@@ -1,0 +1,596 @@
+{
+ "property": {
+  "address": "900 South Orange Avenue, Millburn Township, NJ",
+  "jurisdiction": "Millburn Township",
+  "municipalityCode": "0712",
+  "county": "Essex",
+  "state": "NJ",
+  "parcelId": "Block 4206, Lot 3",
+  "pin": "0712_4206_3",
+  "lat": 40.75333139072311,
+  "lng": -74.30548120658919,
+  "lotAreaSF": 43682,
+  "frontageFt": 210,
+  "depthFt": 208,
+  "dimsEstimated": false,
+  "existingBldgSF": 5600,
+  "existingUnits": 1,
+  "yearBuilt": 1959,
+  "existingUse": "Residential (1-4 units) (1-story, brick, 3-car garage)",
+  "landValue": 886600,
+  "floodZone": "X",
+  "historic": "",
+  "outlineFt": [
+   [
+    112.5,
+    72.4
+   ],
+   [
+    48.8,
+    -124.9
+   ],
+   [
+    -37.4,
+    -96.8
+   ],
+   [
+    -150,
+    -60.1
+   ],
+   [
+    -86.3,
+    137.1
+   ],
+   [
+    112.5,
+    72.4
+   ]
+  ]
+ },
+ "rules": {
+  "jurisdiction": "Township of Millburn",
+  "district": "R-3",
+  "districtName": "R-3 Residential, 29,000 SF minimum lot",
+  "uses": {
+   "permitted": [
+    "Single-family dwelling"
+   ],
+   "conditional": [
+    "Houses of worship and schools (3-acre minimum lot, 200 ft frontage; this lot does not qualify)",
+    "Radio antennas"
+   ],
+   "accessory": [
+    "Private garage (max 4 spaces in R-3)",
+    "Pool, sport court, shed, private greenhouse",
+    "Short-term rental per Revised General Ordinances §4-42",
+    "Temporary portable storage container (30 days, permit required)"
+   ],
+   "prohibited": [
+    "Multifamily and two-family dwellings",
+    "Commercial uses",
+    "Street-facing garage doors in R-3"
+   ]
+  },
+  "minLotAreaSF": 29000,
+  "minLotWidthFt": 115,
+  "minLotDepthFt": 175,
+  "far": {
+   "residential": 0.25,
+   "commercial": null,
+   "communityFacility": null,
+   "industrial": null,
+   "mixedMax": null
+  },
+  "maxLotCoveragePct": 13,
+  "maxImperviousPct": 35,
+  "maxBuildingFootprintSF": null,
+  "maxGFASF": null,
+  "maxHeightFt": 32,
+  "maxStories": 2.5,
+  "setbacks": {
+   "frontFt": 40,
+   "sideFt": 25,
+   "sideTotalFt": 73.5,
+   "rearFt": 41.6,
+   "cornerSideFt": null
+  },
+  "density": {
+   "maxUnitsPerAcre": null,
+   "minLotAreaPerUnitSF": null,
+   "dwellingUnitFactor": null,
+   "maxUnits": 1,
+   "singleFamilyOnly": true
+  },
+  "minUnitSizeSF": null,
+  "parking": {
+   "perUnit": null,
+   "guestPerUnit": null,
+   "waived": false,
+   "rsis": true,
+   "loadingBerths": null
+  },
+  "inclusionaryPct": null,
+  "bonuses": [],
+  "overlays": [],
+  "approvals": [
+   "Zoning permit and building permit if the design meets every bulk standard (no board hearing)",
+   "Zoning Board of Adjustment: a d(4) variance if floor area exceeds 25%, or c variances for coverage, height or setbacks",
+   "Essex County planning review may apply for work fronting South Orange Avenue (a county road); confirm with the county",
+   "Soil movement / grading permit if regrading for a larger footprint or basement"
+  ],
+  "stateOverrides": [
+   "NJ RSIS governs residential driveway and parking standards (N.J.A.C. 5:21)"
+  ],
+  "notes": [
+   "Floor area counts private garages and double-counts space under ceilings 16 ft or taller. Basements and areas with ceilings under 7 ft are excluded (§301.22). A finished basement adds living space without using FAR.",
+   "Height: 32 ft, or 35 ft with a roof pitch of at least 8:12. Measured from average grade around the foundation at 10-ft intervals (§301.9).",
+   "Front setback is the average established setback on the block, or 40 ft where none exists. 40 ft is used here; the actual block average may be larger.",
+   "Side yards: 15 ft for one-story portions up to 18 ft tall, 25 ft for second-story portions; combined side yards at least 35% of lot width (73.5 ft at 210 ft). Side-facing garage entrances need 28 ft.",
+   "Rear setback is 20% of lot depth (41.6 ft), and 25% of the lot area must remain unoccupied rear yard.",
+   "Half story: space under a pitched roof no larger than half the floor below (§301.61.1).",
+   "Accessory structures: 12 ft side and rear setbacks, 18 ft maximum height in R-3."
+  ],
+  "confidence": {
+   "overall": "medium",
+   "lowConfidenceFields": [
+    "setbacks.frontFt"
+   ]
+  },
+  "citations": [
+   {
+    "label": "Zoning map layer: Township of Millburn: Zoning (published by topologygis)",
+    "url": "https://services7.arcgis.com/HVAUPEhgOEfMS4MH/arcgis/rest/services/Township_of_Millburn_Zoning/FeatureServer/0"
+   },
+   {
+    "label": "Millburn Township zoning ordinance (NJ DCA list)",
+    "url": "https://ecode360.com/35143140"
+   },
+   {
+    "label": "Millburn Township official zoning map (NJ DCA list)",
+    "url": "https://topology.maps.arcgis.com/apps/webappviewer/index.html?id=767cdaf78b034e1baba0bf5890d37fe9"
+   },
+   {
+    "label": "Millburn Development Regulations §DRZ-606.2, R-3 through R-6 districts (via Zoneomics mirror; confirm on eCode360)",
+    "url": "https://www.zoneomics.com/code/millburn-NJ/chapter_6"
+   },
+   {
+    "label": "Millburn Development Regulations Article 3 definitions: §301.22 floor area ratio, §301.8 building coverage, §301.30 lot coverage, §301.9 height",
+    "url": "https://www.zoneomics.com/code/millburn-NJ/chapter_3"
+   }
+  ],
+  "researchedAt": "2026-10-15T16:20:00Z"
+ },
+ "overlays": [
+  {
+   "type": "land use",
+   "group": "Land use",
+   "name": "Inside a sewer service area (Joint Meeting Essex and Union)",
+   "severity": "info",
+   "effect": "Public sewer is planned for this area, which supports multifamily and denser development.",
+   "detail": "",
+   "source": "Sewer service area"
+  },
+  {
+   "type": "land use",
+   "group": "Land use",
+   "name": "State Plan: Metropolitan planning area",
+   "severity": "info",
+   "effect": "State policy directs growth to Metropolitan and Suburban planning areas.",
+   "detail": "",
+   "source": "State Plan planning area"
+  }
+ ],
+ "context": {
+  "parcel": {
+   "source": "NJ statewide parcel composite + MOD-IV tax list (NJOGIS)",
+   "pin": "0712_4206_3",
+   "municipalityCode": "0712",
+   "municipality": "MILLBURN TWP",
+   "county": "ESSEX",
+   "block": "4206",
+   "lot": "3",
+   "qualifier": null,
+   "address": "900 SOUTH ORANGE AVENUE",
+   "zip": "07032",
+   "propertyClass": "2",
+   "propertyClassLabel": "Residential (1-4 units)",
+   "buildingDescription": "1SB3G",
+   "buildingDescriptionDecoded": "1-story, brick, 3-car garage",
+   "buildingClass": "20",
+   "landDescription": "210X208",
+   "facilityName": null,
+   "lotAcres": 1.0028000000000001,
+   "lotAreaSF": 43682,
+   "frontageFt": 210,
+   "depthFt": 208,
+   "dimsSource": "tax record",
+   "assessment": {
+    "land": 886600,
+    "improvements": 860600,
+    "net": 1747200,
+    "lastYearTax": 34629.5
+   },
+   "yearBuilt": 1959,
+   "dwellings": 1,
+   "commercialDwellings": null,
+   "lastSale": {
+    "price": 1260000,
+    "date": "2022-08-22",
+    "code": "A",
+    "deed": "Book 20221, Page 04956"
+   },
+   "owner": null,
+   "additionalLots": [],
+   "lat": 40.75333139072311,
+   "lng": -74.30548120658919,
+   "geometry": {
+    "polygonAreaSF": 43336,
+    "perimeterFt": 833,
+    "frontageFtEst": 207,
+    "depthFtEst": 210,
+    "rectangularity": 1,
+    "outlineFt": [
+     [
+      112.5,
+      72.4
+     ],
+     [
+      48.8,
+      -124.9
+     ],
+     [
+      -37.4,
+      -96.8
+     ],
+     [
+      -150,
+      -60.1
+     ],
+     [
+      -86.3,
+      137.1
+     ],
+     [
+      112.5,
+      72.4
+     ]
+    ]
+   }
+  },
+  "sales": {
+   "radiusMiles": 0.5,
+   "years": 5,
+   "sameClass": {
+    "count": 52,
+    "medianPrice": 1797500,
+    "medianPricePerAcre": 3943253.5
+   },
+   "vacantLand": null,
+   "all": {
+    "count": 52,
+    "medianPrice": 1797500,
+    "medianPricePerAcre": 3943253.5
+   },
+   "assessmentRatio": 0.717,
+   "sales": [
+    {
+     "pin": "0712_2604_4",
+     "address": "25 SINCLAIR TERRACE",
+     "block": "2604",
+     "lot": "4",
+     "propertyClass": "2",
+     "acres": 0.45,
+     "price": 2510000,
+     "date": "2024-12-06",
+     "usable": true,
+     "assessed": 1350000,
+     "tax": 26757,
+     "yearBuilt": 1951,
+     "building": "1-story, frame, 2-car garage",
+     "pricePerAcre": 5577778,
+     "ratio": 0.5378486055776892
+    },
+    {
+     "pin": "0712_4204_14",
+     "address": "106 SILVER SPRING ROAD",
+     "block": "4204",
+     "lot": "14",
+     "propertyClass": "2",
+     "acres": 0.3673,
+     "price": 1440000,
+     "date": "2024-11-01",
+     "usable": true,
+     "assessed": 925000,
+     "tax": 18333.5,
+     "yearBuilt": 1947,
+     "building": "1-story, frame, 2-car garage",
+     "pricePerAcre": 3920501,
+     "ratio": 0.6423611111111112
+    },
+    {
+     "pin": "0712_4206_4",
+     "address": "470 OLD SHORT HILLS ROAD",
+     "block": "4206",
+     "lot": "4",
+     "propertyClass": "2",
+     "acres": 1.2139,
+     "price": 2440000,
+     "date": "2024-10-16",
+     "usable": true,
+     "assessed": 1500000,
+     "tax": 29730,
+     "yearBuilt": 1960,
+     "building": "2-story, brick, 2-car garage",
+     "pricePerAcre": 2010050,
+     "ratio": 0.6147540983606558
+    },
+    {
+     "pin": "0712_4506_13",
+     "address": "5 ELIOT PLACE",
+     "block": "4506",
+     "lot": "13",
+     "propertyClass": "2",
+     "acres": 0.4706,
+     "price": 550000,
+     "date": "2024-08-29",
+     "usable": true,
+     "assessed": 858700,
+     "tax": 17019.43,
+     "yearBuilt": 1955,
+     "building": "1-story, frame, 2-car garage",
+     "pricePerAcre": 1168721,
+     "ratio": 1.5612727272727274
+    },
+    {
+     "pin": "0712_4303_18",
+     "address": "1 WINTHROP ROAD",
+     "block": "4303",
+     "lot": "18",
+     "propertyClass": "2",
+     "acres": 0.6427,
+     "price": 1850000,
+     "date": "2024-08-26",
+     "usable": true,
+     "assessed": 1396800,
+     "tax": 27684.58,
+     "yearBuilt": 1963,
+     "building": "1-story, brick, 2-car garage",
+     "pricePerAcre": 2878481,
+     "ratio": 0.7550270270270271
+    },
+    {
+     "pin": "0712_4505_11",
+     "address": "91 TROY DRIVE",
+     "block": "4505",
+     "lot": "11",
+     "propertyClass": "2",
+     "acres": 0.5051,
+     "price": 2105000,
+     "date": "2024-07-23",
+     "usable": true,
+     "assessed": 1465900,
+     "tax": 29054.14,
+     "yearBuilt": 1968,
+     "building": "1-story, frame, 2-car garage",
+     "pricePerAcre": 4167492,
+     "ratio": 0.6963895486935867
+    },
+    {
+     "pin": "0712_2601_6",
+     "address": "49 MARTINDALE RD.",
+     "block": "2601",
+     "lot": "6",
+     "propertyClass": "2",
+     "acres": 0.36610000000000004,
+     "price": 1635000,
+     "date": "2024-07-22",
+     "usable": true,
+     "assessed": 950000,
+     "tax": 18829,
+     "yearBuilt": 1940,
+     "building": "2-story, frame, 2-car garage",
+     "pricePerAcre": 4465993,
+     "ratio": 0.581039755351682
+    },
+    {
+     "pin": "0712_2602_12",
+     "address": "39 FAIRFIELD TERRACE",
+     "block": "2602",
+     "lot": "12",
+     "propertyClass": "2",
+     "acres": 0.505,
+     "price": 3580000,
+     "date": "2024-07-15",
+     "usable": true,
+     "assessed": 2647600,
+     "tax": 52475.43,
+     "yearBuilt": 2012,
+     "building": "2-story, frame, 3-car garage",
+     "pricePerAcre": 7089109,
+     "ratio": 0.7395530726256984
+    },
+    {
+     "pin": "0712_2603_14",
+     "address": "139 FAIRFIELD DRIVE",
+     "block": "2603",
+     "lot": "14",
+     "propertyClass": "2",
+     "acres": 0.49350000000000005,
+     "price": 2795000,
+     "date": "2024-06-25",
+     "usable": true,
+     "assessed": 2000000,
+     "tax": 39640,
+     "yearBuilt": 1940,
+     "building": "2-story, brick, 2-car garage",
+     "pricePerAcre": 5663627,
+     "ratio": 0.7155635062611807
+    },
+    {
+     "pin": "0712_4204_11",
+     "address": "920 SOUTH ORANGE AVENUE",
+     "block": "4204",
+     "lot": "11",
+     "propertyClass": "2",
+     "acres": 0.2346,
+     "price": 1110000,
+     "date": "2024-06-20",
+     "usable": true,
+     "assessed": 687000,
+     "tax": 12419.21,
+     "yearBuilt": 1956,
+     "building": "1-story, frame, 1-car garage",
+     "pricePerAcre": 4731458,
+     "ratio": 0.6189189189189189
+    },
+    {
+     "pin": "0712_2602_20",
+     "address": "28 MARTINDALE ROAD",
+     "block": "2602",
+     "lot": "20",
+     "propertyClass": "2",
+     "acres": 0.6657000000000001,
+     "price": 2400000,
+     "date": "2024-06-18",
+     "usable": true,
+     "assessed": 1625000,
+     "tax": 32207.5,
+     "yearBuilt": 1940,
+     "building": "2-story, frame, 3-car garage",
+     "pricePerAcre": 3605228,
+     "ratio": 0.6770833333333334
+    },
+    {
+     "pin": "0710_7106_11",
+     "address": "1 LOCKHERN DRIVE",
+     "block": "7106",
+     "lot": "11",
+     "propertyClass": "2",
+     "acres": 0.9212,
+     "price": 3100000,
+     "date": "2024-06-14",
+     "usable": true,
+     "assessed": 2988800,
+     "tax": 73106.05,
+     "yearBuilt": 2005,
+     "building": "1-story",
+     "pricePerAcre": 3365176,
+     "ratio": 0.9641290322580646
+    }
+   ]
+  },
+  "tax": {
+   "lastYearTax": 34629.5,
+   "netAssessed": 1747200,
+   "generalRatePer100": 1.982,
+   "assessmentRatioEst": 0.717,
+   "effectiveRatePctEst": 1.421,
+   "note": "Effective rate = general tax rate x assessment-to-sale ratio from nearby recent sales (an estimate of the equalization ratio)."
+  },
+  "links": {
+   "name": "Millburn Township",
+   "county": "Essex",
+   "zoningMap": "https://topology.maps.arcgis.com/apps/webappviewer/index.html?id=767cdaf78b034e1baba0bf5890d37fe9",
+   "ordinance": "https://ecode360.com/35143140",
+   "website": "https://twp.millburn.nj.us/150/Building"
+  },
+  "transit": null,
+  "constraintsClear": [
+   "Freshwater wetlands (2020 mapping)",
+   "Category One (C1) waters",
+   "Streams (2020)",
+   "Climate-adjusted tidal flood area (5 ft sea-level rise)",
+   "Highlands region",
+   "Pinelands management area",
+   "CAFRA coastal zone",
+   "CAFRA and coastal centers",
+   "Known contaminated sites",
+   "Deed notice areas",
+   "Groundwater classification exception areas",
+   "Historically filled land",
+   "Brownfield development areas",
+   "Preserved open space (Green Acres and other)",
+   "Preserved farmland",
+   "State Plan designated center",
+   "Delaware & Raritan Canal Commission review zone",
+   "Historic districts (NJ HPO)",
+   "Historic properties (NJ HPO)",
+   "Area in Need of Redevelopment (NJ DCA)",
+   "Area in Need of Rehabilitation (NJ DCA)",
+   "Urban Enterprise Zone",
+   "Qualified Opportunity Zone",
+   "Opportunity Zone 2.0 eligible tract"
+  ],
+  "constraintErrors": [],
+  "flood": {
+   "zone": "X",
+   "subtype": "AREA OF MINIMAL FLOOD HAZARD",
+   "sfha": false,
+   "bfe": null,
+   "partial": false,
+   "allZones": [
+    "X"
+   ],
+   "firm": "34013C",
+   "source": "FEMA NFHL"
+  },
+  "regional": null,
+  "zoningLayer": {
+   "district": "R-3",
+   "allDistricts": [
+    "R-3"
+   ],
+   "description": "R-3: Residential 29,000 Sq. Ft.",
+   "zoneField": "Zone",
+   "descField": "Zone_Desc",
+   "layer": "Township of Millburn: Zoning",
+   "owner": "topologygis",
+   "url": "https://services7.arcgis.com/HVAUPEhgOEfMS4MH/arcgis/rest/services/Township_of_Millburn_Zoning/FeatureServer/0",
+   "source": "registry",
+   "verifiedAt": "2026-10-15"
+  }
+ },
+ "sources": [
+  {
+   "label": "US Census Geocoder",
+   "kind": "location"
+  },
+  {
+   "label": "NJ statewide parcel composite + MOD-IV tax list (NJOGIS)",
+   "kind": "parcel, assessment, sales"
+  },
+  {
+   "label": "Township of Millburn: Zoning (topologygis)",
+   "kind": "zoning district"
+  },
+  {
+   "label": "NJDEP, NJ DCA, Pinelands, Highlands, SADC and State Plan GIS layers",
+   "kind": "site constraints and incentives"
+  },
+  {
+   "label": "FEMA National Flood Hazard Layer",
+   "kind": "flood"
+  },
+  {
+   "label": "NJ DCA municipal zoning links",
+   "kind": "ordinance and map links"
+  },
+  {
+   "label": "Millburn Development Regulations (via Zoneomics)",
+   "kind": "district standards"
+  }
+ ],
+ "assumptions": {
+  "efficiency": 0.92,
+  "proposedGFASF": 8750,
+  "floorToFloorResFt": 11
+ },
+ "market": {
+  "tenure": "sale",
+  "salePricePerNetSF": 720,
+  "hardCostPerGSF": 400,
+  "softCostPct": 0.15,
+  "financingCostPct": 0.05,
+  "developerMarginPct": 0.12
+ }
+}

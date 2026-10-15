@@ -1,0 +1,31 @@
+{
+  "name": "nj-zoning-envelope",
+  "version": "1.0.0",
+  "description": "What can be built on a New Jersey property: parcel and tax data, zoning district, state site constraints, comparable sales, ordinance research and a buildout envelope with residual land value.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/engine.test.js && node test/parsers.test.js",
+    "test:live": "node test/live.test.js",
+    "refresh-data": "node scripts/refresh-state-data.js",
+    "discover-zoning": "node scripts/discover-zoning-layers.js",
+    "build-pages": "node scripts/build-pages.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "zoning",
+    "new-jersey",
+    "real-estate",
+    "land-use",
+    "gis",
+    "mod-iv"
+  ],
+  "private": true,
+  "homepage": "https://97kmalik.github.io/ZoningDemo/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/97kmalik/ZoningDemo.git"
+  }
+}

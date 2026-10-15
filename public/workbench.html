@@ -1,0 +1,805 @@
+<title>NJ Zoning Envelope</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: tax-map sheet. Left rail = the parcel record and every editable standard; right = the drawing and the math, summary first. */
+:root{
+  --paper:#eef1ec; --sheet:#f8faf6; --ink:#17242b; --graphite:#56656b; --rule:#cbd4cd; --rule-soft:#dfe5e0;
+  --plan:#1f4e79; --plan-soft:#dbe6f0; --resi:#e5bf3d; --resi-soft:#f5e7b3; --comm:#c2453a; --ind:#7a5aa6;
+  --good:#2f7a4f; --good-soft:#dcefe2; --warn:#a86a12; --warn-soft:#f7ead2; --bad:#b23a33; --bad-soft:#f6dcd9;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif; --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1619; --sheet:#162024; --ink:#e3e9e5; --graphite:#9aa8ad; --rule:#2c3a3f; --rule-soft:#223035;
+  --plan:#86b3dd; --plan-soft:#1d3346; --resi:#d9b443; --resi-soft:#3a3218; --comm:#e0776c; --ind:#ab8fd6;
+  --good:#6cc08f; --good-soft:#18352a; --warn:#e2a957; --warn-soft:#3a2c14; --bad:#ee8079; --bad-soft:#3d1f1d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f1619; --sheet:#162024; --ink:#e3e9e5; --graphite:#9aa8ad; --rule:#2c3a3f; --rule-soft:#223035;
+  --plan:#86b3dd; --plan-soft:#1d3346; --resi:#d9b443; --resi-soft:#3a3218; --comm:#e0776c; --ind:#ab8fd6;
+  --good:#6cc08f; --good-soft:#18352a; --warn:#e2a957; --warn-soft:#3a2c14; --bad:#ee8079; --bad-soft:#3d1f1d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:15px/1.5 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:1360px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2,h3{font-family:var(--display);font-stretch:82%;letter-spacing:-.005em;text-wrap:balance;margin:0}
+h1{font-size:1.15rem;font-weight:700;font-stretch:100%}
+h2{font-size:1.25rem;font-weight:700}
+h3{font-size:1rem;font-weight:650}
+p{margin:0}
+a{color:var(--plan)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--plan);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--graphite)}
+.small{font-size:.84rem}
+
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.mast .brand{display:flex;align-items:center;gap:10px}
+.mark{width:28px;height:28px;flex:none}
+.mast .actions{display:flex;flex-wrap:wrap;gap:8px}
+
+.btn{border:1px solid var(--rule);background:var(--sheet);border-radius:var(--r);padding:7px 12px;cursor:pointer;font-weight:500;font-size:.9rem;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--plan)}
+.btn.primary{background:var(--plan);border-color:var(--plan);color:var(--sheet)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn:disabled{opacity:.55;cursor:default}
+.btn.ghost{background:transparent}
+
+/* query panel */
+.query{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--rule)}
+.tab{border:0;background:none;padding:8px 12px;cursor:pointer;color:var(--graphite);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--plan)}
+.qrow{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.qrow label{display:flex;flex-direction:column;gap:4px;font-size:.82rem;color:var(--graphite);flex:1 1 140px;min-width:0}
+.qrow label.wide{flex:3 1 320px}
+.qrow[data-panel]{flex:1 1 320px}
+@media (max-width:980px){.results{order:-1}}
+.where{font-size:.86rem;color:var(--graphite)}
+input[type=text],input[type=number],select,textarea{background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:7px 9px;width:100%;min-width:0}
+textarea{resize:vertical;min-height:90px;font-size:.86rem;line-height:1.45}
+input:focus,select:focus,textarea:focus{border-color:var(--plan);outline:none;box-shadow:0 0 0 3px var(--plan-soft)}
+.log{font-size:.84rem;color:var(--graphite);max-height:130px;overflow:auto;border-left:2px solid var(--rule);padding-left:10px;display:flex;flex-direction:column;gap:2px}
+.log:empty{display:none}
+.notice{border-radius:var(--r);padding:10px 12px;font-size:.88rem;display:flex;gap:10px;align-items:flex-start}
+.notice.info{background:var(--plan-soft)}
+.notice.warn{background:var(--warn-soft)}
+.notice.bad{background:var(--bad-soft)}
+.notice.example{background:var(--resi-soft)}
+
+/* sheet */
+.sheet{display:grid;grid-template-columns:minmax(0,370px) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:980px){.sheet{grid-template-columns:minmax(0,1fr)}}
+.rail{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);overflow:hidden}
+.record{padding:16px;border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:6px}
+.record .addr{font-family:var(--display);font-stretch:88%;font-size:1.35rem;font-weight:700;line-height:1.15}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:5px;border-radius:999px;padding:2px 9px;font-size:.78rem;font-weight:600;border:1px solid var(--rule);background:var(--paper)}
+.chip.district{background:var(--resi-soft);border-color:var(--resi)}
+.chip.high{background:var(--good-soft);border-color:transparent;color:var(--good)}
+.chip.medium{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
+.chip.low{background:var(--bad-soft);border-color:transparent;color:var(--bad)}
+details.grp{border-bottom:1px solid var(--rule-soft)}
+details.grp>summary{list-style:none;cursor:pointer;padding:11px 16px;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.92rem}
+details.grp>summary::-webkit-details-marker{display:none}
+details.grp>summary::after{content:"";width:8px;height:8px;border-right:1.5px solid var(--graphite);border-bottom:1.5px solid var(--graphite);transform:rotate(45deg);transition:transform .15s}
+details.grp[open]>summary::after{transform:rotate(-135deg)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;padding:0 16px 14px}
+.f{display:flex;flex-direction:column;gap:3px;min-width:0}
+.f.full{grid-column:1/-1}
+.f>span{font-size:.78rem;color:var(--graphite);display:flex;justify-content:space-between;gap:6px}
+.f>span i{font-style:normal;opacity:.8}
+.f input[type=number]{font-variant-numeric:tabular-nums}
+.f.check{flex-direction:row;align-items:center;gap:8px;font-size:.86rem}
+.f.flagged input{border-color:var(--warn)}
+
+/* results */
+.results{display:flex;flex-direction:column;gap:18px;min-width:0}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.verdict{font-family:var(--display);font-stretch:78%;font-weight:700;font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+.verdict em{font-style:normal;background:linear-gradient(transparent 62%,var(--resi-soft) 62%)}
+.tallies{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border-top:1px solid var(--rule);border-left:1px solid var(--rule)}
+.tally{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.tally b{font-family:var(--display);font-stretch:85%;font-size:1.45rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.tally span{font-size:.78rem;color:var(--graphite)}
+.tally small{font-size:.76rem;color:var(--plan);font-weight:600}
+.drawings{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:14px}
+@media (max-width:720px){.drawings{grid-template-columns:minmax(0,1fr)}}
+.drawing{border:1px solid var(--rule-soft);border-radius:4px;background:var(--paper);padding:8px;min-width:0}
+.drawing svg{display:block;width:100%;height:auto}
+.drawing figcaption{font-size:.78rem;color:var(--graphite);padding:4px 4px 0}
+.svg-text{font-family:var(--body);font-size:11px;fill:var(--graphite)}
+.svg-strong{font-family:var(--display);font-size:12px;font-weight:700;fill:var(--ink)}
+
+.scen-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.scen-tab{border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:.86rem}
+.scen-tab[aria-pressed="true"]{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+
+.ladder{display:flex;flex-direction:column;gap:7px}
+.rung{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr) 92px;gap:10px;align-items:center;font-size:.86rem}
+@media (max-width:560px){.rung{grid-template-columns:minmax(0,1fr) 84px}.rung .bar{grid-column:1/-1;grid-row:2}}
+.rung .bar{height:10px;background:var(--rule-soft);border-radius:2px;position:relative;overflow:hidden}
+.rung .bar i{position:absolute;inset:0 auto 0 0;background:var(--graphite);opacity:.45}
+.rung.binding .bar i{background:var(--plan);opacity:1}
+.rung.binding{font-weight:600}
+.rung .v{text-align:right;font-variant-numeric:tabular-nums}
+.rung.na{color:var(--graphite)}
+.rung.na .v{font-style:italic}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+.tbl td,.tbl th{padding:6px 4px;border-bottom:1px solid var(--rule-soft);text-align:left;vertical-align:top}
+.tbl th{font-weight:600;color:var(--graphite);font-size:.8rem}
+.tbl td.r,.tbl th.r{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl tr.total td{font-weight:700;border-top:1.5px solid var(--ink);border-bottom:0}
+.tbl tr.neg td.r{color:var(--bad)}
+.scroll{overflow-x:auto}
+.uses{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.uses ul{margin:4px 0 0;padding-left:18px;font-size:.88rem}
+.uses h4{margin:0;font-size:.84rem;font-weight:600;display:flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:2px;display:inline-block;flex:none}
+.flags{display:flex;flex-direction:column;gap:8px}
+.flag{display:grid;grid-template-columns:4px minmax(0,1fr);gap:10px;font-size:.88rem}
+.flag>i{border-radius:2px;background:var(--graphite)}
+.flag.high>i{background:var(--bad)}
+.flag.positive>i{background:var(--good)}
+.flag.info>i{background:var(--plan)}
+.flag.caution>i{background:var(--warn)}
+.flag b{font-weight:600}
+.pill{display:inline-block;border-radius:4px;padding:1px 7px;font-size:.78rem;font-weight:600}
+.pill.ok{background:var(--good-soft);color:var(--good)}
+.pill.no{background:var(--bad-soft);color:var(--bad)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+ul.plain{margin:0;padding-left:18px;font-size:.88rem;display:flex;flex-direction:column;gap:3px}
+.cites a{word-break:break-word}
+.modal{position:fixed;inset:0;background:color-mix(in srgb,var(--ink) 45%,transparent);display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));z-index:10}
+.modal .box{background:var(--sheet);border-radius:var(--r);max-width:720px;width:100%;max-height:90vh;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+.modal .row{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--sheet);padding:8px 14px;border-radius:var(--r);font-size:.88rem;z-index:20}
+.spin{width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:sp .8s linear infinite;display:inline-block}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}details.grp>summary::after{transition:none}}
+.foot{font-size:.8rem;color:var(--graphite);max-width:80ch}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="2" y="2" width="24" height="24" fill="none" stroke="var(--ink)" stroke-width="2"/><rect x="7" y="8" width="14" height="12" fill="var(--resi)"/><rect x="5" y="5" width="18" height="18" fill="none" stroke="var(--plan)" stroke-width="1.4" stroke-dasharray="3 2"/></svg>
+      <h1>NJ Zoning Envelope</h1>
+    </div>
+    <div class="actions">
+      <button class="btn" id="btnLoad" type="button">Load packet</button>
+      <button class="btn" id="btnParse" type="button">Parse ordinance text</button>
+      <button class="btn" id="btnExport" type="button">Export packet</button>
+      <button class="btn ghost" id="btnReset" type="button">Start blank</button>
+      <button class="btn" id="btnKey" type="button" hidden>Add API key</button>
+    </div>
+  </header>
+
+  <section class="query" id="query" aria-label="Find a property">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-q="address" type="button">Address</button>
+      <button class="tab" role="tab" aria-selected="false" data-q="blocklot" type="button">Block and lot</button>
+    </div>
+    <form id="qform" class="qrow">
+      <div class="qrow" data-panel="address" >
+        <label class="wide">New Jersey street address<input type="text" id="qAddress" placeholder="900 S Orange Ave, Short Hills, NJ 07078" autocomplete="street-address"></label>
+      </div>
+      <div class="qrow" data-panel="blocklot"  hidden>
+        <label class="wide">Municipality<input type="text" id="qMun" list="muniList" placeholder="Millburn Township" autocomplete="off"></label>
+        <datalist id="muniList"></datalist>
+        <label>Block<input type="text" id="qBlock" placeholder="1001"></label>
+        <label>Lot<input type="text" id="qLot" placeholder="5"></label>
+        <label>Qualifier<input type="text" id="qQual" placeholder="optional"></label>
+      </div>
+      <label class="f check small" style="flex:0 0 auto"><input type="checkbox" id="qResearch" checked> Research the ordinance</label>
+      <button class="btn primary" id="qGo" type="submit">Analyze property</button>
+    </form>
+    <div class="log" id="log" aria-live="polite"></div>
+  </section>
+
+  <div id="modeNote"></div>
+  <div id="banner"></div>
+
+  <div class="sheet">
+    <aside class="rail" aria-label="Property and zoning standards">
+      <div class="record" id="record"></div>
+      <div id="editor"></div>
+    </aside>
+    <main class="results" id="results"></main>
+  </div>
+
+  <p class="foot">Planning estimate, not a zoning determination. Ordinances change and many lots carry conditions (approvals, deed restrictions, redevelopment plans) that this tool cannot see. Confirm with the municipal zoning officer or a land-use attorney before you price or file anything.</p>
+</div>
+
+<div class="modal" id="modal" hidden></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="zoning-engine.js"></script>
+<script src="rules-schema.js"></script>
+<script>
+(function(){
+'use strict';
+const Z = window.ZoningEngine, S = window.ZoningSchema;
+const $ = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+const fmt = (n, d=0) => n===null||n===undefined||!isFinite(n) ? '—' : Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
+const money = (n) => n===null||n===undefined||!isFinite(n) ? '—' : (n<0?'−$':'$') + Math.abs(Math.round(n)).toLocaleString('en-US');
+const moneyShort = (n) => { if(n===null||n===undefined||!isFinite(n)) return '—'; const a=Math.abs(n), s=n<0?'−$':'$'; return a>=1e6? s+(a/1e6).toFixed(a>=1e7?1:2)+'M' : a>=1e3? s+Math.round(a/1e3)+'K' : s+Math.round(a); };
+const escH = (s) => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const get = (o, path) => path.split('.').reduce((a,k)=>a==null?undefined:a[k], o);
+const set = (o, path, v) => { const ks=path.split('.'); let a=o; ks.slice(0,-1).forEach(k=>{ if(a[k]==null||typeof a[k]!=='object') a[k]={}; a=a[k]; }); a[ks.at(-1)]=v; };
+
+// ---------- state ----------
+const EXAMPLE = {
+  example: true,
+  property: { address: 'Example: 2-acre lot, garden-apartment district', jurisdiction: 'Illustrative NJ township', county: '', state: 'NJ', parcelId: 'Block 0000, Lot 0',
+    lotAreaSF: 87120, frontageFt: 240, depthFt: 363, cornerLot: false, existingBldgSF: 6000, existingUnits: 1, existingUse: 'Single-family residence', landValue: 1800000, floodZone: 'X', historic: '' },
+  rules: { district: 'R-5', districtName: 'Garden apartment residential (illustrative)', far: { residential: 1.2 },
+    maxLotCoveragePct: 35, maxImperviousPct: 70, maxHeightFt: 45, maxStories: 4, minLotAreaSF: 40000, minLotWidthFt: 150,
+    setbacks: { frontFt: 30, sideFt: 20, rearFt: 30 }, density: { maxUnitsPerAcre: 24 }, parking: { perUnit: 1.8, guestPerUnit: 0.2, rsis: true },
+    inclusionaryPct: 20, uses: { permitted: ['Garden apartments', 'Townhouses', 'Single-family detached'], conditional: ['Assisted living', 'Houses of worship'], accessory: ['Clubhouse and pool', 'Private garages'], prohibited: ['Retail', 'Industrial'] },
+    bonuses: [{ name: 'Inclusionary density bonus', farBonus: 0.2, description: 'Additional FAR when the affordable set-aside is built on site (illustrative).', apply: false }],
+    approvals: ['Preliminary and final major site plan (planning board)', 'County planning board review (frontage on a county road)', 'Soil erosion and sediment control certification'],
+    stateOverrides: ['NJ RSIS sets residential parking ratios statewide (N.J.A.C. 5:21-4.14)'],
+    confidence: { overall: 'medium', lowConfidenceFields: [] }, citations: [] },
+  overlays: [], assumptions: {}, market: {}, sources: []
+};
+const BLANK = { property:{}, rules:{ far:{}, setbacks:{}, density:{}, parking:{}, uses:{}, bonuses:[], citations:[] }, overlays:[], assumptions:{}, market:{}, sources:[] };
+let packet = load() || structuredClone(EXAMPLE);
+let scenarioKey = null;
+let mode = { server:false, browser:false, research:false, sample:null };
+let munis = [];
+
+function load(){ try { const s = localStorage.getItem('ze.packet'); return s ? JSON.parse(s) : null; } catch(_) { return null; } }
+function persist(){ try { localStorage.setItem('ze.packet', JSON.stringify(packet)); } catch(_) {} }
+
+// ---------- editor spec ----------
+const G = [
+  { title:'Lot', open:true, fields:[
+    ['property.lotAreaSF','Lot area','SF'],['property.lotAcres','or acres','ac'],
+    ['property.frontageFt','Frontage','ft'],['property.depthFt','Depth','ft'],
+    ['property.cornerLot','Corner lot','','check'],
+    ['property.existingBldgSF','Existing building','SF'],['property.existingUnits','Existing units',''],
+    ['property.landValue','Assessed land value','$'],['property.floodZone','FEMA flood zone','','text'],
+    ['property.historic','Historic designation','','text','full'],
+  ]},
+  { title:'District bulk standards', open:true, fields:[
+    ['rules.district','District','','text'],['rules.districtName','Name','','text'],
+    ['rules.far.residential','FAR, residential',''],['rules.far.commercial','FAR, commercial',''],
+    ['rules.far.communityFacility','FAR, community facility',''],['rules.far.industrial','FAR, industrial',''],
+    ['rules.far.mixedMax','FAR, mixed-use max',''],['rules.maxGFASF','Max floor area','SF'],
+    ['rules.maxLotCoveragePct','Building coverage','%'],['rules.maxImperviousPct','Impervious coverage','%'],
+    ['rules.maxHeightFt','Max height','ft'],['rules.maxStories','Max stories',''],
+    ['rules.minLotAreaSF','Min lot area','SF'],['rules.minLotWidthFt','Min lot width','ft'],
+    ['rules.minLotDepthFt','Min lot depth','ft'],['rules.maxBuildingFootprintSF','Max footprint','SF'],
+  ]},
+  { title:'Setbacks', open:false, fields:[
+    ['rules.setbacks.frontFt','Front yard','ft'],['rules.setbacks.rearFt','Rear yard','ft'],
+    ['rules.setbacks.sideFt','Side yard, each','ft'],['rules.setbacks.sideTotalFt','Side yards, total','ft'],
+    ['rules.setbacks.cornerSideFt','Corner side yard','ft'],
+  ]},
+  { title:'Density and units', open:false, fields:[
+    ['rules.density.maxUnitsPerAcre','Units per acre',''],['rules.density.minLotAreaPerUnitSF','Lot area per unit','SF'],
+    ['rules.density.dwellingUnitFactor','Dwelling unit factor','SF'],['rules.density.maxUnits','Max units',''],
+    ['rules.minUnitSizeSF','Min unit size','SF'],['rules.inclusionaryPct','Affordable set-aside','%'],
+    ['rules.density.singleFamilyOnly','One dwelling per lot','','check','full'],
+  ]},
+  { title:'Parking', open:false, fields:[
+    ['rules.parking.perUnit','Spaces per unit',''],['rules.parking.guestPerUnit','Guest per unit',''],
+    ['rules.parking.perKSFRetail','Per 1,000 SF retail',''],['rules.parking.perKSFOffice','Per 1,000 SF office',''],
+    ['rules.parking.perKSFIndustrial','Per 1,000 SF industrial',''],['rules.parking.reductionPct','Reduction','%'],
+    ['rules.parking.waived','Parking waived','','check'],['assumptions.structuredParking','Structured / podium parking','','check'],
+  ]},
+  { title:'Building assumptions', open:false, fields:[
+    ['assumptions.floorToFloorResFt','Residential floor-to-floor','ft'],['assumptions.floorToFloorComFt','Ground floor height','ft'],
+    ['assumptions.efficiency','Efficiency (net/gross)',''],['assumptions.avgUnitNetSF','Average unit','SF'],
+    ['assumptions.maxAvgUnitNetSF','Largest average unit','SF'],['assumptions.parkingSFPerSpace','Surface SF per stall','SF'],
+    ['assumptions.proposedGFASF','Proposed floor area (your plan)','SF','num','full'],
+    ['assumptions.groundFloorRetail','Ground-floor commercial','','check','full'],
+  ]},
+  { title:'Market and costs', open:false, fields:[
+    ['market.tenure','Tenure','','select:rental,sale'],['market.rentPerNetSFMonth','Rent per SF / month','$'],
+    ['market.salePricePerNetSF','Sale price per SF','$'],['market.exitCapRate','Cap rate',''],
+    ['market.vacancyPct','Vacancy',''],['market.opexPct','Opex (of EGI)',''],
+    ['market.hardCostPerGSF','Hard cost per GSF','$'],['market.softCostPct','Soft cost (of hard)',''],
+    ['market.financingCostPct','Financing (of cost)',''],['market.developerMarginPct','Developer margin (of value)',''],
+    ['market.parkingCostPerStructuredSpace','Structured stall cost','$'],['market.retailRentPerSFYear','Retail rent per SF / yr','$'],
+  ]},
+  { title:'Permitted uses', open:false, lists:[
+    ['rules.uses.permitted','Permitted'],['rules.uses.conditional','Conditional'],['rules.uses.accessory','Accessory'],['rules.uses.prohibited','Prohibited']
+  ]},
+];
+const DEF = { assumptions: Z.DEFAULT_ASSUMPTIONS, market: Z.DEFAULT_MARKET };
+
+function renderEditor(){
+  const low = new Set(packet.rules?.confidence?.lowConfidenceFields || []);
+  const host = $('#editor'); host.innerHTML = '';
+  G.forEach((g, gi) => {
+    const d = document.createElement('details'); d.className='grp'; if (g.open) d.open = true;
+    d.innerHTML = `<summary>${escH(g.title)}</summary><div class="fields"></div>`;
+    const box = $('.fields', d);
+    (g.fields||[]).forEach(([path,label,unit,type='num',w]) => {
+      const id = 'f_' + path.replace(/\./g,'_');
+      const [root, ...rest] = path.split('.');
+      const placeholder = DEF[root] ? DEF[root][rest.join('.')] : '';
+      const v = get(packet, path);
+      const lc = low.has(rest.at(-1)) || low.has(rest.join('.'));
+      let html;
+      if (type==='check') html = `<label class="f check ${w==='full'?'full':''}"><input type="checkbox" id="${id}" data-path="${path}" data-type="check" ${v?'checked':''}> ${escH(label)}</label>`;
+      else if (type.startsWith('select:')) html = `<label class="f ${w==='full'?'full':''}"><span>${escH(label)}</span><select id="${id}" data-path="${path}" data-type="text">${type.slice(7).split(',').map(o=>`<option ${ (v||placeholder)===o?'selected':''}>${o}</option>`).join('')}</select></label>`;
+      else html = `<label class="f ${w==='full'?'full':''} ${lc?'flagged':''}" ${lc?'title="Low confidence: verify against the ordinance"':''}><span>${escH(label)}<i>${escH(unit||'')}</i></span><input id="${id}" data-path="${path}" data-type="${type==='text'?'text':'num'}" type="${type==='text'?'text':'number'}" step="any" inputmode="decimal" value="${v??''}" placeholder="${placeholder??''}"></label>`;
+      box.insertAdjacentHTML('beforeend', html);
+    });
+    (g.lists||[]).forEach(([path,label]) => {
+      const id = 'f_' + path.replace(/\./g,'_');
+      const v = (get(packet, path)||[]).join('\n');
+      box.insertAdjacentHTML('beforeend', `<label class="f full"><span>${escH(label)}<i>one per line</i></span><textarea id="${id}" data-path="${path}" data-type="list" rows="3">${escH(v)}</textarea></label>`);
+    });
+    host.appendChild(d);
+  });
+  // bonuses
+  const b = packet.rules?.bonuses || [];
+  if (b.length){
+    const d = document.createElement('details'); d.className='grp'; d.open = true;
+    d.innerHTML = `<summary>Bonuses</summary><div class="fields">${b.map((x,i)=>`<label class="f check full"><input type="checkbox" data-bonus="${i}" ${x.apply?'checked':''}> <span style="display:block"><b>${escH(x.name)}</b>${x.farBonus?` (+${x.farBonus} FAR)`:''}${x.unitsBonus?` (+${x.unitsBonus} units)`:''}<br><span class="muted small">${escH(x.description||'')}</span></span></label>`).join('')}</div>`;
+    host.appendChild(d);
+  }
+}
+
+$('#editor').addEventListener('input', (e) => {
+  const el = e.target;
+  if (el.dataset.bonus!==undefined){ packet.rules.bonuses[+el.dataset.bonus].apply = el.checked; return changed(); }
+  const path = el.dataset.path; if (!path) return;
+  let v;
+  if (el.dataset.type==='check') v = el.checked;
+  else if (el.dataset.type==='num') v = el.value==='' ? null : +el.value;
+  else if (el.dataset.type==='list') v = el.value.split('\n').map(s=>s.trim()).filter(Boolean);
+  else v = el.value;
+  set(packet, path, v);
+  if (path==='property.lotAcres' && v) { set(packet,'property.lotAreaSF', Math.round(v*43560)); const a=$('#f_property_lotAreaSF'); if(a) a.value=Math.round(v*43560); }
+  if (packet.example) { packet.example = false; renderBanner(); }
+  changed();
+});
+let tmr; function changed(){ clearTimeout(tmr); tmr = setTimeout(()=>{ persist(); renderAll(false); }, 120); }
+
+// ---------- record header ----------
+function renderRecord(){
+  const p = packet.property||{}, r = packet.rules||{};
+  const conf = r.confidence?.overall;
+  $('#record').innerHTML = `
+    <div class="addr">${escH(p.address || 'Untitled property')}</div>
+    <div class="muted small">${escH([p.jurisdiction, p.county, p.state].filter(Boolean).join(', ') || 'Jurisdiction not set')}${p.parcelId?`<br>${escH(p.parcelId)}`:''}</div>
+    <div class="chips">
+      ${r.district?`<span class="chip district">${escH(r.district)}</span>`:'<span class="chip">District not set</span>'}
+      ${conf?`<span class="chip ${escH(conf)}">${escH(conf[0].toUpperCase()+conf.slice(1))} confidence</span>`:''}
+      ${p.dimsEstimated?'<span class="chip" title="Frontage and depth estimated from the parcel outline">Dimensions estimated</span>':''}
+    </div>
+    ${r.districtName?`<div class="small">${escH(r.districtName)}</div>`:''}`;
+}
+
+function renderBanner(){
+  $('#banner').innerHTML = packet.example ? `<div class="notice example"><div><b>Example data.</b> These numbers illustrate a garden-apartment district. ${mode.server?'Search a property above':'Load a zoning packet, parse ordinance text, or type the standards on the left'} to analyze a real lot.</div></div>` : '';
+}
+
+// ---------- drawings ----------
+function sitePlan(res){
+  const L = res.lot, W = L.frontageFt || (L.lotSF?Math.sqrt(L.lotSF):null), D = L.depthFt || (L.lotSF?Math.sqrt(L.lotSF):null);
+  if (!W || !D) return `<div class="muted small" style="padding:40px 10px;text-align:center">Enter lot area or frontage and depth to draw the site.</div>`;
+  const vw = 360, vh = 300, pad = 46;
+  const k = Math.min((vw-pad*2)/W, (vh-pad*2)/D);
+  const w = W*k, h = D*k, x0 = (vw-w)/2, y0 = (vh-h)/2 - 6;
+  const sb = L.setbacks, sideL = (sb.sideEachFt ?? sb.sideTotalFt/2) || 0, sideR = (sb.sideTotalFt||0) - sideL;
+  const bx = x0 + sideL*k, bw = Math.max(0, w - (sb.sideTotalFt||0)*k), by = y0 + (sb.rearFt||0)*k, bh = Math.max(0, h - ((sb.frontFt||0)+(sb.rearFt||0))*k);
+  const fp = res.footprint.value || 0;
+  let fw = bw, fh = bw>0 ? fp*k*k / bw : 0;
+  if (fh > bh) { fh = bh; fw = bh>0 ? Math.min(bw, fp*k*k/bh) : 0; }
+  const fx = bx + (bw-fw)/2, fy = by + bh - fh;
+  const ln = (x1,y1,x2,y2,c='var(--graphite)',dash='') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="1" ${dash?`stroke-dasharray="${dash}"`:''}/>`;
+  let s = `<svg viewBox="0 0 ${vw} ${vh}" role="img" aria-label="Site plan showing lot, setback lines and building footprint">`;
+  s += `<rect x="0" y="${y0+h+14}" width="${vw}" height="18" fill="var(--rule-soft)"/><text x="${vw/2}" y="${y0+h+27}" text-anchor="middle" class="svg-text">Street (front lot line)</text>`;
+  s += `<rect x="${x0}" y="${y0}" width="${w}" height="${h}" fill="var(--sheet)" stroke="var(--ink)" stroke-width="1.6"/>`;
+  if (bw>0 && bh>0) s += `<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" fill="none" stroke="var(--plan)" stroke-width="1.2" stroke-dasharray="5 3"/>`;
+  if (fw>0 && fh>0) s += `<rect x="${fx}" y="${fy}" width="${fw}" height="${fh}" fill="var(--resi)" fill-opacity=".85" stroke="var(--ink)" stroke-width=".8"/><text x="${fx+fw/2}" y="${fy+fh/2+4}" text-anchor="middle" class="svg-strong">${fmt(fp)} SF</text>`;
+  // dimensions
+  s += ln(x0, y0-14, x0+w, y0-14) + ln(x0,y0-18,x0,y0-10) + ln(x0+w,y0-18,x0+w,y0-10);
+  s += `<text x="${x0+w/2}" y="${y0-19}" text-anchor="middle" class="svg-text">${fmt(W)} ft${L.frontageFt?'':' (est.)'}</text>`;
+  s += ln(x0+w+14, y0, x0+w+14, y0+h) + ln(x0+w+10,y0,x0+w+18,y0) + ln(x0+w+10,y0+h,x0+w+18,y0+h);
+  s += `<text x="${x0+w+20}" y="${y0+h/2}" class="svg-text" transform="rotate(90 ${x0+w+20} ${y0+h/2})" text-anchor="middle">${fmt(D)} ft</text>`;
+  if (sb.frontFt) s += `<text x="${x0+4}" y="${y0+h-4}" class="svg-text">front ${sb.frontFt}′</text>`;
+  if (sb.rearFt) s += `<text x="${x0+4}" y="${y0+11}" class="svg-text">rear ${sb.rearFt}′</text>`;
+  if (sideL) s += `<text x="${x0+3}" y="${y0+h/2}" class="svg-text" transform="rotate(-90 ${x0+9} ${y0+h/2})" text-anchor="middle">side ${fmt(sideL,0)}′</text>`;
+  // actual outline inset
+  const o = packet.property?.outlineFt;
+  if (o && o.length>3){
+    const xs=o.map(p=>p[0]), ys=o.map(p=>p[1]); const mx=Math.min(...xs), Mx=Math.max(...xs), my=Math.min(...ys), My=Math.max(...ys);
+    const ik = 54/Math.max(Mx-mx, My-my); const pts = o.map(p=>`${(8+(p[0]-mx)*ik).toFixed(1)},${(8+(My-p[1])*ik).toFixed(1)}`).join(' ');
+    s += `<g><rect x="2" y="2" width="66" height="76" fill="var(--paper)" stroke="var(--rule)"/><polygon points="${pts}" fill="var(--resi-soft)" stroke="var(--ink)" stroke-width=".8"/><text x="35" y="74" text-anchor="middle" class="svg-text" style="font-size:9px">actual shape</text></g>`;
+  }
+  return s + '</svg>';
+}
+
+function section(res, scen){
+  const A = res.assumptions, hMax = res.floors.heightFt;
+  const used = scen?.floorsUsed || res.floors.value || 0, allowed = res.floors.value || used;
+  if (!used) return `<div class="muted small" style="padding:40px 10px;text-align:center">Enter a height or story limit to draw the section.</div>`;
+  const floorH = (i) => (A.groundFloorRetail && i===0) ? A.floorToFloorComFt : A.floorToFloorResFt;
+  let totalH = 0; for (let i=0;i<Math.max(used,allowed);i++) totalH += floorH(i);
+  const top = Math.max(totalH, hMax||0) * 1.12;
+  const vw = 300, vh = 300, base = vh-30, k = (vh-56)/top, bw = 130, bx = 90;
+  let s = `<svg viewBox="0 0 ${vw} ${vh}" role="img" aria-label="Building section showing floors against the height limit">`;
+  s += `<line x1="20" y1="${base}" x2="${vw-10}" y2="${base}" stroke="var(--ink)" stroke-width="1.6"/><text x="22" y="${base+16}" class="svg-text">Grade</text>`;
+  let y = base;
+  for (let i=0;i<allowed;i++){
+    const fh = floorH(i)*k; y -= fh;
+    const isUsed = i < used, isCom = A.groundFloorRetail && i===0;
+    s += `<rect x="${bx}" y="${y}" width="${bw}" height="${fh}" fill="${isUsed?(isCom?'var(--comm)':'var(--resi)'):'none'}" fill-opacity="${isUsed?(isCom?.55:.85):0}" stroke="var(--ink)" stroke-width=".8" ${isUsed?'':'stroke-dasharray="3 2"'}/>`;
+    if (fh>11) s += `<text x="${bx+bw/2}" y="${y+fh/2+4}" text-anchor="middle" class="svg-text" style="fill:var(--ink)">${isCom?'Commercial':'Floor '+(i+1)}</text>`;
+  }
+  if (hMax){ const hy = base - hMax*k; s += `<line x1="40" y1="${hy}" x2="${vw-14}" y2="${hy}" stroke="var(--bad)" stroke-width="1.2" stroke-dasharray="6 3"/><text x="${vw-14}" y="${hy-5}" text-anchor="end" class="svg-strong" style="fill:var(--bad)">${hMax} ft limit</text>`; }
+  s += `<text x="${bx+bw+8}" y="${base-totalH*k/2}" class="svg-text">${fmt(totalH,1)} ft</text>`;
+  s += `<text x="${bx-8}" y="${base-6}" text-anchor="end" class="svg-text">${used} of ${allowed}</text>`;
+  return s + '</svg>';
+}
+
+// ---------- results ----------
+function renderAll(rebuildEditor=true){
+  if (rebuildEditor) renderEditor();
+  renderRecord(); renderBanner();
+  const res = Z.analyze(packet);
+  const scen = res.scenarios.find(s=>s.key===scenarioKey) || res.scenarios.find(s=>s.units) || res.scenarios[0];
+  if (scen) scenarioKey = scen.key;
+  const out = $('#results');
+  if (!scen || !scen.gfa){
+    out.innerHTML = `<section class="card" aria-label="Standards needed">
+      <p class="where">${escH(packet.property?.address||'Untitled property')}${packet.rules?.district?`, zoned ${escH(packet.rules.district)}`:''}</p>
+      <h2>${packet.rules?.district?`Add the ${escH(packet.rules.district)} standards to size the building`:'Find the zoning district and its standards'}</h2>
+      <p class="muted">The envelope needs lot area plus either a FAR or a height limit with coverage. ${mode.server&&mode.research?'Run ordinance research from the search bar, or':mode.browser?'Add your Anthropic API key (top right) to research the ordinance automatically, or':mode.server?'Set ANTHROPIC_API_KEY on the server to research the ordinance automatically, or':'You can'} paste the district's section of the code with <b>Parse ordinance text</b>.${packet.context?.links?.ordinance?` The town's ordinance is <a href="${escH(packet.context.links.ordinance)}" target="_blank" rel="noopener">here</a>${packet.context.links.zoningMap?` and its zoning map <a href="${escH(packet.context.links.zoningMap)}" target="_blank" rel="noopener">here</a>`:''}.`:''}</p>
+      ${listMissing(res)}
+    </section>
+    ${flagsCard(res)}
+    ${parcelCard()}
+    ${salesCard()}
+    ${sourcesCard()}`;
+    return;
+  }
+  const f = res.feasibility && scen.units ? res.feasibility : (scen.key==='commercial'?res.feasibilityCommercial:null);
+  const unitsLine = scen.units ? `, <em>${fmt(scen.units)} ${scen.units===1?'dwelling':'units'}</em>` : '';
+  const binder = scen.units && scen.unitsBinding && !scen.unitsBinding.startsWith('Floor area') ? scen.unitsBinding.replace(/\s*\(.*\)/,'').toLowerCase() : (scen.gfaBinding||'').split(' (')[0].toLowerCase();
+  out.innerHTML = `
+  <section class="card" aria-label="Summary">
+    <p class="where">${escH(packet.property?.address||'Untitled property')}${packet.rules?.district?`, zoned ${escH(packet.rules.district)}`:''}</p>
+    ${res.scenarios.length>1?`<div class="scen-tabs" role="group" aria-label="Use scenario">${res.scenarios.map(s=>`<button type="button" class="scen-tab" data-scen="${s.key}" aria-pressed="${s.key===scen.key}">${escH(s.label)}</button>`).join('')}</div>`:''}
+    <p class="verdict">Up to <em>${fmt(scen.gfa)} SF</em> of ${escH(scen.label.toLowerCase().replace(' (max combined)',''))} floor area${unitsLine}. ${binder?`${escH(binder[0].toUpperCase()+binder.slice(1))} is the limit that binds.`:''}</p>
+    <div class="tallies">
+      ${tally(fmt(scen.gfa), 'Buildable floor area, SF', scen.far!==null?`FAR ${scen.far}${scen.bonusFar?` + ${scen.bonusFar} bonus`:''}`:'')}
+      ${scen.units?tally(fmt(scen.units), 'Dwelling units', scen.affordableUnits?`${scen.affordableUnits} affordable`:''):''}
+      ${tally(res.floors.value?fmt(res.floors.value):'—', 'Stories allowed', res.floors.heightFt?`${res.floors.heightFt} ft cap`:'')}
+      ${tally(fmt(res.footprint.value), 'Footprint, SF', res.footprint.binding||'')}
+      ${f?tally(moneyShort(f.residualLandValue), 'Residual land value', f.perUnit?`${moneyShort(f.perUnit)} per unit`:`${money(f.perBuildableSF)}/SF`):''}
+    </div>
+    <div class="drawings">
+      <figure class="drawing" style="margin:0">${sitePlan(res)}<figcaption>Site plan. Dashed line is the setback envelope; yellow is the maximum footprint (${escH(res.footprint.binding||'n/a')} governs).</figcaption></figure>
+      <figure class="drawing" style="margin:0">${section(res, scen)}<figcaption>Section. Solid floors are needed to reach the floor area; dashed floors are allowed but unused.</figcaption></figure>
+    </div>
+  </section>
+
+  ${(res.warnings.length||res.missing.length)?`<section class="card" aria-label="Warnings"><h3>Check before relying on this</h3><ul class="plain">${res.warnings.map(w=>`<li>${escH(w)}</li>`).join('')}${res.missing.map(m=>`<li>Missing: ${escH(m)}</li>`).join('')}${(packet.rules?.confidence?.lowConfidenceFields||[]).length?`<li>Unverified fields (outlined on the left): ${escH(packet.rules.confidence.lowConfidenceFields.join(', '))}</li>`:''}</ul></section>`:''}
+
+  <section class="card" aria-label="Constraints">
+    <h2>What limits the building</h2>
+    <div class="grid2">
+      <div><h3>Floor area</h3><div class="ladder">${ladder(scen.gfaCandidates, scen.gfa)}</div></div>
+      ${scen.unitCandidates?`<div><h3>Unit count</h3><div class="ladder">${ladder(scen.unitCandidates, scen.units)}</div>${scen.rightsized?`<p class="small muted" style="margin-top:8px">Density binds before floor area, so the program is right-sized to ${fmt(scen.programGFA)} SF at ${fmt(scen.avgUnitNetSF)} SF per unit. The extra ${fmt(scen.gfa-scen.programGFA)} SF of zoning capacity goes unused unless units get larger.</p>`:''}</div>`:''}
+      <div><h3>Footprint</h3><div class="ladder">${ladder(res.footprint.candidates, res.footprint.value)}</div></div>
+    </div>
+  </section>
+
+  <div class="grid2">
+    <section class="card" aria-label="Lot conformity">
+      <h2>Lot conformity</h2>
+      ${res.conformity.length?`<table class="tbl"><thead><tr><th>Standard</th><th class="r">Lot</th><th class="r">Required</th><th></th></tr></thead><tbody>${res.conformity.map(c=>`<tr><td>${escH(c.label)}</td><td class="r">${fmt(c.actual)} ${c.unit}</td><td class="r">${fmt(c.required)} ${c.unit}</td><td class="r"><span class="pill ${c.ok?'ok':'no'}">${c.ok?'Meets':'Short'}</span></td></tr>`).join('')}</tbody></table>`:'<p class="muted small">Add minimum lot area, width or depth to test conformity.</p>'}
+      ${res.lot.buildableBox?`<p class="small">Setback envelope: ${fmt(res.lot.buildableBox.widthFt)} × ${fmt(res.lot.buildableBox.depthFt)} ft (${fmt(res.lot.buildableBox.areaSF)} SF).</p>`:''}
+      ${scen.proposedCheck?`<p class="small"><span class="pill ${scen.proposedCheck.fits?'ok':'no'}">${scen.proposedCheck.fits?'Plan fits':'Plan too large'}</span> Your ${fmt(scen.proposedCheck.proposedGFA)} SF plan against ${fmt(scen.proposedCheck.allowedGFA)} SF allowed: ${scen.proposedCheck.fits?`${fmt(scen.proposedCheck.headroomSF)} SF of headroom.`:`${fmt(-scen.proposedCheck.headroomSF)} SF over.`}</p>`:''}
+      ${res.existing.bldgSF?`<p class="small">Existing building: ${fmt(res.existing.bldgSF)} SF${res.existing.builtFAR!==null?`, FAR ${res.existing.builtFAR}`:''}. ${res.existing.unusedGFA>0?`About ${fmt(res.existing.unusedGFA)} SF of zoning capacity is unused (${res.existing.utilizationPct}% built out).`:''}</p>`:''}
+    </section>
+    <section class="card" aria-label="Parking">
+      <h2>Parking</h2>
+      ${scen.parking.lines.length?`<table class="tbl"><tbody>${scen.parking.lines.map(l=>`<tr><td>${escH(l.label)}</td><td class="r">${l.spaces===null?'':fmt(l.spaces,1)}</td></tr>`).join('')}<tr class="total"><td>Required spaces</td><td class="r">${fmt(scen.parking.spaces)}</td></tr></tbody></table>`:'<p class="muted small">No parking ratio entered for this use.</p>'}
+      ${scen.parkingFit?(scen.parkingFit.structured?`<p class="small"><span class="pill ok">Structured</span> ${fmt(scen.parking.spaces)} stalls in a garage or podium (about ${fmt(scen.parkingFit.requiredSF)} SF).</p>`:`<p class="small"><span class="pill ${scen.parkingFit.fits?'ok':'no'}">${scen.parkingFit.fits?'Fits on surface':'Does not fit on surface'}</span> Needs ${fmt(scen.parkingFit.requiredSF)} SF; about ${fmt(scen.parkingFit.availableSF)} SF of paveable land remains after the footprint.${!scen.parkingFit.fits&&scen.unitsWithSurfaceParking!==undefined?` Surface parking supports about <b>${fmt(scen.unitsWithSurfaceParking)} units</b>; going higher needs structured parking.`:''}</p>`):''}
+      ${scen.parking.loading?`<p class="small">Loading: ${escH(scen.parking.loading)}</p>`:''}
+      ${packet.rules?.parking?.rsis?`<p class="small muted">New Jersey residential parking follows RSIS (N.J.A.C. 5:21-4.14). Ratios vary by unit type and bedroom count.</p>`:''}
+    </section>
+  </div>
+
+  ${usesCard()}
+  ${f?feasCard(f, scen):''}
+  ${flagsCard(res)}
+  ${parcelCard()}
+  ${salesCard()}
+  ${sourcesCard()}`;
+  $$('.scen-tab', out).forEach(b=>b.onclick=()=>{ scenarioKey=b.dataset.scen; renderAll(false); });
+}
+function tally(v,label,sub){ return `<div class="tally"><b>${v}</b><span>${escH(label)}</span>${sub?`<small>${escH(sub)}</small>`:''}</div>`; }
+function ladder(cands, val){
+  const vals = cands.filter(c=>c.value!==null&&isFinite(c.value)); const max = Math.max(...vals.map(c=>c.value), 1);
+  return cands.map(c => {
+    const na = c.value===null || !isFinite(c.value);
+    const bind = !na && val!==null && Math.abs(c.value - val) < 0.5;
+    return `<div class="rung ${bind?'binding':''} ${na?'na':''}"><span>${escH(c.label)}</span><span class="bar">${na?'':`<i style="width:${Math.max(2,c.value/max*100)}%"></i>`}</span><span class="v">${na?'not set':fmt(c.value)}</span></div>`;
+  }).join('');
+}
+function usesCard(){
+  const u = packet.rules?.uses||{}; const any = ['permitted','conditional','accessory','prohibited'].some(k=>(u[k]||[]).length);
+  if (!any) return '';
+  const col = {permitted:'var(--good)',conditional:'var(--warn)',accessory:'var(--plan)',prohibited:'var(--bad)'};
+  const lab = {permitted:'Permitted by right',conditional:'Conditional / special permit',accessory:'Accessory',prohibited:'Prohibited'};
+  return `<section class="card" aria-label="Uses"><h2>Uses</h2><div class="uses">${Object.keys(lab).filter(k=>(u[k]||[]).length).map(k=>`<div><h4><i class="dot" style="background:${col[k]}"></i>${lab[k]}</h4><ul>${u[k].map(x=>`<li>${escH(x)}</li>`).join('')}</ul></div>`).join('')}</div></section>`;
+}
+function feasCard(f, scen){
+  const rows = f.noi!==undefined && f.noi!==null ? [
+    ['Gross potential rent', money(f.grossPotentialRent)], ['Net operating income', money(f.noi)],
+    [`Stabilized value at ${(packet.market?.exitCapRate||Z.DEFAULT_MARKET.exitCapRate)*100}% cap`, money(f.value)]] : [['Sellout value', money(f.value)]];
+  const assessed = f.assessedLandValue ? `<p class="small">Assessed land value is ${money(f.assessedLandValue)}. ${f.residualLandValue>0?`Residual supports ${f.rlvToAssessed}× that.`:'At these inputs the project does not support a positive land price.'}</p>` : '';
+  return `<section class="card" aria-label="Feasibility"><h2>Residual land value</h2>
+  <p class="small muted">${escH(f.scenario)} program: ${fmt(f.programGFA||scen.gfa)} GSF, ${fmt(f.programNetSF||scen.netSF)} net SF${scen.units?`, ${fmt(scen.units)} units`:''}. Edit rents and costs under Market and costs.</p>
+  <div class="scroll"><table class="tbl"><tbody>
+    ${rows.map(r=>`<tr><td>${r[0]}</td><td class="r">${r[1]}</td></tr>`).join('')}
+    <tr><td>Hard cost</td><td class="r">(${money(f.costs.hard)})</td></tr>
+    ${f.costs.structuredParking?`<tr><td>Structured parking</td><td class="r">(${money(f.costs.structuredParking)})</td></tr>`:''}
+    <tr><td>Soft cost</td><td class="r">(${money(f.costs.soft)})</td></tr>
+    <tr><td>Financing</td><td class="r">(${money(f.costs.financing)})</td></tr>
+    <tr><td>Developer margin</td><td class="r">(${money(f.developerMargin)})</td></tr>
+    <tr class="total ${f.residualLandValue<0?'neg':''}"><td>Residual land value</td><td class="r">${money(f.residualLandValue)}</td></tr>
+    ${f.perUnit!==undefined&&f.perUnit!==null?`<tr><td class="muted">Per unit</td><td class="r muted">${money(f.perUnit)}</td></tr>`:''}
+    <tr><td class="muted">Per buildable SF</td><td class="r muted">${money(f.perBuildableSF)}</td></tr>
+    ${f.yieldOnCost?`<tr><td class="muted">Untrended yield on cost</td><td class="r muted">${f.yieldOnCost}%</td></tr>`:''}
+  </tbody></table></div>${assessed}</section>`;
+}
+function flagsCard(res){
+  const r = packet.rules||{}, ctx = packet.context||{};
+  const all = [...res.flags, ...(r.overlays||[]).map(o=>({...o, severity:o.severity||'info'}))];
+  const seen = new Set(); const flags = all.filter(x=>{ const k=x.name; if(seen.has(k)) return false; seen.add(k); return true; });
+  const has = flags.length || (r.approvals||[]).length || (r.stateOverrides||[]).length || (r.notes||[]).length;
+  if (!has) return '';
+  const rank = { high:0, caution:1, positive:2, info:3 };
+  flags.sort((a,b)=>(rank[a.severity]??9)-(rank[b.severity]??9));
+  const counts = { high: flags.filter(f=>f.severity==='high').length, caution: flags.filter(f=>f.severity==='caution').length, positive: flags.filter(f=>f.severity==='positive').length };
+  const clear = ctx.constraintsClear||[];
+  return `<section class="card" aria-label="Site constraints and approvals"><h2>Site constraints, incentives and approvals</h2>
+    <div class="chips">${counts.high?`<span class="chip low">${counts.high} could stop or shrink the project</span>`:''}${counts.caution?`<span class="chip medium">${counts.caution} add permits or cost</span>`:''}${counts.positive?`<span class="chip high">${counts.positive} incentive${counts.positive>1?'s':''}</span>`:''}${!counts.high&&!counts.caution&&clear.length?'<span class="chip high">No state-mapped constraints</span>':''}</div>
+    ${flags.length?`<div class="flags">${flags.map(x=>`<div class="flag ${escH(x.severity)}"><i></i><div><b>${escH(x.name)}</b>${x.effect?` <span>${escH(x.effect)}</span>`:''}${x.detail?` <span class="muted small">${escH(x.detail)}</span>`:''}${x.source?` <span class="muted small">(${escH(x.source)})</span>`:''}</div></div>`).join('')}</div>`:''}
+    ${clear.length?`<details class="small"><summary class="muted">${clear.length} state layers checked with nothing found</summary><p class="muted">${clear.map(escH).join(', ')}.</p></details>`:''}
+    ${(ctx.constraintErrors||[]).length?`<p class="small muted">Not checked (layer unavailable): ${ctx.constraintErrors.map(escH).join('; ')}</p>`:''}
+    <div class="grid2">
+    ${(r.approvals||[]).length?`<div><h3>Likely approvals</h3><ul class="plain">${r.approvals.map(x=>`<li>${escH(x)}</li>`).join('')}</ul></div>`:''}
+    ${(r.stateOverrides||[]).length?`<div><h3>State rules that override local zoning</h3><ul class="plain">${r.stateOverrides.map(x=>`<li>${escH(x)}</li>`).join('')}</ul></div>`:''}
+    ${(r.notes||[]).length?`<div><h3>Notes</h3><ul class="plain">${r.notes.map(x=>`<li>${escH(x)}</li>`).join('')}</ul></div>`:''}
+    </div></section>`;
+}
+function parcelCard(){
+  const ctx = packet.context||{}, p = ctx.parcel, t = ctx.tax, L = ctx.links;
+  if (!p && !t && !L) return '';
+  const row = (k,v) => v===null||v===undefined||v===''?'':`<tr><td>${k}</td><td class="r">${v}</td></tr>`;
+  return `<div class="grid2">
+  ${p?`<section class="card" aria-label="Tax record"><h2>Tax record</h2><table class="tbl"><tbody>
+    ${row('Block and lot', escH(`${p.block} / ${p.lot}${p.qualifier?' '+p.qualifier:''}`))}${row('Property class', escH(p.propertyClassLabel))}
+    ${row('Building', escH(p.buildingDescriptionDecoded || p.buildingDescription || ''))}${row('Year built', p.yearBuilt||'')}
+    ${row('Lot', `${fmt(p.lotAreaSF)} SF (${fmt(p.lotAcres,3)} ac)`)}${row('Dimensions', p.frontageFt?`${fmt(p.frontageFt)} × ${fmt(p.depthFt)} ft <span class="muted">(${escH(p.dimsSource||'')})</span>`:'')}
+    ${row('Land assessment', money(p.assessment?.land))}${row('Improvement assessment', money(p.assessment?.improvements))}${row('Net assessed', money(p.assessment?.net))}
+    ${row('Last sale', p.lastSale?`${money(p.lastSale.price)} on ${escH(p.lastSale.date||'')}`:'')}${mode.browser?'':row('Owner of record', escH(p.owner||''))}
+  </tbody></table></section>`:''}
+  ${(t||L)?`<section class="card" aria-label="Tax and municipal links"><h2>Property tax and town records</h2>
+    ${t?`<table class="tbl"><tbody>${row('Last year tax', money(t.lastYearTax))}${row('General tax rate', `${t.generalRatePer100} per $100 assessed`)}${row('Assessment-to-sale ratio (est.)', t.assessmentRatioEst?`${Math.round(t.assessmentRatioEst*100)}%`:'')}${row('Effective tax rate (est.)', t.effectiveRatePctEst?`${t.effectiveRatePctEst}% of market value`:'')}</tbody></table><p class="small muted">${escH(t.note)}</p>`:''}
+    ${L?`<ul class="plain">${L.ordinance?`<li><a href="${escH(L.ordinance)}" target="_blank" rel="noopener">Zoning ordinance</a></li>`:''}${L.zoningMap?`<li><a href="${escH(L.zoningMap)}" target="_blank" rel="noopener">Official zoning map</a></li>`:''}${L.website?`<li><a href="${escH(L.website)}" target="_blank" rel="noopener">Zoning office</a></li>`:''}</ul><p class="small muted">Links from the NJ Department of Community Affairs municipal zoning list.</p>`:''}
+    ${ctx.transit?`<p class="small">Nearest rail station: ${escH(ctx.transit.name)} (${escH(ctx.transit.line)}), ${ctx.transit.miles} mi.</p>`:''}
+  </section>`:''}
+  </div>`;
+}
+function salesCard(){
+  const S = packet.context?.sales; if (!S || !S.sales?.length) return '';
+  const sum = (x,label) => x?`<div class="tally"><b>${moneyShort(x.medianPrice)}</b><span>${label}: median of ${x.count}</span>${x.medianPricePerAcre?`<small>${moneyShort(x.medianPricePerAcre)} per acre</small>`:''}</div>`:'';
+  return `<section class="card" aria-label="Nearby sales"><h2>Nearby sales</h2>
+    <p class="small muted">Recorded sales within ${S.radiusMiles} mi over the last ${S.years} years, from the state tax list (latest deed per parcel; non-usable transfers excluded). Building size isn't in the tax list, so compare by lot and age.</p>
+    <div class="tallies">${sum(S.sameClass,'Same property class')}${sum(S.vacantLand,'Vacant land')}${sum(S.all,'All classes')}</div>
+    <div class="scroll"><table class="tbl"><thead><tr><th>Address</th><th>Sold</th><th class="r">Price</th><th class="r">Acres</th><th class="r">Per acre</th><th>Built</th></tr></thead><tbody>
+    ${S.sales.map(r=>`<tr><td>${escH(r.address||'')}<br><span class="muted small">B${escH(r.block)} L${escH(r.lot)}${r.building?`, ${escH(r.building)}`:''}${r.propertyClass==='1'?', vacant':''}</span></td><td>${escH(r.date)}</td><td class="r">${money(r.price)}</td><td class="r">${r.acres?fmt(r.acres,2):'—'}</td><td class="r">${moneyShort(r.pricePerAcre)}</td><td>${r.yearBuilt||''}</td></tr>`).join('')}
+    </tbody></table></div></section>`;
+}
+function sourcesCard(){
+  const c = packet.rules?.citations||[], s = packet.sources||[];
+  if (!c.length && !s.length) return '';
+  return `<section class="card cites" aria-label="Sources"><h2>Sources</h2><ul class="plain">
+    ${s.map(x=>`<li>${escH(x.label)}${x.kind?` <span class="muted">(${escH(x.kind)})</span>`:''}</li>`).join('')}
+    ${c.map(x=>`<li>${x.url?`<a href="${escH(x.url)}" target="_blank" rel="noopener">${escH(x.label||x.url)}</a>`:escH(x.label)}</li>`).join('')}
+  </ul>${packet.rules?.researchedAt?`<p class="small muted">Researched ${new Date(packet.rules.researchedAt).toLocaleString()}.</p>`:''}</section>`;
+}
+function listMissing(res){ return res.missing.length?`<ul class="plain">${res.missing.map(m=>`<li>${escH(m)}</li>`).join('')}</ul>`:''; }
+
+// ---------- merging research ----------
+function applyRules(rules, source){
+  if (!rules || typeof rules!=='object') throw new Error('No standards came back.');
+  const merged = { ...BLANK.rules, ...rules };
+  if (!merged.district && packet.rules?.district) merged.district = packet.rules.district;
+  merged.bonuses = [...(packet.rules?.bonuses||[]), ...(rules.bonuses||[])].filter((b,i,a)=>a.findIndex(x=>x.name===b.name)===i);
+  merged.citations = [...(packet.rules?.citations||[]), ...(rules.citations||[])].filter((b,i,a)=>a.findIndex(x=>(x.url||x.label)===(b.url||b.label))===i);
+  packet.rules = merged;
+  if (rules.jurisdiction && !packet.property.jurisdiction) packet.property.jurisdiction = rules.jurisdiction;
+  packet.example = false;
+  persist(); renderAll();
+}
+
+// ---------- server mode: lookup + research ----------
+function log(msg){ const el=$('#log'); el.insertAdjacentHTML('beforeend', `<div>${escH(msg)}</div>`); el.scrollTop = el.scrollHeight; }
+let qmode = 'address';
+$$('.tab').forEach(t=>t.onclick=()=>{ qmode=t.dataset.q; $$('.tab').forEach(x=>x.setAttribute('aria-selected', x===t)); $$('[data-panel]').forEach(p=>p.hidden = p.dataset.panel!==qmode); });
+$('#qform').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const go = $('#qGo'); go.disabled = true; go.innerHTML = '<span class="spin"></span> Looking up';
+  $('#log').innerHTML = '';
+  try {
+    const munInput = $('#qMun').value.trim();
+    const munMatch = munis.find(m => m.name.toLowerCase() === munInput.toLowerCase() || `${m.name}, ${m.county} County`.toLowerCase() === munInput.toLowerCase());
+    const body = qmode==='address' ? { mode:'address', address: $('#qAddress').value.trim() }
+      : { mode:'blocklot', municipality: munMatch?.name || munInput, municipalityCode: munMatch?.code, block: $('#qBlock').value.trim(), lot: $('#qLot').value.trim(), qualifier: $('#qQual').value.trim() };
+    const r = await api.lookup(body);
+    if (r.error) throw new Error(r.error);
+    (r.notes||[]).forEach(n=>log(n));
+    const seed = r.packet;
+    packet = { ...structuredClone(BLANK), ...seed, assumptions: packet.assumptions||{}, market: packet.market||{}, example:false };
+    scenarioKey = null; persist(); renderAll();
+    log(`Found ${seed.property.parcelId || seed.property.address}${seed.rules.district?` in ${seed.rules.district}`:''}.`);
+    if ($('#qResearch').checked && mode.research) await researchOnline();
+    else if ($('#qResearch').checked) log(mode.browser ? 'Add your Anthropic API key (top right) to research the ordinance, or paste the ordinance text.' : 'Ordinance research is off on this server (no API key). Paste the ordinance text instead.');
+  } catch (err) { log(`Stopped: ${err.message}`); toast(err.message); }
+  finally { go.disabled = false; go.textContent = 'Analyze property'; }
+});
+// One interface over the three ways the page can run: the Node server, the GitHub Pages
+// build (lookups in the browser via window.NJLookup), or a Claude artifact (no lookups).
+const KEY_STORE = 'ze.anthropicKey';
+function storedKey(){ try { return localStorage.getItem(KEY_STORE) || ''; } catch(_) { return ''; } }
+const api = {
+  lookup: (body) => mode.browser ? window.NJLookup.lookup(body, { onProgress: log }) : streamJSON('api/lookup', body),
+  research: (body) => mode.browser ? window.NJLookup.research(storedKey(), body, log) : streamJSON('api/research', body),
+  parse: async (body) => {
+    if (mode.browser) return window.NJLookup.parse(storedKey(), body.text, body);
+    const r = await fetch('api/parse',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}).then(r=>r.json());
+    if (r.error) throw new Error(r.error); return r.result;
+  }
+};
+// Reads an NDJSON stream of {progress} lines ending in {result} or {error}.
+async function streamJSON(url, body){
+  const res = await fetch(url, { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(body) });
+  if (!res.ok || !res.body) throw new Error(`Server returned ${res.status}`);
+  const reader = res.body.getReader(); const dec = new TextDecoder(); let buf = '', result = null;
+  while (true){
+    const { value, done } = await reader.read(); if (done) break;
+    buf += dec.decode(value, { stream:true });
+    const lines = buf.split('\n'); buf = lines.pop();
+    for (const line of lines){ if (!line.trim()) continue; const m = JSON.parse(line);
+      if (m.progress) log(m.progress); if (m.error) throw new Error(m.error); if (m.result) result = m.result; }
+  }
+  return result || {};
+}
+async function researchOnline(refresh=false){
+  log('Researching the zoning ordinance. This usually takes one to three minutes.');
+  const ctx = { ...(packet.context||{}) }; delete ctx.sales; delete ctx.parcel;
+  const result = await api.research({ property: packet.property, district: packet.rules?.district || '', overlays: packet.overlays || [], context: ctx, refresh });
+  if (result){ applyRules(result, 'research'); log(`Standards loaded for ${result.district||'the district'}${result.confidence?.overall?` (${result.confidence.overall} confidence)`:''}.`); }
+}
+
+// ---------- modals: load, parse, export ----------
+function modal(html){ const m=$('#modal'); m.innerHTML=`<div class="box" role="dialog" aria-modal="true">${html}</div>`; m.hidden=false; const first=$('textarea,input,button',m); first&&first.focus(); return m; }
+function closeModal(){ $('#modal').hidden=true; $('#modal').innerHTML=''; }
+$('#modal').addEventListener('click', e=>{ if(e.target.id==='modal'||e.target.dataset.close!==undefined) closeModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape' && !$('#modal').hidden) closeModal(); });
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.hidden=false; clearTimeout(t._h); t._h=setTimeout(()=>t.hidden=true, 3200); }
+
+$('#btnLoad').onclick = () => {
+  const m = modal(`<h2>Load a zoning packet</h2>
+    <p class="small muted">A packet is the JSON this tool exports, or the one Claude produces when you ask it in chat to research a property's zoning. Paste it below or choose a file.</p>
+    <textarea id="mPacket" rows="12" placeholder='{"property": {...}, "rules": {...}}'></textarea>
+    <label class="small">Or choose a .json file <input type="file" id="mFile" accept=".json,application/json"></label>
+    <div class="row"><button class="btn" data-close type="button">Cancel</button><button class="btn primary" id="mLoadGo" type="button">Load packet</button></div>`);
+  $('#mFile',m).onchange = async (e)=>{ const f=e.target.files[0]; if(f) $('#mPacket',m).value = await f.text(); };
+  $('#mLoadGo',m).onclick = () => {
+    try { const p = JSON.parse($('#mPacket',m).value); if(!p.property && !p.rules) throw new Error('The JSON needs a "property" or "rules" object.');
+      packet = { ...structuredClone(BLANK), ...p, rules:{ ...BLANK.rules, ...(p.rules||{}) }, example:false }; scenarioKey=null; persist(); closeModal(); renderAll(); toast('Packet loaded'); }
+    catch(err){ toast(`Couldn't read that packet: ${err.message}`); }
+  };
+};
+
+$('#btnParse').onclick = () => {
+  const can = mode.server ? mode.research : !!mode.sample;
+  const m = modal(`<h2>Parse ordinance text</h2>
+    <p class="small muted">Paste the district's section of the zoning code (use, bulk, height, setback, parking and density provisions). Claude extracts the standards into the fields on the left. Only what the text says is used; check the results against the ordinance.</p>
+    <div class="qrow"><label>District<input type="text" id="mDist" value="${escH(packet.rules?.district||'')}" placeholder="R-5"></label><label class="wide">Jurisdiction<input type="text" id="mJur" value="${escH(packet.property?.jurisdiction||'')}"></label></div>
+    <textarea id="mText" rows="12" placeholder="§ 21-12.4. R-5 Garden Apartment District. A. Permitted principal uses…"></textarea>
+    ${can?'':'<div class="notice warn">Claude is not available in this view. Open the page in Claude, or run the self-hosted app with an API key.</div>'}
+    <p class="small" id="mStatus" aria-live="polite"></p>
+    <div class="row">
+      ${(!mode.server && mode.sample)?'<button class="btn" id="mDraft" type="button" title="No browsing: drafted from Claude\'s general knowledge and marked low confidence">Draft from Claude\'s knowledge</button>':''}
+      <button class="btn" data-close type="button">Cancel</button><button class="btn primary" id="mParseGo" type="button" ${can?'':'disabled'}>Extract standards</button></div>`);
+  let ctl = null;
+  const run = async (draft) => {
+    const text = $('#mText',m).value.trim(), ctx = { district: $('#mDist',m).value.trim(), jurisdiction: $('#mJur',m).value.trim() };
+    if (!draft && text.length < 80) { $('#mStatus',m).textContent = 'Paste at least a paragraph of ordinance text.'; return; }
+    $('#mStatus',m).innerHTML = '<span class="spin"></span> Reading the ordinance. This can take up to a minute.';
+    $$('button',m).forEach(b=>b.disabled=true);
+    try {
+      let rules;
+      if (mode.server){ rules = await api.parse({ text, ...ctx }); }
+      else {
+        ctl = new AbortController();
+        const prompt = draft
+          ? S.researchPrompt({ property: { ...packet.property, jurisdiction: ctx.jurisdiction || packet.property?.jurisdiction }, district: ctx.district, extra: 'You cannot browse in this context. Answer from your own knowledge of this jurisdiction\'s zoning code. Set confidence.overall to "low" unless you are certain, list every number you are unsure of in lowConfidenceFields, and add a note that values must be verified against the current ordinance.' })
+          : S.parsePrompt(text.slice(0, 150000), ctx);
+        rules = await mode.sample.json(prompt, { modelTier: draft ? 'complex' : 'default', signal: ctl.signal });
+        if (draft) { rules.confidence = rules.confidence || {}; if (!rules.confidence.overall || rules.confidence.overall==='high') rules.confidence.overall='low'; rules.notes = [...(rules.notes||[]), 'Drafted from Claude\'s general knowledge without reading the current ordinance. Verify every value.']; }
+      }
+      closeModal(); applyRules(rules, draft?'draft':'parse'); toast(`Standards loaded for ${rules.district||'the district'}`);
+    } catch (err) {
+      const msg = err.code==='not_granted' ? 'Claude access was declined for this page.' : err.code==='rate_limited' ? 'Too many requests right now. Try again in a minute.' : err.code==='invalid_json' ? 'Claude did not return clean standards. Try again with a shorter excerpt.' : (err.message||'Something went wrong.');
+      $('#mStatus',m) && ($('#mStatus',m).textContent = msg); $$('button',m).forEach(b=>b.disabled=false);
+    }
+  };
+  $('#mParseGo',m).onclick = () => run(false);
+  const d = $('#mDraft',m); if (d) d.onclick = () => run(true);
+};
+
+$('#btnExport').onclick = async () => {
+  const data = JSON.stringify({ ...packet, analysis: Z.analyze(packet), exportedAt: new Date().toISOString() }, null, 2);
+  const name = (packet.property?.address || 'zoning-packet').replace(/[^a-z0-9]+/gi,'-').replace(/^-|-$/g,'').slice(0,60).toLowerCase() + '.json';
+  if (!mode.server && window.claude?.use){
+    const dl = await window.claude.use('downloads').catch(()=>null);
+    if (dl){ try { await dl.save({ filename: name, data }); toast('Saved'); return; } catch(e){ if (e?.code==='declined'||e?.code==='cancelled') return; } }
+    try { await navigator.clipboard.writeText(data); toast('Packet copied to clipboard'); } catch(_) { modal(`<h2>Export packet</h2><textarea rows="16" readonly>${escH(data)}</textarea><div class="row"><button class="btn" data-close type="button">Close</button></div>`); }
+    return;
+  }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([data],{type:'application/json'})); a.download = name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 2000);
+};
+$('#btnReset').onclick = () => { packet = structuredClone(BLANK); scenarioKey=null; persist(); renderAll(); toast('Cleared. Enter a lot and its standards.'); };
+
+// ---------- boot ----------
+async function detect(){
+  if (window.NJLookup){
+    mode.server = true; mode.browser = true; mode.research = !!storedKey();
+    munis = window.NJLookup.municipalities();
+    $('#muniList').innerHTML = munis.map(m=>`<option value="${escH(m.name)}">${escH(m.county)} County</option>`).join('');
+    $('#btnKey').hidden = false; keyNote();
+    return;
+  }
+  try {
+    const h = await fetch('api/health', { cache:'no-store' }).then(r=>r.ok?r.json():null);
+    if (h && h.ok){ mode.server = true; mode.research = !!h.research;
+      munis = await fetch('api/municipalities').then(r=>r.json()).catch(()=>[]);
+      $('#muniList').innerHTML = munis.map(m=>`<option value="${escH(m.name)}">${escH(m.county)} County</option>`).join(''); }
+  } catch(_) {}
+  if (!mode.server){
+    $('#query').hidden = true;
+    $('#modeNote').innerHTML = `<div class="notice info"><div>Live lookups (NJ parcels, zoning maps, state constraint layers, comps and ordinance research) run in the self-hosted NJ Zoning Envelope app, or ask Claude in chat for a zoning packet on any NJ address. Here you can load that packet, paste ordinance text for Claude to parse, or enter the standards by hand.</div></div>`;
+    if (window.claude?.use){ mode.sample = await window.claude.use('sample').catch(()=>null); }
+  } else if (!mode.research) {
+    $('#modeNote').innerHTML = `<div class="notice warn"><div>Ordinance research is off because the server has no ANTHROPIC_API_KEY. Parcel lookups still work; add the standards by hand or set the key and restart.</div></div>`;
+  }
+}
+function keyNote(){
+  $('#btnKey').textContent = mode.research ? 'API key saved' : 'Add API key';
+  $('#modeNote').innerHTML = mode.research ? '' : `<div class="notice info"><div>Parcel, zoning map, constraint, flood and sales lookups run right in your browser. To have Claude read the town's ordinance and fill in the district standards, add your own Anthropic API key. It stays in this browser and is sent only to Anthropic.</div></div>`;
+}
+$('#btnKey').onclick = () => {
+  const m = modal(`<h2>Anthropic API key</h2>
+    <p class="small muted">Used only for ordinance research and parsing. It is saved in this browser's local storage and sent directly to api.anthropic.com, nowhere else. Get one at console.anthropic.com.</p>
+    <label class="f full"><span>API key</span><input type="text" id="mKey" autocomplete="off" spellcheck="false" placeholder="sk-ant-…" value="${storedKey()?'••••••••  (saved)':''}"></label>
+    <div class="row">${storedKey()?'<button class="btn" id="mKeyClear" type="button">Remove key</button>':''}<button class="btn" data-close type="button">Cancel</button><button class="btn primary" id="mKeySave" type="button">Save key</button></div>`);
+  $('#mKeySave',m).onclick = () => { const v = $('#mKey',m).value.trim(); if (v && !v.startsWith('•')) { try { localStorage.setItem(KEY_STORE, v); } catch(_) { toast('This browser blocks local storage, so the key could not be saved.'); return; } } mode.research = !!storedKey(); keyNote(); closeModal(); toast(mode.research?'Key saved':'No key saved'); };
+  const c = $('#mKeyClear',m); if (c) c.onclick = () => { try { localStorage.removeItem(KEY_STORE); } catch(_) {} mode.research = false; keyNote(); closeModal(); toast('Key removed'); };
+};
+renderAll();
+detect();
+})();
+</script>

@@ -1,0 +1,3955 @@
+{
+ "description": "Official zoning map and ordinance links for every NJ municipality, from the NJ Department of Community Affairs Municipal Zoning layer. Refresh with scripts/refresh-state-data.js.",
+ "source": "https://services.arcgis.com/Aur8tCo478N3VovT/arcgis/rest/services/Municipal_Zoning/FeatureServer/0",
+ "fetchedAt": "2026-10-15T18:03:11.657Z",
+ "municipalities": {
+  "1001": {
+   "name": "Alexandria Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/AL1642/AL1642-115e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8913340",
+   "website": "https://www.alexandrianj.gov/departments/construction"
+  },
+  "1002": {
+   "name": "Bethlehem Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/BE1218/BE1218-102o%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8952347",
+   "website": "https://bethlehemnj.org/zoning-officer/"
+  },
+  "1003": {
+   "name": "Bloomsbury Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/BL2976/BL2976-270b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/14759787",
+   "website": "https://bloomsburyborough.com/zoning-officer-code-enforcement/"
+  },
+  "1004": {
+   "name": "Califon Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://mcclibrary.blob.core.usgovcloudapi.net/codecontent/16788/355458/16-08-030.png",
+   "ordinance": "https://library.municode.com/nj/califon/codes/code_of_ordinances?nodeId=TIT16LADE",
+   "website": "https://www.califonboro.org/category/planning-zoning/"
+  },
+  "1005": {
+   "name": "Clinton Town",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.clintonnj.gov/sites/g/files/vyhlif411/f/uploads/zoning-map.pdf",
+   "ordinance": "https://ecode360.com/12168364",
+   "website": "https://www.clintonnj.gov/construction-zoning"
+  },
+  "1006": {
+   "name": "Clinton Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/CL1920/CL1920-165%20Exhibit%20A,%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/9549632",
+   "website": "https://clintontwpnj.gov/departments-2/zoning"
+  },
+  "1007": {
+   "name": "Delaware Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.delawaretwpnj.org/government/forms/zoning-office-documents/1520-zoning-map-delaware-township/file",
+   "ordinance": "https://ecode360.com/13567067",
+   "website": "https://www.delawaretwpnj.org/departments/zoning-office"
+  },
+  "1008": {
+   "name": "East Amwell Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.eastamwelltownship.com/DocumentCenter/View/95/Zoning-Map-?bidId=",
+   "ordinance": "https://ecode360.com/10036754",
+   "website": "https://www.eastamwelltownship.com/258/Zoning-Office"
+  },
+  "1009": {
+   "name": "Flemington Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/FL4073/FL4073-026b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34752254",
+   "website": "https://www.historicflemington.com/departments/construction"
+  },
+  "1010": {
+   "name": "Franklin Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/FR1024/FR1024-220b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/37600557",
+   "website": "https://franklin-twp.org/departments/zoning-and-health/"
+  },
+  "1011": {
+   "name": "Frenchtown Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/319174/FR0843-050d%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36961967",
+   "website": "https://frenchtownboro.com/departments/construction-zoning/"
+  },
+  "1012": {
+   "name": "Glen Gardner Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/GL1524/GL1524-104h%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/12503741",
+   "website": "https://www.glengardner.org/borough-staff/"
+  },
+  "1013": {
+   "name": "Hampton Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.hamptonboro.org/government/forms/planning/1-zoning-map/file",
+   "ordinance": "https://ecode360.com/11992420",
+   "website": "https://www.hamptonboro.org/departments/zone"
+  },
+  "1014": {
+   "name": "High Bridge Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/HI1180LUL/HI1180-145a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/41434323",
+   "website": "https://highbridge.org/government/land-use-and-zoning/"
+  },
+  "1015": {
+   "name": "Holland Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/HO1127/HO1127-100m%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/10266095",
+   "website": "https://www.hollandtownshipnj.gov/departments/zoning-department"
+  },
+  "1016": {
+   "name": "Kingwood Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://kingwoodtownship.com/zoning-board-pages-2/257-zoning-map",
+   "ordinance": "https://ecode360.com/10105230",
+   "website": "https://kingwoodtownship.com/departments/zoning-office"
+  },
+  "1017": {
+   "name": "Lambertville City",
+   "county": "Hunterdon",
+   "zoningMap": "https://lambertvillenj.org/government/documents/board-documents/zoning-board-of-adjustment-documents/zoning-maps/9-zoning-map/file",
+   "ordinance": "https://ecode360.com/35940822",
+   "website": "https://lambertvillenj.org/departments/construction"
+  },
+  "1018": {
+   "name": "Lebanon Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.lebanonboro.com/_Content/pdf/forms/Zoning-Map-Effective-10-18-2023.pdf",
+   "ordinance": "https://www.lebanonboro.com/ordinances",
+   "website": "https://www.lebanonboro.com/Departments/building-departmentzoningconstruction"
+  },
+  "1019": {
+   "name": "Lebanon Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/LE2241/LE2241-400e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6918619",
+   "website": "https://lebanontownship.net/zoning/"
+  },
+  "1020": {
+   "name": "Milford Borough",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.milfordnj.gov/_files/ugd/1a7eb3_3708ea58777d4d13acf80e894cae2acf.pdf",
+   "ordinance": "https://ecode360.com/27409022",
+   "website": "https://www.milfordnj.gov/zoning-department"
+  },
+  "1021": {
+   "name": "Raritan Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.raritan-township.com/meetings/department-documents/planning-zoning-department/maps/51-zoning-map-2019/file",
+   "ordinance": "https://ecode360.com/36097718",
+   "website": "https://www.raritan-township.com/departments/zone"
+  },
+  "1022": {
+   "name": "Readington Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://www.readington.gov/government/forms/zoning-department/153-zoning-map/file",
+   "ordinance": "https://ecode360.com/8741373",
+   "website": "https://www.readington.gov/departments/zoning-department"
+  },
+  "1023": {
+   "name": "Stockton Borough",
+   "county": "Hunterdon",
+   "zoningMap": "http://www.stocktonboronj.us/wp-content/uploads/2021/03/Land-Use-Plan-9-13-6-ADOPTED.pdf",
+   "ordinance": "Not published online",
+   "website": "http://www.stocktonboronj.us/zoning"
+  },
+  "1024": {
+   "name": "Tewksbury Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://cms7files.revize.com/tewksburytwpnj/TEWKSBURY%20Zoning%20Map.pdf",
+   "ordinance": "https://library.municode.com/nj/tewksbury_township/codes/development_code?nodeId=ARTVIIZOPR",
+   "website": "https://www.tewksburytwp.net/government/departments/zoning_.php"
+  },
+  "1025": {
+   "name": "Union Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://uniontwp-hcnj.gov/vertical/sites/%7B45967581-AB8B-4219-9A83-39FE1CF6DFB8%7D/uploads/Zoning_Map_2013_Adopted.pdf",
+   "ordinance": "https://ecode360.com/34873871",
+   "website": "https://uniontwp-hcnj.gov/zoning"
+  },
+  "1026": {
+   "name": "West Amwell Township",
+   "county": "Hunterdon",
+   "zoningMap": "https://ecode360.com/attachment/WE0827/WE0827-109q%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8212505",
+   "website": "https://www.westamwelltwp.org/zoning-office"
+  },
+  "1101": {
+   "name": "East Windsor Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.east-windsor.nj.us/media/Township%20Ordinance/2022/Ordinance%202022-04%20Complete.pdf",
+   "ordinance": "https://ecode360.com/36451542?noresponsive=false",
+   "website": "https://www.east-windsor.nj.us/planning-department"
+  },
+  "1102": {
+   "name": "Ewing Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.ewingnj.org/filelink/fileman-files/ETRA/ZoningMapsm1.pdf",
+   "ordinance": "https://ecode360.com/12144997",
+   "website": "https://www.ewingnj.org/planning-and-zoning"
+  },
+  "1103": {
+   "name": "Hamilton Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.hamiltonnj.com/DocumentCenter/View/6909/2025-Master-Plan-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/27523333",
+   "website": "https://www.hamiltonnj.com/207/Zoning-Enforcement"
+  },
+  "1104": {
+   "name": "Hightstown Borough",
+   "county": "Mercer",
+   "zoningMap": "https://www.hightstownborough.com/maps/Zoning-Map-June-2020.pdf",
+   "ordinance": "https://ecode360.com/38303380#38303380",
+   "website": "https://www.hightstownborough.com/construction-zoning/"
+  },
+  "1105": {
+   "name": "Hopewell Borough",
+   "county": "Mercer",
+   "zoningMap": "https://www.hopewellboro-nj.us/download/hopewell-borough-zoning-map/",
+   "ordinance": "https://ecode360.com/36401490",
+   "website": "https://www.hopewellboro-nj.us/resources/zoning-office/"
+  },
+  "1106": {
+   "name": "Hopewell Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.hopewelltwp.org/DocumentCenter/View/2411/18_082715_Zoning-Maps-with-Sewer-Service",
+   "ordinance": "https://ecode360.com/36109812",
+   "website": "https://www.hopewelltwp.org/281/Zoning"
+  },
+  "1107": {
+   "name": "Lawrence Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.lawrencetwp.com/media/Departments/EngineeringPlanningZoning/Referencing%20Maps/Zoning%20Map%20dated%202021.pdf",
+   "ordinance": "https://www.lawrencetwp.com/departments/engineering-planning-zoning/land-use-ordinance",
+   "website": "https://www.lawrencetwp.com/departments/engineering-planning-zoning"
+  },
+  "1108": {
+   "name": "Pennington Borough",
+   "county": "Mercer",
+   "zoningMap": "https://www.penningtonboro.org/DocumentCenter/View/695/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/10461504",
+   "website": "https://www.penningtonboro.org/1227/Planning-Zoning"
+  },
+  "1111": {
+   "name": "Trenton City",
+   "county": "Mercer",
+   "zoningMap": "https://ecode360.com/attachment/TR0722/TR0722-315a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/9134222",
+   "website": "https://www.trentonnj.org/232/Division-of-Planning"
+  },
+  "1112": {
+   "name": "Robbinsville Township",
+   "county": "Mercer",
+   "zoningMap": "https://cms5.revize.com/revize/robbinsville/Planning-Zoning/Map_17_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/6347457",
+   "website": "https://www.robbinsville.net/departments/planning_zoning_land_use/index.php"
+  },
+  "1113": {
+   "name": "West Windsor Township",
+   "county": "Mercer",
+   "zoningMap": "https://www.westwindsortwp.gov/Documents/How%20Do%20I/View/Maps/Zoning-Map.pdf?t=202512121231000",
+   "ordinance": "https://ecode360.com/8064661",
+   "website": "https://www.westwindsortwp.gov/departments/planning_zoning/index.php"
+  },
+  "1114": {
+   "name": "Princeton",
+   "county": "Mercer",
+   "zoningMap": "https://www.princetonnj.gov/DocumentCenter/View/12501/OFFICIAL-CONSOLIDATED-ZONING-MAP-11-28-22-REV-7-22-24-PDF?bidId=OFFICIAL-CONSOLIDATED-ZONING-MAP-11-28-22-REV-7-22-24-PDF",
+   "ordinance": "https://ecode360.com/36813655",
+   "website": "https://www.princetonnj.gov/451/Zoning-Department"
+  },
+  "1201": {
+   "name": "Carteret Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.carteret.net/wp-content/uploads//2018/08/Zoning-Map-in-color.pdf",
+   "ordinance": "https://ecode360.com/10004326",
+   "website": "https://www.carteret.net/construction-office-3/"
+  },
+  "1202": {
+   "name": "Cranbury Township",
+   "county": "Middlesex",
+   "zoningMap": "https://www.cranburytownship.org/sites/g/files/vyhlif4296/f/uploads/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/6664894",
+   "website": "https://www.cranburytownship.org/zoning-officer"
+  },
+  "1203": {
+   "name": "Dunellen Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://cms1files.revize.com/dunellennj/docs/Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36540438",
+   "website": "https://www.dunellen-nj.gov/departments/construction/index.php"
+  },
+  "1204": {
+   "name": "East Brunswick Township",
+   "county": "Middlesex",
+   "zoningMap": "https://www.eastbrunswick.org/DocumentCenter/View/1007/2018-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/34758262",
+   "website": "https://www.eastbrunswick.org/246/Zoning"
+  },
+  "1205": {
+   "name": "Edison Township",
+   "county": "Middlesex",
+   "zoningMap": "https://cms2.revize.com/revize/edisonnj/Departments/Engineering%20Department/ZONING%20MAP.pdf",
+   "ordinance": "https://ecode360.com/34716725",
+   "website": "https://www.edisonnj.org/departments/engineering_department/planning_and_zoning.php"
+  },
+  "1206": {
+   "name": "Helmetta Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.helmettaboro.com/FCpdf/Land%20Development%20Regulations.pdf",
+   "ordinance": "https://www.helmettaboro.com/FCpdf/Land%20Development%20Regulations.pdf",
+   "website": "https://www.helmettaboro.com/cn/contactinfo/?did=1718"
+  },
+  "1207": {
+   "name": "Highland Park Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.hpboro.com/home/showpublisheddocument/152/637363623570930000",
+   "ordinance": "https://ecode360.com/10533011",
+   "website": "https://www.hpboro.com/government/planning-zoning"
+  },
+  "1208": {
+   "name": "Jamesburg Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://cms7files.revize.com/jamesburg/document_center/Departments/Zoning%20Permit/ZONINGMAP.pdf",
+   "ordinance": "https://www.jamesburgborough.org/document_center/How%20do%20I/Landuse%20Ordinance%20Book.pdf",
+   "website": "https://www.jamesburgborough.org/departments/zoning_and_housing.php"
+  },
+  "1209": {
+   "name": "Metuchen Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.metuchennj.org/government/forms/resident-forms/department-documents/zoning-department/1165-zoning-map/file",
+   "ordinance": "https://ecode360.com/13500449",
+   "website": "https://www.metuchennj.org/departments/zoning"
+  },
+  "1210": {
+   "name": "Middlesex Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://static1.squarespace.com/static/5ee8c28c4123db0c8d74ece8/t/5eeb9ae806f6df35a51044a6/1592498921775/MiddlesexZoningMap3-12-2014REV.pdf",
+   "ordinance": "https://ecode360.com/10337742",
+   "website": "https://www.middlesexboro-nj.gov/zoningcode-enforcement"
+  },
+  "1211": {
+   "name": "Milltown Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.milltownnj.org/DocumentCenter/View/3964/Milltown-Zoning-Map?bidId=",
+   "ordinance": "https://ecode360.com/36544601?highlight=zoning&searchId=37848769491097706#36544601",
+   "website": "https://www.milltownnj.org/279/Planning-and-Zoning"
+  },
+  "1212": {
+   "name": "Monroe Township",
+   "county": "Middlesex",
+   "zoningMap": "https://ecode360.com/MO0544/laws/LF1644908.pdf",
+   "ordinance": "https://ecode360.com/35513835",
+   "website": "https://www.monroetwp.com/index.php/departments/planning-zoning"
+  },
+  "1213": {
+   "name": "New Brunswick City",
+   "county": "Middlesex",
+   "zoningMap": "https://www.arcgis.com/apps/webappviewer/index.html?id=ac5e721a1ecb4cef86840c35a8b176f4",
+   "ordinance": "https://library.municode.com/nj/new_brunswick/codes/municipal_code?nodeId=TIT17ZO_CH17.01TIINPU",
+   "website": "https://www.cityofnewbrunswick.org/residents/departments/planning_development/index.php"
+  },
+  "1214": {
+   "name": "North Brunswick Township",
+   "county": "Middlesex",
+   "zoningMap": "https://northbrunswicknj.gov/wp-content/uploads/2020/09/North-Brunswick-Zoning-2018.pdf'",
+   "ordinance": "https://ecode360.com/8532410",
+   "website": "https://northbrunswicknj.gov/programs_and_service/zoning-permit/"
+  },
+  "1215": {
+   "name": "Old Bridge Township",
+   "county": "Middlesex",
+   "zoningMap": "https://core-docs.s3.amazonaws.com/documents/asset/uploaded_file/824862/2015_Zoning_Map_Signed.pdf",
+   "ordinance": "https://ecode360.com/6934942",
+   "website": "https://www.oldbridge.com/page/zoning-division"
+  },
+  "1216": {
+   "name": "Perth Amboy City",
+   "county": "Middlesex",
+   "zoningMap": "https://topology.maps.arcgis.com/apps/instant/basic/index.html?appid=09bd902a48ef45348d2d59283c89673c",
+   "ordinance": "https://ecode360.com/35019251",
+   "website": "https://www.perthamboynj.org/government/departments/code_enforcement"
+  },
+  "1217": {
+   "name": "Piscataway Township",
+   "county": "Middlesex",
+   "zoningMap": "https://cms9files.revize.com/piscatawaytownshipnj/Maps/ZoneMaps/PwayZone_KeyMap.pdf",
+   "ordinance": "https://ecode360.com/34887069",
+   "website": "https://www.piscatawaynj.org/departments/community_development/planning_division/index.php"
+  },
+  "1218": {
+   "name": "Plainsboro Township",
+   "county": "Middlesex",
+   "zoningMap": "https://www.plainsboronj.com/DocumentCenter/View/5384/Zoning-Map-and-Street-Index-Map",
+   "ordinance": "https://ecode360.com/9429117",
+   "website": "https://www.plainsboronj.com/308/Zoning-Board-of-Adjustment"
+  },
+  "1219": {
+   "name": "Sayreville Borough",
+   "county": "Middlesex",
+   "zoningMap": "http://www.sayreville.com/documents/code_enforcment_zoning/zoningmap.pdf",
+   "ordinance": "https://library.municode.com/nj/sayreville_borough/codes/code_of_ordinances?nodeId=CHXXVILADE",
+   "website": "http://www.sayreville.com/Cit-e-Access/webpage.cfm?TID=87&TPID=8812"
+  },
+  "1220": {
+   "name": "South Amboy City",
+   "county": "Middlesex",
+   "zoningMap": "https://www.southamboynj.gov/_Content/pdf/SA-City-Zoning-Map.PDF",
+   "ordinance": "https://ecode360.com/36481465",
+   "website": "https://www.southamboynj.gov/Page/zoning-officer"
+  },
+  "1221": {
+   "name": "South Brunswick Township",
+   "county": "Middlesex",
+   "zoningMap": "https://southbrunswicknj.gov/wp-content/uploads/2022/06/sbzones_12_2021_esize_3-1.pdf",
+   "ordinance": "https://library.municode.com/nj/south_brunswick_township/codes/code_of_ordinances?nodeId=CH62LAUS_ARTIVZO",
+   "website": "https://southbrunswicknj.gov/zoning-forms/"
+  },
+  "1222": {
+   "name": "South Plainfield Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.southplainfieldnj.com/spnj/Zoning%20Board/Zoning%20Map.pdf?1773431125",
+   "ordinance": "https://ecode360.com/31176547",
+   "website": "http://www.southplainfieldnj.com/spnj/Departments/Departments/Zoning%20%26%20Property%20Maintenance/"
+  },
+  "1223": {
+   "name": "South River Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://www.southrivernj.org/DocumentCenter/View/373/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/8204960",
+   "website": "https://www.southrivernj.org/Directory.aspx?did=38"
+  },
+  "1224": {
+   "name": "Spotswood Borough",
+   "county": "Middlesex",
+   "zoningMap": "https://cse.maps.arcgis.com/apps/webappviewer/index.html?id=dd5b16d990e546d08f7cbe804725b256",
+   "ordinance": "https://ecode360.com/33312083",
+   "website": "https://www.spotswoodboro.com/planning-zoning"
+  },
+  "1225": {
+   "name": "Woodbridge Township",
+   "county": "Middlesex",
+   "zoningMap": "https://www.twp.woodbridge.nj.us/DocumentCenter/View/729/Zoning-Map--Revised-February-PDF",
+   "ordinance": "https://ecode360.com/6495886",
+   "website": "https://www.twp.woodbridge.nj.us/1341/Building-Department"
+  },
+  "1301": {
+   "name": "Aberdeen Township",
+   "county": "Monmouth",
+   "zoningMap": "https://www.aberdeennj.org/DocumentCenter/View/170/Properties-Listed-by-Zone-PDF?bidId=",
+   "ordinance": "https://ecode360.com/34485471",
+   "website": "https://www.aberdeennj.org/221/Planning-Zoning-Development"
+  },
+  "1302": {
+   "name": "Allenhurst Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.allenhurstnj.org/sites/g/files/vyhlif5496/f/agendas/final_zoning_map_revised_8-26-20.pdf",
+   "ordinance": "https://ecode360.com/34621706",
+   "website": "https://www.allenhurstnj.org/zoning-boardcode-enforcement"
+  },
+  "1303": {
+   "name": "Allentown Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/AL0466/AL0466-028a%20Appendix%20A%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35610634",
+   "website": "https://allentownboronj.com/index.asp?SEC=7808D9E7-82BB-4F21-97A3-C9DB99A7CF28"
+  },
+  "1304": {
+   "name": "Asbury Park City",
+   "county": "Monmouth",
+   "zoningMap": "https://asburypark.maps.arcgis.com/apps/webappviewer/index.html?id=2da5f2edfee84e62bac3743ebd8fd0b2",
+   "ordinance": "https://ecode360.com/34679998",
+   "website": "https://www.cityofasburypark.com/257/Planning-Redevelopment"
+  },
+  "1305": {
+   "name": "Atlantic Highlands Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.ahnj.com/ahnj/Departments/Planning%20Board/_Docs/Frequently%20Requested%20Documents/Zoning%20Map.pdf?1676661138",
+   "ordinance": "https://ecode360.com/13491368#13491368",
+   "website": "https://www.ahnj.com/ahnj/Departments/Zoning%20Office/#gsc.tab=0"
+  },
+  "1306": {
+   "name": "Avon-by-the-Sea Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/AV0655/AV0655-113b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35076961",
+   "website": "https://www.avonbytheseanj.com/departments/code_enforcement/construction___zoning_departments.php"
+  },
+  "1307": {
+   "name": "Belmar Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/user/file/clerk@belmar.com/570514134.pdf",
+   "ordinance": "https://ecode360.com/35398589",
+   "website": "https://www.belmar.com/departments/community-development/construction"
+  },
+  "1308": {
+   "name": "Bradley Beach Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/BR2100/BR2100-450b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/7045401",
+   "website": "https://www.bradleybeachnj.gov/zoning-office/"
+  },
+  "1309": {
+   "name": "Brielle Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/BR0342/BR0342-021b%20Zoning%20Map%20July%202020.pdf",
+   "ordinance": "https://ecode360.com/36088579",
+   "website": "https://www.briellenj.gov/207/Planning-Board"
+  },
+  "1310": {
+   "name": "Colts Neck Township",
+   "county": "Monmouth",
+   "zoningMap": "https://coltsneck.org/wp-content/uploads/2021/08/Zoning-Map11-2014-UPDATE-4-25-16-REV.pdf",
+   "ordinance": "https://ecode360.com/8737401",
+   "website": "https://coltsneck.org/departments/planning-zoning/"
+  },
+  "1311": {
+   "name": "Deal Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/DE4069/DE4069-030d%20Sch%20D%20-%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36242592",
+   "website": "https://dealnj.gov/departments/building/"
+  },
+  "1312": {
+   "name": "Eatontown Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.eatontownnj.com/DocumentCenter/View/279/2019-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/7635029",
+   "website": "https://www.eatontownnj.com/196/Land-Use---Zoning-Code-Enforcement"
+  },
+  "1313": {
+   "name": "Englishtown Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://static1.squarespace.com/static/65cd2ea5193f092dffbdeb8a/t/6769ca05df34a8396ccd7da4/1734986245615/ENGLISHTOWN-ZONING-MAP-04-30-2024+%28002%29.pdf",
+   "ordinance": "https://ecode360.com/42145684",
+   "website": "https://www.englishtownnj.com/departments"
+  },
+  "1314": {
+   "name": "Fair Haven Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.fairhavennj.org/sites/g/files/vyhlif4411/f/uploads/zoning_dept._-_zoning_map_0.pdf",
+   "ordinance": "https://ecode360.com/35378092",
+   "website": "https://www.fairhavennj.org/zoning-official-zoning-board-adjustment"
+  },
+  "1315": {
+   "name": "Farmingdale Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://cms8.revize.com/revize/farmingdale/Documents%20Center/Department/Zoning/1030201794805AM_1.PDF",
+   "ordinance": "https://ecode360.com/35819138",
+   "website": "https://www.farmingdaleborough.org/departments/zoning.php"
+  },
+  "1316": {
+   "name": "Freehold Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2019/05/Zoning-rev5.pdf",
+   "ordinance": "https://www.freeholdboroughnj.gov/community/code-book/175-020-title-18-zoning/file",
+   "website": "https://www.freeholdboroughnj.gov/departments/construction/zoning-department"
+  },
+  "1317": {
+   "name": "Freehold Township",
+   "county": "Monmouth",
+   "zoningMap": "https://twp.freehold.nj.us/DocumentCenter/View/249/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/9101819",
+   "website": "https://www.twp.freehold.nj.us/225/Department-of-Zoning-Housing-Enforcement"
+  },
+  "1318": {
+   "name": "Hazlet Township",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/HA0969/HA0969-181e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/14612358",
+   "website": "https://www.hazlettwp.org/190/Zoning-Office"
+  },
+  "1319": {
+   "name": "Highlands Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://highlandsborough.org/wp-content/uploads/2020/10/O-18-22-Updated-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/35388261",
+   "website": "https://highlandsnj.gov/departments/department-of-buildings-housing/"
+  },
+  "1320": {
+   "name": "Holmdel Township",
+   "county": "Monmouth",
+   "zoningMap": "http://www.holmdeltownship.com/DocumentCenter/View/3921/Zoning-Map_12-17-21",
+   "ordinance": "https://ecode360.com/35669469",
+   "website": "https://www.holmdeltownship.com/177/Zoning-Office"
+  },
+  "1321": {
+   "name": "Howell Township",
+   "county": "Monmouth",
+   "zoningMap": "http://www.twp.howell.nj.us/DocumentCenter/View/2420/Zoning-Map-Updated-July-2022?bidId=",
+   "ordinance": "https://ecode360.com/6670314",
+   "website": "https://www.twp.howell.nj.us/136/Planning-Zoning"
+  },
+  "1322": {
+   "name": "Interlaken Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/IN4101/IN4101-026c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35525497",
+   "website": "https://www.interlakenboro.com/building--code.html"
+  },
+  "1323": {
+   "name": "Keansburg Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://keansburgnj.gov/PDF/construction/zoning-map.pdf",
+   "ordinance": "https://ecode360.com/35678813",
+   "website": "https://keansburgnj.gov/development/construction-office/"
+  },
+  "1324": {
+   "name": "Keyport Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.keyportonline.com/filestorage/4031/5682/7599/7603/zoning_map_new.pdf",
+   "ordinance": "https://ecode360.com/35075973",
+   "website": "https://www.keyportonline.com/building"
+  },
+  "1325": {
+   "name": "Little Silver Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.littlesilver.org/DocumentCenter/View/154/Zoning-Districts",
+   "ordinance": "https://ecode360.com/34801515",
+   "website": "https://www.littlesilver.org/197/Planning-Zoning-Office"
+  },
+  "1326": {
+   "name": "Loch Arbour Village",
+   "county": "Monmouth",
+   "zoningMap": "https://www.locharbournj.us/sites/g/files/vyhlif5551/f/uploads/265_-_amend_section_412_fees_-_planning_board_section_702_b_zone_section_705_c_zone.pdf",
+   "ordinance": "https://www.locharbournj.us/ordinances/pages/development",
+   "website": "https://www.locharbournj.us/departments-services/pages/departments-services-contacts"
+  },
+  "1327": {
+   "name": "Long Branch City",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/LO1625/LO1625-345d%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6283412",
+   "website": "https://www.longbranch.org/235/Planning-Zoning"
+  },
+  "1328": {
+   "name": "Manalapan Township",
+   "county": "Monmouth",
+   "zoningMap": "https://mtnj.org/images/uploads/Zoning/manalapan_zoning_map.pdf",
+   "ordinance": "https://ecode360.com/10115497",
+   "website": "https://mtnj.org/departments/zoning_enforcement/"
+  },
+  "1329": {
+   "name": "Manasquan Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.manasquan-nj.gov/sites/g/files/vyhlif831/f/uploads/amended_zoning_map_in_color_2023.pdf",
+   "ordinance": "https://www.manasquan-nj.gov/planning-zoning-office/pages/zoning",
+   "website": "https://www.manasquan-nj.gov/planning-zoning-office/pages/zoning"
+  },
+  "1330": {
+   "name": "Marlboro Township",
+   "county": "Monmouth",
+   "zoningMap": "https://www.marlboro-nj.gov/_Content/pdf/ZoningMap(1).pdf",
+   "ordinance": "https://ecode360.com/12875623",
+   "website": "https://www.marlboro-nj.gov/Departments/planning-zoning-division"
+  },
+  "1331": {
+   "name": "Matawan Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.matawanborough.com/matawan/Our%20COMMUNITY/2015%20BOM%20Zoning%20Map.pdf?1743107665",
+   "ordinance": "https://ecode360.com/35436783",
+   "website": "https://www.matawanborough.com/matawan/Borough%20SERVICES/Zoning/"
+  },
+  "1332": {
+   "name": "Middletown Township",
+   "county": "Monmouth",
+   "zoningMap": "https://www.middletownnj.org/DocumentCenter/View/8023/ZONING-MAP-3-18-1999-signed-color?bidId=",
+   "ordinance": "https://library.municode.com/nj/middletown_township/codes/code?nodeId=CH540PLDERE_ARTIXZODIRE",
+   "website": "https://www.middletownnj.org/219/Planning-Zoning-Community-Development"
+  },
+  "1333": {
+   "name": "Millstone Township",
+   "county": "Monmouth",
+   "zoningMap": "https://storage.googleapis.com/juniper-media-library/232/2025/05/Millstone-Twp-2014-ZONE-MAP.pdf",
+   "ordinance": "https://ecode360.com/35733768",
+   "website": "https://www.millstonenj.gov/departments/zoning"
+  },
+  "1334": {
+   "name": "Monmouth Beach Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/MO3812/MO3812-030d%20Appendix%20D%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/32003892",
+   "website": "https://www.monmouthbeach.org/government/departments/zoning/"
+  },
+  "1335": {
+   "name": "Neptune Township",
+   "county": "Monmouth",
+   "zoningMap": "https://neptunetownship.org/sites/default/files/ZONINGMAP2021_color_revised%207.25.2022.pdf",
+   "ordinance": "https://ecode360.com/41286452#41286452",
+   "website": "https://neptunetownship.org/departments/land-use"
+  },
+  "1336": {
+   "name": "Neptune City Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.neptunecitynj.com/sites/g/files/vyhlif5316/f/uploads/2018_zoning_map.pdf",
+   "ordinance": "https://ecode360.com/36200490",
+   "website": "https://www.neptunecitynj.com/zoning-code-enforcement"
+  },
+  "1337": {
+   "name": "Ocean Township",
+   "county": "Monmouth",
+   "zoningMap": "https://oceantwp.qscendcms.com/ckfinder/connector?command=Proxy&lang=en&type=Files&currentFolder=%2FPool%20%26%20Tennis%20Facility%2F&hash=c245c263ce0eced480effe66bbede6b4d46c15ae&fileName=ZONING_MAP_2014.pdf",
+   "ordinance": "https://ecode360.com/35350757",
+   "website": "https://oceantwp.org/p/planning-and-zoning-personnel"
+  },
+  "1338": {
+   "name": "Oceanport Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://oceanportboro.com/government/department/zoning-board-of-adjustment-documents/626-zoning-map/file",
+   "ordinance": "https://ecode360.com/11276392",
+   "website": "https://www.oceanportboro.com/departments/zone"
+  },
+  "1339": {
+   "name": "Red Bank Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/RE2655/RE2655-490d%20Zoning%20Map%20Color.pdf",
+   "ordinance": "https://ecode360.com/14160157",
+   "website": "https://www.redbanknj.org/196/Planning-Zoning"
+  },
+  "1340": {
+   "name": "Roosevelt Borough",
+   "county": "Monmouth",
+   "zoningMap": "http://www.web2sons.org/zoning/maps/RooseveltZoneMap.pdf",
+   "ordinance": "https://ecode360.com/35770062",
+   "website": "https://www.rooseveltnj.us/departments/zoning-officer-housing-inspector"
+  },
+  "1341": {
+   "name": "Rumson Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.rumsonnj.gov/_files/ugd/9497f2_590472905b614098bf7496c66974d0ef.pdf",
+   "ordinance": "https://ecode360.com/35608798",
+   "website": "https://www.rumsonnj.gov/zoning-code"
+  },
+  "1342": {
+   "name": "Sea Bright Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.seabrightnj.org/sbnj/Departments/Unified%20Planning%20Board/Sea%20Bright%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8056032",
+   "website": "https://www.seabrightnj.org/sbnj/Departments/Building%20Department/"
+  },
+  "1343": {
+   "name": "Sea Girt Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.seagirt-nj.gov/sites/g/files/vyhlif3791/f/uploads/zoningmap1.jpg",
+   "ordinance": "https://ecode360.com/36181331",
+   "website": "https://www.seagirt-nj.gov/zoning-and-code-enforcement"
+  },
+  "1344": {
+   "name": "Shrewsbury Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.shrewsburyboro.com/snj/Forms/Land%20Use%20Forms/Zoning%20Map%202024.pdf?1744904495",
+   "ordinance": "https://ecode360.com/31119967",
+   "website": "https://www.shrewsburyboro.com/snj/Departments/Construction/"
+  },
+  "1345": {
+   "name": "Shrewsbury Township",
+   "county": "Monmouth",
+   "zoningMap": "http://www.townshipofshrewsbury.com/uploads/3/4/2/9/34299549/figure_7_-zoning_map.pdf",
+   "ordinance": "Not published online",
+   "website": "http://www.townshipofshrewsbury.com/departments.html"
+  },
+  "1346": {
+   "name": "Lake Como Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://lakecomonj.org/code_enforement/LAKE%20COMO%20ZONING%20MAP.pdf",
+   "ordinance": "https://ecode360.com/34659351",
+   "website": "http://lakecomonj.org/home/page/9"
+  },
+  "1347": {
+   "name": "Spring Lake Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://ecode360.com/attachment/SP0178/SP0178-225c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8207708",
+   "website": "https://www.springlakeboro.org/departments/zoning-department"
+  },
+  "1348": {
+   "name": "Spring Lake Heights Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://springlakehts.com/wp-content/uploads/2025/01/Zoning-Map-with-bulk-table-2024.pdf",
+   "ordinance": "https://ecode360.com/36507551",
+   "website": "https://springlakehts.com/departments/construction-zoning-code-enforcement/"
+  },
+  "1349": {
+   "name": "Tinton Falls Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.tintonfalls.com/government/documents/department-documents/zoning/551-zoning-map/file",
+   "ordinance": "https://ecode360.com/35781656",
+   "website": "https://www.tintonfalls.com/departments/zoning"
+  },
+  "1350": {
+   "name": "Union Beach Borough",
+   "county": "Monmouth",
+   "zoningMap": "http://www.ubnj.net/ubnj/Departments/Planning%20Board/Zoning%20Map%202016.pdf?1677014933",
+   "ordinance": "https://ecode360.com/36146430",
+   "website": "http://www.ubnj.net/ubnj/Departments/Construction%20Department/"
+  },
+  "1351": {
+   "name": "Upper Freehold Township",
+   "county": "Monmouth",
+   "zoningMap": "https://uftnj.com/download/93/construction-department-permit/3890/uft-zoning-map.pdf",
+   "ordinance": "https://ecode360.com/36392134",
+   "website": "https://uftnj.com/departments/construction-department/"
+  },
+  "1352": {
+   "name": "Wall Township",
+   "county": "Monmouth",
+   "zoningMap": "https://www.arcgis.com/home/item.html?id=2999d48c26954881b6b763bb61d2012b",
+   "ordinance": "https://ecode360.com/9589088",
+   "website": "https://www.wallnj.gov/300/Land-Use-Office"
+  },
+  "1353": {
+   "name": "West Long Branch Borough",
+   "county": "Monmouth",
+   "zoningMap": "https://www.westlongbranch.org/DocumentCenter/View/383/zoning_map",
+   "ordinance": "https://ecode360.com/36235740",
+   "website": "https://www.westlongbranch.org/zoning-officer"
+  },
+  "1401": {
+   "name": "Boonton Town",
+   "county": "Morris",
+   "zoningMap": "https://www.boonton.org/DocumentCenter/View/340/Boonton-Zoning-Map---Color-PDF",
+   "ordinance": "https://ecode360.com/7162402",
+   "website": "https://www.boonton.org/646/Zoning-Department"
+  },
+  "1402": {
+   "name": "Boonton Township",
+   "county": "Morris",
+   "zoningMap": "https://www.boontontownship.com/media/zoning/Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/8468356",
+   "website": "https://www.boontontownship.com/planning-zoning-board"
+  },
+  "1403": {
+   "name": "Butler Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.butlerborough.com/FCpdf/BUTLER-NEW-ZONING-MAP-01-10-2017.pdf",
+   "ordinance": "https://www.butlerborough.com/documents/Zoning%20Forms/Schedules%20ABCD%20booklet%202019.pdf",
+   "website": "https://www.butlerborough.com/cn/webpage.cfm?tpid=15405"
+  },
+  "1404": {
+   "name": "Chatham Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.chathamborough.org/media/attachments/2021/11/08/chatham-borough-zoning-map-1.pdf",
+   "ordinance": "https://ecode360.com/29899377",
+   "website": "https://www.chathamborough.org/departments/construction"
+  },
+  "1405": {
+   "name": "Chatham Township",
+   "county": "Morris",
+   "zoningMap": "https://ecode360.com/attachment/CH4056/CH4056-030g%20Appendix%20III%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35304966",
+   "website": "https://chathamtownship.org/departments/land-use/construction/"
+  },
+  "1406": {
+   "name": "Chester Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.chesterborough.org/forms-documents/forms/department-documents/zoning/571-zoning-map-amendment-adopted-nov-5-2020-ord-no-2020-13-1/file",
+   "ordinance": "https://ecode360.com/11481180",
+   "website": "https://www.chesterborough.org/departments/zoning-department"
+  },
+  "1407": {
+   "name": "Chester Township",
+   "county": "Morris",
+   "zoningMap": "https://chestertownship.maps.arcgis.com/apps/webappviewer/index.html?id=72344c9bb02c48e1be0aa5e6fc7e3251",
+   "ordinance": "https://ecode360.com/12402684",
+   "website": "https://chestertownship.org/index.php/departments/planning-zoning"
+  },
+  "1408": {
+   "name": "Denville Township",
+   "county": "Morris",
+   "zoningMap": "https://cms1files.revize.com/denville/docs/Construction/Zoning_Map_Shoppes_B2_Revision_010816_001_2_.pdf",
+   "ordinance": "https://ecode360.com/32120250",
+   "website": "https://www.denvillenj.org/departments/zoning_and_land_use_department.php"
+  },
+  "1409": {
+   "name": "Dover Town",
+   "county": "Morris",
+   "zoningMap": "https://www.dover.nj.us/Documents/Planning%20and%20Zoning/Zoning_Map_2018%20Rev%2001-08-18.pdf",
+   "ordinance": "https://ecode360.com/10030924",
+   "website": "https://www.dover.nj.us/cn/webpage.cfm?tpid=2378"
+  },
+  "1410": {
+   "name": "East Hanover Township",
+   "county": "Morris",
+   "zoningMap": "https://www.easthanovertownship.com/_Content/pdf/ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/13435455",
+   "website": "https://www.easthanovertownship.com/Departments/construction-department"
+  },
+  "1411": {
+   "name": "Florham Park Borough",
+   "county": "Morris",
+   "zoningMap": "https://ecode360.com/attachment/FL0846/FL0846-250c%20Exhibit%20B.pdf",
+   "ordinance": "https://ecode360.com/9092271",
+   "website": "https://www.fpboro.net/departments/planing-and-zoning/"
+  },
+  "1412": {
+   "name": "Hanover Township",
+   "county": "Morris",
+   "zoningMap": "https://www.hanovertownship.com/DocumentCenter/View/7069/Zoning-Map-February-2025-DRAFT-COLOR",
+   "ordinance": "https://ecode360.com/10234797",
+   "website": "https://www.hanovertownship.com/154/Building-Zoning"
+  },
+  "1413": {
+   "name": "Harding Township",
+   "county": "Morris",
+   "zoningMap": "https://www.hardingnj.org/government/forms/zoning/zoning-department/additional-documents-1/751-zoning-map/file",
+   "ordinance": "https://ecode360.com/10244400",
+   "website": "https://www.hardingnj.org/departments/zoning"
+  },
+  "1414": {
+   "name": "Jefferson Township",
+   "county": "Morris",
+   "zoningMap": "https://www.jeffersontownship.net/DocumentCenter/View/3362/Jefferson-Township-Zoning-Map?bidId",
+   "ordinance": "https://ecode360.com/10285446",
+   "website": "https://www.jeffersontownship.net/153/Building-Department"
+  },
+  "1415": {
+   "name": "Kinnelon Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.nj.gov/njhighlands/morris_county/kinnelon/6a_Kinnelon_LUO_110520_Exhibits%20(Reduced)_HC.pdf",
+   "ordinance": "https://ecode360.com/10290657",
+   "website": "https://www.kinnelonboro.org/cn/webpage.cfm?tpid=18147"
+  },
+  "1416": {
+   "name": "Lincoln Park Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.lincolnpark.org/DocumentCenter/View/1411/chapter-28---retyped-September-2015?bidId=",
+   "ordinance": "https://ecode360.com/28279847",
+   "website": "https://www.lincolnpark.org/200/Planning-Development"
+  },
+  "1417": {
+   "name": "Madison Borough",
+   "county": "Morris",
+   "zoningMap": "https://rosenet.org/DocumentCenter/View/1233/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/13618568",
+   "website": "https://rosenet.org/425/Planning-and-Zoning-Office"
+  },
+  "1418": {
+   "name": "Mendham Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.mendhamnj.org/FCpdf/MendZ01_12.pdf",
+   "ordinance": "https://ecode360.com/6682547",
+   "website": "https://www.mendhamnj.org/cn/webpage.cfm?tpid=15725"
+  },
+  "1419": {
+   "name": "Mendham Township",
+   "county": "Morris",
+   "zoningMap": "https://www.mendhamtownship.org/sites/g/files/vyhlif7531/f/uploads/zoning_map.pdf",
+   "ordinance": "https://www.mendhamtownship.org/construction-department/pages/helpful-links",
+   "website": "https://www.mendhamtownship.org/planning-zoning"
+  },
+  "1420": {
+   "name": "Mine Hill Township",
+   "county": "Morris",
+   "zoningMap": "https://ecode360.com/attachment/MI3185/MI3185-310a%20App%20I%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/28591011",
+   "website": "https://minehill.com/township-departments/construction-department-2/"
+  },
+  "1421": {
+   "name": "Montville Township",
+   "county": "Morris",
+   "zoningMap": "http://www.montvillenj.org/DocumentCenter/View/1002/Amended-Zoning-Map-Aug-2016?bidId=",
+   "ordinance": "https://ecode360.com/12152893",
+   "website": "https://www.montvillenj.org/331/Zoning"
+  },
+  "1422": {
+   "name": "Morris Township",
+   "county": "Morris",
+   "zoningMap": "https://www.morristwp.com/DocumentCenter/View/4860/Zoning-Map-Land-Use-Page-under-Documents-?bidId=",
+   "ordinance": "https://ecode360.com/10354651",
+   "website": "https://www.morristwp.com/205/Zoning"
+  },
+  "1423": {
+   "name": "Morris Plains Borough",
+   "county": "Morris",
+   "zoningMap": "https://morrisplainsboro.org/wp-content/uploads/2021/04/Morris-Plains-Zoning-Map-2019.pdf",
+   "ordinance": "https://ecode360.com/34055799",
+   "website": "https://morrisplainsboro.org/construction-department/"
+  },
+  "1424": {
+   "name": "Morristown Town",
+   "county": "Morris",
+   "zoningMap": "https://www.townofmorristown.org/vertical/sites/%7B0813EA2E-B627-4F82-BBB0-DDEE646947B5%7D/uploads/2024_Wall_Map_2_x_3.pdf",
+   "ordinance": "https://ecode360.com/34174642",
+   "website": "https://www.townofmorristown.org/zoning"
+  },
+  "1425": {
+   "name": "Mountain Lakes Borough",
+   "county": "Morris",
+   "zoningMap": "https://mountainlakes.gov/wp-content/uploads/2014/11/ML-Zone-Map-11x17.pdf",
+   "ordinance": "https://ecode360.com/8632797",
+   "website": "https://mountainlakes.gov/departments/construction-office/"
+  },
+  "1426": {
+   "name": "Mount Arlington Borough",
+   "county": "Morris",
+   "zoningMap": "https://mountarlingtonnj.org/wp-content/uploads/2017/02/Borough-Zone-Map-08-20-15.pdf",
+   "ordinance": "https://ecode360.com/35507125",
+   "website": "https://mountarlingtonnj.org/departments/construction/"
+  },
+  "1427": {
+   "name": "Mount Olive Township",
+   "county": "Morris",
+   "zoningMap": "https://www.mountolivetwpnj.org/media/4511",
+   "ordinance": "https://ecode360.com/29932417",
+   "website": "https://www.mountolivetwpnj.org/planning-zoning"
+  },
+  "1428": {
+   "name": "Netcong Borough",
+   "county": "Morris",
+   "zoningMap": "https://netcong.org/?ddownload=1409",
+   "ordinance": "https://ecode360.com/11256132",
+   "website": "https://netcong.org/zoning/"
+  },
+  "1429": {
+   "name": "Parsippany-Troy Hills Township",
+   "county": "Morris",
+   "zoningMap": "https://www.parsippany.net/_Content/pdf/BIG-General-zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/5102724",
+   "website": "https://www.parsippany.net/Departments/zoning-division"
+  },
+  "1430": {
+   "name": "Long Hill Township",
+   "county": "Morris",
+   "zoningMap": "https://ecode360.com/attachment/PA0262/PA0262-LUd%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36006607",
+   "website": "https://www.longhillnj.gov/Departments/planning-and-zoning-department"
+  },
+  "1431": {
+   "name": "Pequannock Township",
+   "county": "Morris",
+   "zoningMap": "https://www.peqtwp.org/DocumentCenter/View/11370/Zoning-Map?bidId=Zoning%20Map.mxd",
+   "ordinance": "https://ecode360.com/36915264",
+   "website": "https://www.peqtwp.org/227/Planning-Zoning"
+  },
+  "1432": {
+   "name": "Randolph Township",
+   "county": "Morris",
+   "zoningMap": "https://randolphnjedc.com/wp-content/uploads/2018/11/zoning_map.pdf",
+   "ordinance": "https://library.municode.com/nj/randolph_township/codes/land_development_code?nodeId=LAND_DEVELOPMENT_CODE_ARTIIIZO",
+   "website": "https://www.randolphnj.org/397/Planning-Zoning"
+  },
+  "1433": {
+   "name": "Riverdale Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.riverdalenj.gov/_Content/pdf/riverdale-zoning-map.pdf",
+   "ordinance": "https://ecode360.com/11334089",
+   "website": "https://www.riverdalenj.gov/Departments/construction-department"
+  },
+  "1434": {
+   "name": "Rockaway Borough",
+   "county": "Morris",
+   "zoningMap": "https://ecode360.com/attachment/RO1087/RO1087-172b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6698413",
+   "website": "https://www.rockawayborough.org/departments/directory/"
+  },
+  "1435": {
+   "name": "Rockaway Township",
+   "county": "Morris",
+   "zoningMap": "https://www.rockawaytownship.org/DocumentCenter/View/1104/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/33535597",
+   "website": "https://www.rockawaytownship.org/213/Zoning"
+  },
+  "1436": {
+   "name": "Roxbury Township",
+   "county": "Morris",
+   "zoningMap": "https://www.roxburynj.us/DocumentCenter/View/744/zonemap?bidId=",
+   "ordinance": "https://ecode360.com/34589700",
+   "website": "https://www.roxburynj.us/12/Planning-Zoning"
+  },
+  "1437": {
+   "name": "Victory Gardens Borough",
+   "county": "Morris",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/36399578",
+   "website": "https://www.victorygardensnj.gov/PB/index.html"
+  },
+  "1438": {
+   "name": "Washington Township",
+   "county": "Morris",
+   "zoningMap": "https://www.wtmorris.org/PDF/zoning/documents/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/11403972",
+   "website": "https://www.wtmorris.org/index.php/departments/zoning"
+  },
+  "1439": {
+   "name": "Wharton Borough",
+   "county": "Morris",
+   "zoningMap": "https://www.whartonnj.com/images/2021_Zoning_Map_11x17_1.pdf",
+   "ordinance": "https://ecode360.com/11907471",
+   "website": "https://www.whartonnj.com/index.php/departments/zoning-and-housing"
+  },
+  "1501": {
+   "name": "Barnegat Township",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/BA0366/BA0366-055a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34703168",
+   "website": "http://www.barnegat.net/departments/code-enforcement-zoning-office/"
+  },
+  "1502": {
+   "name": "Barnegat Light Borough",
+   "county": "Ocean",
+   "zoningMap": "https://barnegatlight.org/wp-content/uploads/2023/07/BL_ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/8932977#8932977",
+   "website": "https://barnegatlight.org/departments/building-zoning/"
+  },
+  "1503": {
+   "name": "Bay Head Borough",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/BA1546/BA1546-147c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8934722",
+   "website": "https://www.bayheadnj.org/construction-and-building"
+  },
+  "1504": {
+   "name": "Beach Haven Borough",
+   "county": "Ocean",
+   "zoningMap": "https://beachhaven-nj.com/wp-content/uploads/2018/06/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/8940233",
+   "website": "https://beachhaven-nj.gov/departments/construction-zoning/"
+  },
+  "1505": {
+   "name": "Beachwood Borough",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/BE0372/BE0372-017b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36572650",
+   "website": "https://www.beachwoodusa.com/159/Construction-Zoning"
+  },
+  "1506": {
+   "name": "Berkeley Township",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/319622/BE0455-035j%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35657340",
+   "website": "https://www.berkeleytownship.org/290/Zoning-Board-of-Adjustment"
+  },
+  "1507": {
+   "name": "Brick Township",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/BR0201/BR0201-245f%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6897821",
+   "website": "https://www.bricknj.gov/departments/zoning.php"
+  },
+  "1508": {
+   "name": "Toms River Township",
+   "county": "Ocean",
+   "zoningMap": "https://tomsrivertownship.com/DocumentCenter/View/237/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/12012794",
+   "website": "https://tomsrivertownship.com/374/Zoning"
+  },
+  "1509": {
+   "name": "Eagleswood Township",
+   "county": "Ocean",
+   "zoningMap": "http://eagleswood1.wpengine.com/wp-content/uploads/2020/01/ZoneMap-09-24-13-001-Eagleswood.pdf",
+   "ordinance": "https://ecode360.com/27202838",
+   "website": "https://www.eagleswoodtwpnj.us/?page_id=80"
+  },
+  "1510": {
+   "name": "Harvey Cedars Borough",
+   "county": "Ocean",
+   "zoningMap": "https://www.harveycedars.org/documents/Zoning/Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/40156906",
+   "website": "https://www.harveycedars.org/cn/webpage.cfm?tpid=16490"
+  },
+  "1511": {
+   "name": "Island Heights Borough",
+   "county": "Ocean",
+   "zoningMap": "https://islandheightsborough.gov/wp-content/uploads/2021/09/Island-Heights-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/34732066",
+   "website": "https://islandheightsborough.gov/code/"
+  },
+  "1512": {
+   "name": "Jackson Township",
+   "county": "Ocean",
+   "zoningMap": "https://www.jacksontwpnj.net/DocumentCenter/View/3819/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/15718704",
+   "website": "https://www.jacksontwpnj.net/171/Planning-Zoning"
+  },
+  "1513": {
+   "name": "Lacey Township",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/LA0472/LA0472-335g%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/5063812",
+   "website": "http://www.laceytownship.org/content/4702/3676/3847/"
+  },
+  "1514": {
+   "name": "Lakehurst Borough",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/LA4045/LA4045-025a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/40151518?highlight=zone,zoned,zoning&searchId=43018355515817723#40151516",
+   "website": "https://www.lakehurst-nj.gov/department/construction.php"
+  },
+  "1515": {
+   "name": "Lakewood Township",
+   "county": "Ocean",
+   "zoningMap": "https://www.lakewoodnj.gov/images/db/sforsyth-2537-2017-Zoning-Map-by-RVE-adopted-12.7.17.pdf",
+   "ordinance": "https://ecode360.com/35467568",
+   "website": "https://www.lakewoodnj.gov/department/zoning"
+  },
+  "1516": {
+   "name": "Lavallette Borough",
+   "county": "Ocean",
+   "zoningMap": "https://www.lavallette.org/forms/zoning/ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/29560525",
+   "website": "https://www.lavallette.org/zoning.html"
+  },
+  "1517": {
+   "name": "Little Egg Harbor Township",
+   "county": "Ocean",
+   "zoningMap": "http://www.leht.com/wp-content/uploads/2022/10/Zoning-Map-Dec-2007-Final.pdf",
+   "ordinance": "https://ecode360.com/46297705#46297705",
+   "website": "https://www.leht.com/zoning-code-enforcement/"
+  },
+  "1518": {
+   "name": "Long Beach Township",
+   "county": "Ocean",
+   "zoningMap": "https://www.longbeachtownship.com/wp-content/uploads/2020/06/zoning_map_10-05-11.pdf",
+   "ordinance": "https://ecode360.com/10305304",
+   "website": "https://www.longbeachtownship.com/construction-zoning/"
+  },
+  "1519": {
+   "name": "Manchester Township",
+   "county": "Ocean",
+   "zoningMap": "https://manchestertwp.com/wp-content/uploads/2024/10/Zoning-Map-Manchester-Township-NJ-Adopted-3-11-2024-Per-Ordinance-24-009-004.pdf",
+   "ordinance": "https://ecode360.com/13196032",
+   "website": "https://manchestertwp.com/departments/department-of-inspection/zoningcode-enforcement/"
+  },
+  "1520": {
+   "name": "Mantoloking Borough",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/MA4063/MA4063-030b%20Sheet%201.pdf",
+   "ordinance": "https://ecode360.com/35382135",
+   "website": "https://www.mantoloking.org/1198/Zoning"
+  },
+  "1521": {
+   "name": "Ocean Township",
+   "county": "Ocean",
+   "zoningMap": "https://www.twpoceannj.gov/Departments/construction",
+   "ordinance": "https://ecode360.com/14288370",
+   "website": "https://www.twpoceannj.gov/Departments/construction"
+  },
+  "1522": {
+   "name": "Ocean Gate Borough",
+   "county": "Ocean",
+   "zoningMap": "Not published online",
+   "ordinance": "https://img1.wsimg.com/blobby/go/3f5a6a60-f81d-45b2-bd17-4c05c6850268/downloads/Land-Use-Ordinance-No-617-18.pdf?ver=1773239655310",
+   "website": "https://oceangatenjgov.com/construction%2Fcode%2Fzoning-1"
+  },
+  "1523": {
+   "name": "Pine Beach Borough",
+   "county": "Ocean",
+   "zoningMap": "https://pinebeachnj.gov/zoningandlanduse#occdrw",
+   "ordinance": "https://ecode360.com/36224557",
+   "website": "https://pinebeachnj.gov/zoningandlanduse"
+  },
+  "1524": {
+   "name": "Plumsted Township",
+   "county": "Ocean",
+   "zoningMap": "https://www.plumsted.org/sites/g/files/vyhlif4876/f/uploads/zoning_map_nov_2019.pdf",
+   "ordinance": "https://ecode360.com/34926755#34926755",
+   "website": "https://www.plumsted.org/construction"
+  },
+  "1525": {
+   "name": "Point Pleasant Borough",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/323659/PO0252-019a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34552181",
+   "website": "https://ptboro.com/departments/building-code-enforcement/zoning-code-enforcement/"
+  },
+  "1526": {
+   "name": "Point Pleasant Beach Borough",
+   "county": "Ocean",
+   "zoningMap": "https://pointpleasantbeach.org/DocumentCenter/View/259/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/34564199",
+   "website": "https://pointpleasantbeach.org/departments/building-department/"
+  },
+  "1527": {
+   "name": "Seaside Heights Borough",
+   "county": "Ocean",
+   "zoningMap": "https://www.seaside-heightsnj.org/DocumentCenter/View/182/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/11353395",
+   "website": "https://www.seaside-heightsnj.org/291/Zoning-Department"
+  },
+  "1528": {
+   "name": "Seaside Park Borough",
+   "county": "Ocean",
+   "zoningMap": "https://webgen1files1.revize.com/seasideparktmpnj/Documents/Departments/Zoning%20Department/DOC_20220602131613.pdf",
+   "ordinance": "https://ecode360.com/15454505",
+   "website": "https://www.seasideparknj.org/departments/zoning_department.php"
+  },
+  "1529": {
+   "name": "Ship Bottom Borough",
+   "county": "Ocean",
+   "zoningMap": "https://www.shipbottom.org/uploads/2/9/2/0/29205155/zoning_map_color_2018-1.pdf",
+   "ordinance": "https://ecode360.com/37833320",
+   "website": "https://shipbottom.org/government/departments/building-zoning/"
+  },
+  "1530": {
+   "name": "South Toms River Borough",
+   "county": "Ocean",
+   "zoningMap": "https://www.southtomsriver.org/uploads/docs/1516027110adopted-zoning-map-2013-07-15.pdf",
+   "ordinance": "https://ecode360.com/36292076",
+   "website": "https://www.southtomsriver.org/zoningandcodeenforcement"
+  },
+  "1531": {
+   "name": "Stafford Township",
+   "county": "Ocean",
+   "zoningMap": "https://ecode360.com/attachment/ST0825/ST0825-211-Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/11380267",
+   "website": "https://www.staffordnj.gov/170/Community-DevelopmentZoning-Department"
+  },
+  "1532": {
+   "name": "Surf City Borough",
+   "county": "Ocean",
+   "zoningMap": "https://surfcitynj.org/wp-content/uploads/2017/12/Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/36054386",
+   "website": "https://surfcitynj.org/zoning/"
+  },
+  "1533": {
+   "name": "Tuckerton Borough",
+   "county": "Ocean",
+   "zoningMap": "https://tuckertonborough.com/wp-content/uploads/2024/05/2017-master-plan-re-examination-borough-of-tuckerton-zone-map.pdf",
+   "ordinance": "https://ecode360.com/11387115",
+   "website": "https://tuckertonborough.com/government/departments/construction-and-code-enforcement"
+  },
+  "1601": {
+   "name": "Bloomingdale Borough",
+   "county": "Passaic",
+   "zoningMap": "https://ecode360.com/attachment/BL0149/BL0149-092e%20Appendix%20B%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36008846#36008846",
+   "website": "http://www.bloomingdalenj.net/Cit-e-Access/webpage.cfm?TID=137&TPID=13069#"
+  },
+  "1602": {
+   "name": "Clifton City",
+   "county": "Passaic",
+   "zoningMap": "https://www.cliftonnj.org/242/Zoning",
+   "ordinance": "https://ecode360.com/8520554",
+   "website": "https://www.cliftonnj.org/242/Zoning"
+  },
+  "1603": {
+   "name": "Haledon Borough",
+   "county": "Passaic",
+   "zoningMap": "https://static1.squarespace.com/static/5bd359cf9b7d1522a142aea3/t/603577bbd8b96d2565610bc6/1614116797029/zoning+map.pdf",
+   "ordinance": "https://ecode360.com/10213172",
+   "website": "https://www.haledonboronj.com/construction-department"
+  },
+  "1604": {
+   "name": "Hawthorne Borough",
+   "county": "Passaic",
+   "zoningMap": "https://www.hawthornenj.org/DocumentCenter/View/4746/Zoning-Map-2023",
+   "ordinance": "https://ecode360.com/14634825",
+   "website": "https://www.hawthornenj.org/416/Zoning-Enforcement"
+  },
+  "1605": {
+   "name": "Little Falls Township",
+   "county": "Passaic",
+   "zoningMap": "https://littlefallsnj.gov/uploads/dm/27382/Little_Falls_Zoning_MAP.pdf",
+   "ordinance": "https://ecode360.com/6923297",
+   "website": "https://littlefallsnj.gov/building-department"
+  },
+  "1606": {
+   "name": "North Haledon Borough",
+   "county": "Passaic",
+   "zoningMap": "https://cms9files1.revize.com/northhaledonnj/Document%20Center/How%20Do%20I/Tax%20Map%20Zoning%20Map/Zoning%20Map/zoning%20map.pdf",
+   "ordinance": "https://ecode360.com/11828832#11828832",
+   "website": "https://www.northhaledon.com/departments/construction_department/index.php"
+  },
+  "1607": {
+   "name": "Passaic City",
+   "county": "Passaic",
+   "zoningMap": "https://ecode360.com/attachment/PA1001/PA1001-317-Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8710518",
+   "website": "https://www.cityofpassaic.com/247/Code-Enforcement-Zoning"
+  },
+  "1608": {
+   "name": "Paterson City",
+   "county": "Passaic",
+   "zoningMap": "https://www.patersonnj.gov/egov/documents/1462910718_22204.pdf",
+   "ordinance": "https://www.patersonnj.gov/egov/documents/1463422578_02635.pdf",
+   "website": "https://www.patersonnj.gov/department/division.php?structureid=64"
+  },
+  "1609": {
+   "name": "Pompton Lakes Borough",
+   "county": "Passaic",
+   "zoningMap": "https://ecode360.com/PO0300/document/566973810.pdf",
+   "ordinance": "https://ecode360.com/12775487",
+   "website": "https://www.pomptonlakes-nj.gov/directory.aspx?did=21"
+  },
+  "1610": {
+   "name": "Prospect Park Borough",
+   "county": "Passaic",
+   "zoningMap": "https://pr0441.zoninghub.com/zoningmap.aspx",
+   "ordinance": "https://ecode360.com/37243888",
+   "website": "https://www.prospectpark.net/departments/construction_department/index.php"
+  },
+  "1611": {
+   "name": "Ringwood Borough",
+   "county": "Passaic",
+   "zoningMap": "http://www.ringwoodnj.net/filestorage/2500/2502/4077/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/35996072",
+   "website": "https://www.ringwoodnj.net/content/2347/2355/2379.aspx"
+  },
+  "1612": {
+   "name": "Totowa Borough",
+   "county": "Passaic",
+   "zoningMap": "https://www.totowanj.org/_files/ugd/0ca20b_7c1ee987bcc947a0aecb7a08a3f67983.pdf",
+   "ordinance": "https://ecode360.com/10396130",
+   "website": "https://www.totowanj.org/zoning"
+  },
+  "1613": {
+   "name": "Wanaque Borough",
+   "county": "Passaic",
+   "zoningMap": "https://www.wanaqueborough.com/vertical/sites/%7B685BAF4D-C434-4DFB-94F4-1C8D180E9776%7D/uploads/Wanaque_Zoning_Map_2006(1).pdf",
+   "ordinance": "https://ecode360.com/11788457",
+   "website": "https://www.wanaqueborough.com/buildingzoning"
+  },
+  "1614": {
+   "name": "Wayne Township",
+   "county": "Passaic",
+   "zoningMap": "https://waynetownship.com/wp-content/uploads/2013/06/2019%20AMENDED%20ZONING%20MAP%202x3%20Portrait.pdf",
+   "ordinance": "https://ecode360.com/35290985",
+   "website": "https://waynetownship.com/planning.html"
+  },
+  "1615": {
+   "name": "West Milford Township",
+   "county": "Passaic",
+   "zoningMap": "https://www.westmilford.org/FCpdf/Zoning08.pdf",
+   "ordinance": "https://ecode360.com/6398597",
+   "website": "https://www.westmilford.org/cn/webpage.cfm?tpid=1779"
+  },
+  "1616": {
+   "name": "Woodland Park Borough",
+   "county": "Passaic",
+   "zoningMap": "http://www.wpnj.us/filestorage/167/327/211209apb_Zoning_Map_ADOPTED11x17.pdf",
+   "ordinance": "https://ecode360.com/34550493",
+   "website": "http://www.wpnj.us/content/167/327/default.aspx"
+  },
+  "1701": {
+   "name": "Alloway Township",
+   "county": "Salem",
+   "zoningMap": "http://www.allowaytownship.com/downloads/Housing/Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13785205",
+   "website": "https://allowaytownship.com/housing-and-zoning-official"
+  },
+  "1702": {
+   "name": "Carneys Point Township",
+   "county": "Salem",
+   "zoningMap": "https://cms2.revize.com/revize/carneyspointtownship/Document/Department/Construction/Zoning/Digital%20Zoning%20Map.pdf?t=202312070953170&t=202312070953170",
+   "ordinance": "https://ecode360.com/9997311",
+   "website": "https://carneyspointtwp.org/departments/construction_department/zoning.php"
+  },
+  "1703": {
+   "name": "Elmer Borough",
+   "county": "Salem",
+   "zoningMap": "https://www.nj.gov/dep/wqmp/docs/20151019-salem-chap-ix-3-elmer-maps.pdf",
+   "ordinance": "https://ecode360.com/35943105#35943105",
+   "website": "http://elmerboroughnj.com/LandUseBoard.html"
+  },
+  "1704": {
+   "name": "Elsinboro Township",
+   "county": "Salem",
+   "zoningMap": "https://www.nj.gov/dep/wqmp/docs/20151019-salem-chap-ix-4-elsinboro-maps.pdf",
+   "ordinance": "https://assets.zyrosite.com/Hk1eZdfjLtvdh0WU/form-8---standards-and-use-schedules-7-1-2010-cTGxCQV4TIO8LohB.pdf",
+   "website": "https://elsinborotownship.com/planning-board"
+  },
+  "1705": {
+   "name": "Lower Alloways Creek Township",
+   "county": "Salem",
+   "zoningMap": "https://www.lowerallowayscreek-nj.gov/sites/g/files/vyhlif3381/f/uploads/p_28000-28499_28081.00_cadd_dwg_28081.00_zoning_map_color_1.pdf",
+   "ordinance": "https://www.lowerallowayscreek-nj.gov/sites/g/files/vyhlif3381/f/uploads/landuse_code_ver8032021.pdf",
+   "website": "https://www.lowerallowayscreek-nj.gov/zoning"
+  },
+  "1706": {
+   "name": "Mannington Township",
+   "county": "Salem",
+   "zoningMap": "https://manningtontwp.com/wp-content/uploads/2022/12/ZONING-MAP-min.pdf",
+   "ordinance": "https://ecode360.com/8047831",
+   "website": "https://manningtontwp.com/housing-zoning/"
+  },
+  "1707": {
+   "name": "Oldmans Township",
+   "county": "Salem",
+   "zoningMap": "https://oldmanstownship.com/wp-content/uploads/2024/05/OLDMANS_Zoning_Optimized.pdf",
+   "ordinance": "https://ecode360.com/13124483",
+   "website": "https://oldmanstownship.com/zoning/"
+  },
+  "1708": {
+   "name": "Penns Grove Borough",
+   "county": "Salem",
+   "zoningMap": "https://pennsgrove-nj.org/wp-content/uploads/2022/04/PE0949-450c-Zoning-Maps-min.pdf",
+   "ordinance": "https://ecode360.com/30578273",
+   "website": "https://pennsgrove-nj.org/departments/housing-office/"
+  },
+  "1709": {
+   "name": "Pennsville Township",
+   "county": "Salem",
+   "zoningMap": "https://pennsville.org/download/forms_library/Forms_Notices/notices/zonemap.pdf",
+   "ordinance": "https://www.pennsville.org/download/forms_library/ordinances/land_development/Chapter-05-Zoning-Districts-and-Regulations-Variances.pdf",
+   "website": "https://www.pennsville.org/government/construction-code-office/"
+  },
+  "1710": {
+   "name": "Pilesgrove Township",
+   "county": "Salem",
+   "zoningMap": "https://www.pilesgrovenj.org/media/2281",
+   "ordinance": "https://ecode360.com/11316238",
+   "website": "https://www.pilesgrovenj.org/zoning-housing"
+  },
+  "1711": {
+   "name": "Pittsgrove Township",
+   "county": "Salem",
+   "zoningMap": "https://www.pittsgrovetownship.com/committees/planning-board/zoning-map/",
+   "ordinance": "https://ecode360.com/9112866",
+   "website": "https://www.pittsgrovetownship.com/departments/housing-zoning-code-enforcement/"
+  },
+  "1712": {
+   "name": "Quinton Township",
+   "county": "Salem",
+   "zoningMap": "http://quintonnj.com/maps/qt-zonemap.pdf",
+   "ordinance": "https://ecode360.com/14188730",
+   "website": "http://www.quintonnj.com/qtzone.htm"
+  },
+  "1713": {
+   "name": "Salem City",
+   "county": "Salem",
+   "zoningMap": "https://cityofsalemnj.gov/wp-content/uploads/2019/08/SalemCity-Zoning-Map-min.pdf",
+   "ordinance": "https://ecode360.com/12294581",
+   "website": "https://cityofsalemnj.gov/zoning-office/"
+  },
+  "1714": {
+   "name": "Upper Pittsgrove Township",
+   "county": "Salem",
+   "zoningMap": "https://www.nj.gov/dep/wqmp/docs/20151019-salem-chap-ix-14-upper-pittgsgrove-maps.pdf",
+   "ordinance": "Not published online",
+   "website": "https://upperpittsgrovenj.org/zoning-and-construction/"
+  },
+  "1715": {
+   "name": "Woodstown Borough",
+   "county": "Salem",
+   "zoningMap": "https://www.nj.gov/dep/wqmp/docs/20151019-salem-chap-ix-15-woodstown-maps.pdf",
+   "ordinance": "https://ecode360.com/36016857",
+   "website": "https://historicwoodstown.org/index.asp?SEC=3719472C-DF56-49F1-8E3F-D9DB70A21C36&Type=B_BASIC"
+  },
+  "1801": {
+   "name": "Bedminster Township",
+   "county": "Somerset",
+   "zoningMap": "https://ecode360.com/attachment/BE4090/BE4090-013c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35861552",
+   "website": "https://www.bedminster.us/services/zoning_official"
+  },
+  "1802": {
+   "name": "Bernards Township",
+   "county": "Somerset",
+   "zoningMap": "https://www.bernards.org/media/attachments/2025/05/16/zoning-map-copy-3.25.2025.pdf",
+   "ordinance": "https://ecode360.com/9067936",
+   "website": "https://www.bernards.org/departments/planning-zoning-department"
+  },
+  "1803": {
+   "name": "Bernardsville Borough",
+   "county": "Somerset",
+   "zoningMap": "https://bernardsville.gov/government/forms/zoning-department/161-zoning-map/file",
+   "ordinance": "https://ecode360.com/35370581",
+   "website": "https://bernardsville.gov/departments/zoning-department"
+  },
+  "1804": {
+   "name": "Bound Brook Borough",
+   "county": "Somerset",
+   "zoningMap": "https://boundbrook-nj.org/wp-content/uploads/2021/08/Zoning-Map_092119.pdf",
+   "ordinance": "https://ecode360.com/32691564",
+   "website": "https://boundbrook-nj.org/construction/"
+  },
+  "1805": {
+   "name": "Branchburg Township",
+   "county": "Somerset",
+   "zoningMap": "https://ecode360.com/attachment/BR4037/BR4037-LDc%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36039187",
+   "website": "https://www.branchburg.nj.us/departments/land_use_and_planning/index.php"
+  },
+  "1806": {
+   "name": "Bridgewater Township",
+   "county": "Somerset",
+   "zoningMap": "https://bridgewaternj.gov/government/forms/resident-forms/department-documents/zoning/151-bridgewater-township-zoning-map/file",
+   "ordinance": "https://ecode360.com/8962061",
+   "website": "https://bridgewaternj.gov/government/forms/resident-forms/department-documents/zoning"
+  },
+  "1807": {
+   "name": "Far Hills Borough",
+   "county": "Somerset",
+   "zoningMap": "Not published online",
+   "ordinance": "https://www.farhillsnj.org/ordinances.php",
+   "website": "https://www.farhillsnj.org/zoning.php"
+  },
+  "1808": {
+   "name": "Franklin Township",
+   "county": "Somerset",
+   "zoningMap": "https://www.franklintwpnj.org/home/showpublisheddocument/1250/637977135774700000",
+   "ordinance": "https://ecode360.com/6274401",
+   "website": "https://www.franklintwpnj.org/departments/planning-zoning"
+  },
+  "1809": {
+   "name": "Green Brook Township",
+   "county": "Somerset",
+   "zoningMap": "https://www.greenbrooktwp.org/_readwritedata/_file_depot/a5d3e3d8-fa3b-4d29-b26e-7c9153f37a58.pdf",
+   "ordinance": "http://www.greenbrooktwp.org/_readwritedata/_file_depot/879360d9-8a02-43e7-8730-1576ff94d5d9.pdf",
+   "website": "https://www.greenbrooktwp.org/cms.php?page_id=125&page_name=Planning%20&%20Zoning"
+  },
+  "1810": {
+   "name": "Hillsborough Township",
+   "county": "Somerset",
+   "zoningMap": "https://www.hillsborough-nj.org/meetings/department-documents/planning-zoning-department/zoning/233-zoning-map/file",
+   "ordinance": "https://ecode360.com/10254213",
+   "website": "https://hillsboroughnj.gov/departments/planning-zoning"
+  },
+  "1811": {
+   "name": "Manville Borough",
+   "county": "Somerset",
+   "zoningMap": "https://www.manvillenj.org/DocumentCenter/View/4285/Zoning-Map",
+   "ordinance": "https://ecode360.com/36487179",
+   "website": "https://www.manvillenj.org/Directory.aspx?did=11"
+  },
+  "1812": {
+   "name": "Millstone Borough",
+   "county": "Somerset",
+   "zoningMap": "https://cms2.revize.com/revize/millstone/Affordable%20Housing/AH%20Amendment%20-%20Zoning%20Map%202013_01_07.pdf",
+   "ordinance": "https://ecode360.com/36462020",
+   "website": "https://millstoneboro.org/contact_us/index.php"
+  },
+  "1813": {
+   "name": "Montgomery Township",
+   "county": "Somerset",
+   "zoningMap": "https://ecode360.com/attachment/MO4095/MO4095-016b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34978977",
+   "website": "https://www.montgomerynj.gov/planning"
+  },
+  "1814": {
+   "name": "North Plainfield Borough",
+   "county": "Somerset",
+   "zoningMap": "https://northplainfieldnj.gov/documents/add-document/maps/64-zoning-map/file",
+   "ordinance": "https://ecode360.com/35428228",
+   "website": "https://northplainfieldnj.gov/departments/property-maintenance-zoning"
+  },
+  "1815": {
+   "name": "Peapack and Gladstone Borough",
+   "county": "Somerset",
+   "zoningMap": "https://www.peapackgladstone.org/government/forms/zoning-rental-registration/140-zoning-map/file",
+   "ordinance": "https://ecode360.com/34919450",
+   "website": "https://www.peapackgladstone.org/departments/zoning-department"
+  },
+  "1816": {
+   "name": "Raritan Borough",
+   "county": "Somerset",
+   "zoningMap": "https://www.raritanboro.org/_Content/pdf/Raritan-Zoning-Districts.pdf",
+   "ordinance": "https://ecode360.com/16029213",
+   "website": "https://www.raritanboro.org/Departments/construction-planning-and-zoning"
+  },
+  "1817": {
+   "name": "Rocky Hill Borough",
+   "county": "Somerset",
+   "zoningMap": "https://drive.google.com/file/d/1-VJQkumN9s16X7uZ3v4_3yb6aR-9MbAj/view",
+   "ordinance": "https://ecode360.com/28937503",
+   "website": "https://www.rockyhill-nj.gov/294/Zoning"
+  },
+  "1818": {
+   "name": "Somerville Borough",
+   "county": "Somerset",
+   "zoningMap": "https://www.somervillenj.org/zoning-map/",
+   "ordinance": "https://ecode360.com/35176492",
+   "website": "https://www.somervillenj.org/zoning-permits/"
+  },
+  "1819": {
+   "name": "South Bound Brook Borough",
+   "county": "Somerset",
+   "zoningMap": "https://ecode360.com/attachment/SO4087/SO4087-034a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36254792",
+   "website": "https://sbbnj.com/departments/office-of-planning-zoning/"
+  },
+  "1820": {
+   "name": "Warren Township",
+   "county": "Somerset",
+   "zoningMap": "https://www.warrennj.org/DocumentCenter/View/1430/ZONING-DISTRICT-MAP-PDF",
+   "ordinance": "https://ecode360.com/35251901",
+   "website": "https://warrennj.org/243/Zoning-Enforcement"
+  },
+  "1821": {
+   "name": "Watchung Borough",
+   "county": "Somerset",
+   "zoningMap": "https://watchungnj.gov/government/forms/construction/3-zoning-map/file",
+   "ordinance": "https://ecode360.com/35411794",
+   "website": "https://watchungnj.gov/departments/zoning"
+  },
+  "1901": {
+   "name": "Andover Borough",
+   "county": "Sussex",
+   "zoningMap": "https://www.andoverboroughnj.org/media/1611",
+   "ordinance": "https://ecode360.com/8926611",
+   "website": "https://www.andoverboroughnj.org/planning-zoning-board"
+  },
+  "1902": {
+   "name": "Andover Township",
+   "county": "Sussex",
+   "zoningMap": "https://ecode360.com/attachment/AN2011/AN2011-190g%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/7157344",
+   "website": "https://www.andovertwp.org/directory/zoning/"
+  },
+  "1903": {
+   "name": "Branchville Borough",
+   "county": "Sussex",
+   "zoningMap": "https://njogis-newjersey.opendata.arcgis.com/datasets/sussex::sussex-county-zoning-1/about",
+   "ordinance": "https://ecode360.com/8956744",
+   "website": "https://branchvilleborough.org/directory/"
+  },
+  "1904": {
+   "name": "Byram Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.byramtwp.org/useruploads/docs/Byram_Zoning_Map_Adopted_June_2018.pdf",
+   "ordinance": "https://ecode360.com/6654769",
+   "website": "https://www.byramtwp.org/index.php/town_hall/township_offices_detail/planning_zoning"
+  },
+  "1905": {
+   "name": "Frankford Township",
+   "county": "Sussex",
+   "zoningMap": "https://frankfordtownship.org/departments/zoning/Fk-Zone-October2013.pdf",
+   "ordinance": "https://ecode360.com/35912567",
+   "website": "https://frankfordtownship.org/departments/zoning/"
+  },
+  "1906": {
+   "name": "Franklin Borough",
+   "county": "Sussex",
+   "zoningMap": "https://www.franklinborough.org/index.php/community/info-cont/zoning-map",
+   "ordinance": "https://ecode360.com/9094934",
+   "website": "https://www.franklinborough.org/index.php/departments/building-and-code-enforcement/zoning-officer-code-enforcement"
+  },
+  "1907": {
+   "name": "Fredon Township",
+   "county": "Sussex",
+   "zoningMap": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.fredonnj.gov%2Fsites%2Fg%2Ffiles%2Fvyhlif3141%2Ff%2Fuploads%2Fzoning_map.docx&wdOrigin=BROWSELINK",
+   "ordinance": "https://ecode360.com/15272017",
+   "website": "https://www.fredonnj.gov/code-enforcement"
+  },
+  "1908": {
+   "name": "Green Township",
+   "county": "Sussex",
+   "zoningMap": "https://ecode360.com/attachment/GR0626/GR0626-030c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35691758",
+   "website": "http://www.greentwp.com/Cit-e-Access/webpage.cfm?TID=147&TPID=14291"
+  },
+  "1909": {
+   "name": "Hamburg Borough",
+   "county": "Sussex",
+   "zoningMap": "https://www.hamburgnj.org/wp-content/documents/zoning-map.jpg",
+   "ordinance": "https://ecode360.com/10217356",
+   "website": "https://www.hamburgnj.org/departments/zoning-property-maintenance/"
+  },
+  "1910": {
+   "name": "Hampton Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.hamptontownshipnj.info/DocumentCenter/View/255/Hampton-Township-Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/6802815",
+   "website": "https://www.hamptontownshipnj.info/1217/Zoning"
+  },
+  "1911": {
+   "name": "Hardyston Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.hardyston.com/wp-content/documents/land_use/Zone_Map.pdf",
+   "ordinance": "https://ecode360.com/10248901",
+   "website": "https://hardyston.com/directories/zoning-office"
+  },
+  "1912": {
+   "name": "Hopatcong Borough",
+   "county": "Sussex",
+   "zoningMap": "https://cms8.revize.com/revize/hopatcong/Digital%20Zoning%20Map%20Hopatcong.pdf",
+   "ordinance": "https://ecode360.com/9571491",
+   "website": "https://hopatcong.org/departments/zoning/index.php"
+  },
+  "1913": {
+   "name": "Lafayette Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.lafayettetwp.org/maps/Zoning-Map-2015.pdf",
+   "ordinance": "https://ecode360.com/35475318",
+   "website": "https://www.lafayettetwp.org/directory/zoning/index.shtml"
+  },
+  "1914": {
+   "name": "Montague Township",
+   "county": "Sussex",
+   "zoningMap": "https://webgen1files1.revize.com/montaguetwpnj/Document_Center/Department/Zoning/ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/35814779",
+   "website": "https://montaguenj.org/departments___services/zoning_department1/index.php"
+  },
+  "1915": {
+   "name": "Newton Town",
+   "county": "Sussex",
+   "zoningMap": "http://www.newtontownhall.com/DocumentCenter/View/1506/Newton-Zoning-Map?bidId=",
+   "ordinance": "https://ecode360.com/14049407",
+   "website": "https://www.newtontownhall.com/170/Zoning-Officer"
+  },
+  "1916": {
+   "name": "Ogdensburg Borough",
+   "county": "Sussex",
+   "zoningMap": "https://www.ogdensburgnj.org/wp-content/documents/Borough%20of%20Ogdensburg%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36214137",
+   "website": "https://ogdensburgnj.org/departments/zoning-department/"
+  },
+  "1917": {
+   "name": "Sandyston Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.sandystontownship.com/government/forms/zoning-board-of-adjustment-documents/89-zoning-map-1/file",
+   "ordinance": "https://ecode360.com/6230796",
+   "website": "https://www.sandystontownship.com/departments/zone"
+  },
+  "1918": {
+   "name": "Sparta Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.spartanj.org/DocumentCenter/View/227/Sparta-Township-Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/35836262#35836262",
+   "website": "https://spartanj.org/197/Planning-Zoning"
+  },
+  "1919": {
+   "name": "Stanhope Borough",
+   "county": "Sussex",
+   "zoningMap": "https://stanhopenj.gov/resident-resources/tax-and-zoning-maps/",
+   "ordinance": "https://ecode360.com/10121158",
+   "website": "https://stanhopenj.gov/departments-and-services/municipal-departments/zoning-and-code-enforcement/"
+  },
+  "1920": {
+   "name": "Stillwater Township",
+   "county": "Sussex",
+   "zoningMap": "https://stillwatertownshipnj.com/wp-content/uploads/2022/04/Stillwater-Zoning-Map-120412.pdf",
+   "ordinance": "https://ecode360.com/12520973",
+   "website": "https://stillwatertownshipnj.com/departments-services/zoning-code-enforcement/"
+  },
+  "1921": {
+   "name": "Sussex Borough",
+   "county": "Sussex",
+   "zoningMap": "https://njogis-newjersey.opendata.arcgis.com/datasets/sussex::sussex-county-zoning-1/explore?location=41.127827%2C-74.680582%2C11.57",
+   "ordinance": "https://ecode360.com/36299715",
+   "website": "https://www.sussexboro.com/directory/zoning/"
+  },
+  "1922": {
+   "name": "Vernon Township",
+   "county": "Sussex",
+   "zoningMap": "http://www.vernontwp.com/pdf/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/11389947#11389947",
+   "website": "https://www.vernontwp.com/index.php/government/departments/planning-zoning"
+  },
+  "1923": {
+   "name": "Walpack Township",
+   "county": "Sussex",
+   "zoningMap": "https://njogis-newjersey.opendata.arcgis.com/datasets/sussex::sussex-county-zoning-1/about",
+   "ordinance": "Not published online",
+   "website": "https://www.twp.walpack.nj.us/directory.htm"
+  },
+  "1924": {
+   "name": "Wantage Township",
+   "county": "Sussex",
+   "zoningMap": "https://www.wantagetwp.com/municipal/2015/WANT-RD-ZONE-30-42-Plot.pdf",
+   "ordinance": "https://ecode360.com/36122325",
+   "website": "https://www.wantagetwp.com/departments/zoning/"
+  },
+  "2001": {
+   "name": "Berkeley Heights Township",
+   "county": "Union",
+   "zoningMap": "https://www.berkeleyheights.gov/DocumentCenter/View/893/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://library.municode.com/nj/berkeley_heights_township/codes/code_of_ordinances?nodeId=APXAMULAUSPROR_PT6ZO",
+   "website": "https://www.berkeleyheights.gov/203/Zoning-Tree-Inspections"
+  },
+  "2002": {
+   "name": "Clark Township",
+   "county": "Union",
+   "zoningMap": "https://www.ourclark.com/DocumentCenter/View/52/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/13985053",
+   "website": "https://www.ourclark.com/331/Zoning"
+  },
+  "2003": {
+   "name": "Cranford Township",
+   "county": "Union",
+   "zoningMap": "https://cranfordnj.maps.arcgis.com/apps/webappviewer/index.html?id=31d7fd16166547c1864a272e12a5b996",
+   "ordinance": "https://ecode360.com/30628034",
+   "website": "https://www.cranfordnj.org/2050/Office-of-Planning-and-Zoning"
+  },
+  "2004": {
+   "name": "Elizabeth City",
+   "county": "Union",
+   "zoningMap": "https://www.elizabethnj.org/DocumentCenter/View/1351/Elizabeth-Zoning-Map-?bidId=",
+   "ordinance": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT17LADECO_CH17.36ZODIGE",
+   "website": "https://www.elizabethnj.org/231/Zoning-Board-of-Adjustment"
+  },
+  "2005": {
+   "name": "Fanwood Borough",
+   "county": "Union",
+   "zoningMap": "https://fanwoodnj.org/wp-content/uploads/2024/10/Zoning-Map-Tabloid-Size-Streets-at-50-Percent-Grey.pdf",
+   "ordinance": "https://ecode360.com/13470133",
+   "website": "https://www.fanwoodnj.org/departments/zoning/"
+  },
+  "2006": {
+   "name": "Garwood Borough",
+   "county": "Union",
+   "zoningMap": "https://garwood.org/vertical/Sites/%7B7F1088A0-CEC9-4505-80EE-1DF1BF7DFFBD%7D/uploads/Garwood_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/10089816",
+   "website": "https://garwood.org/index.asp?SEC=ADC50B6E-7941-4F8B-A5B0-709D6E3DAF42"
+  },
+  "2007": {
+   "name": "Hillside Township",
+   "county": "Union",
+   "zoningMap": "https://hillsidenj.us/css/hillsidenj/attachments/22986/5ebb2529e9ad6_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/7652540",
+   "website": "https://hillsidenj.us/planning-and-zoning"
+  },
+  "2008": {
+   "name": "Kenilworth Borough",
+   "county": "Union",
+   "zoningMap": "https://nj-kenilworth.civicplus.com/DocumentCenter/View/312/Zoning-Map---2015-PDF",
+   "ordinance": "https://ecode360.com/31837085",
+   "website": "https://www.kenilworthborough.com/183/Construction-Building-Department"
+  },
+  "2009": {
+   "name": "Linden City",
+   "county": "Union",
+   "zoningMap": "https://linden-nj.gov/wp-content/uploads/2020/03/Zoning-Map__2020-GIS.pdf",
+   "ordinance": "https://ecode360.com/34738311",
+   "website": "https://linden-nj.gov/directory/construction-code/"
+  },
+  "2010": {
+   "name": "Mountainside Borough",
+   "county": "Union",
+   "zoningMap": "https://mountainside-nj.com/vertical/sites/%7B276ABAC2-0109-45E5-B4B4-AB4B1C9853DC%7D/uploads/ZoningMap18.pdf",
+   "ordinance": "https://mountainside.municipalcodeonline.com/book?type=ordinances#name=ARTICLE_10_ZONING_REGULATIONS",
+   "website": "https://www.mountainside-nj.com/engineering"
+  },
+  "2011": {
+   "name": "New Providence Borough",
+   "county": "Union",
+   "zoningMap": "https://www.newprov.us/DocumentCenter/View/11569/Zoning-Map-2023?bidId=",
+   "ordinance": "https://ecode360.com/11261881",
+   "website": "https://www.newprov.us/221/Building-Department"
+  },
+  "2012": {
+   "name": "Plainfield City",
+   "county": "Union",
+   "zoningMap": "https://cms9files.revize.com/plainfield/Document_Center/Department/Planning%20&%20Zoning/Planning%20and%20Zoning%20Maps/2015-Zoning-Map-06-2015.pdf",
+   "ordinance": "https://ecode360.com/34633662",
+   "website": "https://www.plainfieldnj.gov/departments/economic_development/zoning_division/index.php"
+  },
+  "2013": {
+   "name": "Rahway City",
+   "county": "Union",
+   "zoningMap": "https://nj-rahway.civicplus.com/DocumentCenter/View/92/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/9586465",
+   "website": "https://www.cityofrahway.org/181/Division-of-Land-Use"
+  },
+  "2014": {
+   "name": "Roselle Borough",
+   "county": "Union",
+   "zoningMap": "https://ecode360.com/attachment/RO0497/RO0497-650a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/33686209",
+   "website": "https://www.boroughofroselle.com/departments/economic_development/zoning_administration___enforcement.php"
+  },
+  "2015": {
+   "name": "Roselle Park Borough",
+   "county": "Union",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/35336948",
+   "website": "https://www.rosellepark.net/186/Planning-and-Zoning"
+  },
+  "2016": {
+   "name": "Scotch Plains Township",
+   "county": "Union",
+   "zoningMap": "https://ecode360.com/attachment/SC0174/SC0174-023e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36466224",
+   "website": "https://www.scotchplainsnj.gov/index.php/departments/building-department"
+  },
+  "2017": {
+   "name": "Springfield Township",
+   "county": "Union",
+   "zoningMap": "https://ecode360.com/attachment/SP1128/SP1128-035d%20Appendix%20D.pdf",
+   "ordinance": "https://ecode360.com/35108252",
+   "website": "https://springfield-nj.us/departments/engineering/zoning/"
+  },
+  "2018": {
+   "name": "Summit City",
+   "county": "Union",
+   "zoningMap": "https://cityofsummit.org/DocumentCenter/View/93/Zoning-Map-PDF-",
+   "ordinance": "https://ecode360.com/36967882",
+   "website": "https://www.cityofsummit.org/188/Planning-Zoning"
+  },
+  "2019": {
+   "name": "Union Township",
+   "county": "Union",
+   "zoningMap": "https://www.uniontownship.com/DocumentCenter/View/4250/Zoning-Map-last-revised-November-2022-PDF",
+   "ordinance": "https://ecode360.com/40912751",
+   "website": "https://uniontownship.com/134/Building-Department"
+  },
+  "2020": {
+   "name": "Westfield Town",
+   "county": "Union",
+   "zoningMap": "https://www.westfieldnj.gov/DocumentCenter/View/430/Westfield-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/33926340",
+   "website": "https://www.westfieldnj.gov/190/Planning-Zoning"
+  },
+  "2021": {
+   "name": "Winfield Township",
+   "county": "Union",
+   "zoningMap": "Not published online",
+   "ordinance": "https://www.winfield-nj.org/ordinances.html",
+   "website": "https://www.winfield-nj.org/building-department.html"
+  },
+  "2101": {
+   "name": "Allamuchy Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/AL0810/AL0810-190a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/14459581",
+   "website": "https://allamuchynj.org/zoning"
+  },
+  "2102": {
+   "name": "Alpha Borough",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/315178/AL0476-410b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6790739",
+   "website": "https://www.alphaboronj.org/offices/construction___zoning/index.php"
+  },
+  "2103": {
+   "name": "Belvidere Town",
+   "county": "Warren",
+   "zoningMap": "https://www.belviderenj.net/media/101",
+   "ordinance": "https://ecode360.com/29507072",
+   "website": "https://www.belviderenj.net/zoning-official"
+  },
+  "2104": {
+   "name": "Blairstown Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/BL1895/BL1895-019b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13014484",
+   "website": "https://www.blairstowntownship.org/departments/zoning___code_enforcement/index.php"
+  },
+  "2105": {
+   "name": "Franklin Township",
+   "county": "Warren",
+   "zoningMap": "https://www.franklintwpwarren.org/wp-content/uploads/2024/11/Zoning_map.pdf",
+   "ordinance": "https://ecode360.com/10080572",
+   "website": "https://www.franklintwpwarren.org/zoning/"
+  },
+  "2106": {
+   "name": "Frelinghuysen Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/321258/FR4078-LDOk%20Zoning%20Map%202024.pdf",
+   "ordinance": "https://ecode360.com/34834896",
+   "website": "https://www.frelinghuysen-nj.us/zoning-office"
+  },
+  "2107": {
+   "name": "Greenwich Township",
+   "county": "Warren",
+   "zoningMap": "http://www.greenwichtownship.org/wp-content/uploads/2020/03/Greenwich-Zoning-Map-1.pdf",
+   "ordinance": "https://ecode360.com/31920804",
+   "website": "http://www.greenwichtownship.org/our-government/recreation-commission/"
+  },
+  "2108": {
+   "name": "Hackettstown Town",
+   "county": "Warren",
+   "zoningMap": "https://www.hackettstown.net/DocumentCenter/View/386/Zoning-Map-PDF",
+   "ordinance": "https://www.hackettstown.net/sites/g/files/vyhlif646/f/uploads/hackettstown_ldo_2018.pdf",
+   "website": "https://www.hackettstown.net/253/Zoning"
+  },
+  "2109": {
+   "name": "Hardwick Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/HA4041/HA4041-013a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34940923",
+   "website": "https://www.hardwicktwp.com/departments/"
+  },
+  "2110": {
+   "name": "Harmony Township",
+   "county": "Warren",
+   "zoningMap": "https://harmonytwp-nj.gov/wp-content/uploads/2023/03/Zoning-Map-2020.pdf",
+   "ordinance": "https://ecode360.com/38587871",
+   "website": "https://harmonytwp-nj.gov/departments/zoning-office/"
+  },
+  "2111": {
+   "name": "Hope Township",
+   "county": "Warren",
+   "zoningMap": "https://static1.squarespace.com/static/60b014af89c6ba1a7c92a801/t/617995750dc8d27f59ce0b4c/1635358070483/Zoning+Map.pdf",
+   "ordinance": "https://ecode360.com/35684260",
+   "website": "https://www.hopetwp-nj.us/zoning-officer-1"
+  },
+  "2112": {
+   "name": "Independence Township",
+   "county": "Warren",
+   "zoningMap": "https://independencenj.com/pdfs/zoningmap.pdf",
+   "ordinance": "https://ecode360.com/10271076",
+   "website": "https://independencenj.com/departments/building-department/"
+  },
+  "2113": {
+   "name": "Knowlton Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/KN1730/KN1730-011a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/29584043",
+   "website": "https://knowlton-nj.com/directory/"
+  },
+  "2114": {
+   "name": "Liberty Township",
+   "county": "Warren",
+   "zoningMap": "https://libertytownship.org/municipal/zoning/20140607111407737.pdf",
+   "ordinance": "https://ecode360.com/14166793",
+   "website": "https://www.libertytownship.org/municipal/zoning/index.html"
+  },
+  "2115": {
+   "name": "Lopatcong Township",
+   "county": "Warren",
+   "zoningMap": "https://www.lopatcongtwp.com/home/showpublisheddocument/1399/638034968310330000",
+   "ordinance": "https://ecode360.com/10312668",
+   "website": "https://www.lopatcongtwp.com/offices-boards-commissions/zoning-officer"
+  },
+  "2116": {
+   "name": "Mansfield Township",
+   "county": "Warren",
+   "zoningMap": "https://www.mansfieldtwp.com/sites/g/files/vyhlif8026/f/uploads/0318-zoning_map_0.pdf",
+   "ordinance": "https://ecode360.com/MA2843",
+   "website": "https://mansfieldtownship-nj.gov/index.php/offices/zoning"
+  },
+  "2117": {
+   "name": "Oxford Township",
+   "county": "Warren",
+   "zoningMap": "https://oxfordtwpnj.org/wp-content/uploads/2024/03/Oxford-Zoning-Map-for-ordinance-5-5-2021-CBO-Overlay.pdf",
+   "ordinance": "https://ecode360.com/6586696",
+   "website": "https://oxfordtwpnj.org/index.php/2021/06/01/construction-and-land-use/"
+  },
+  "2119": {
+   "name": "Phillipsburg Town",
+   "county": "Warren",
+   "zoningMap": "https://www.phillipsburgnj.org/wp-content/uploads/2019/05/Map-2-Zoning-Districts-05-20-2014.pdf",
+   "ordinance": "https://ecode360.com/11314719",
+   "website": "https://www.phillipsburgnj.org/our-town/departments/zoning-office/"
+  },
+  "2120": {
+   "name": "Pohatcong Township",
+   "county": "Warren",
+   "zoningMap": "http://www.pohatcongtwp.org/_Content/pdf/forms/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/9120441",
+   "website": "http://www.pohatcongtwp.org/Departments/construction-zoning-sub-code-officials"
+  },
+  "2121": {
+   "name": "Washington Borough",
+   "county": "Warren",
+   "zoningMap": "https://www.washingtonboro-nj.gov/DocumentCenter/View/789/Zoning-Map?bidId=",
+   "ordinance": "https://ecode360.com/12542290",
+   "website": "https://www.washingtonboro-nj.gov/207/Zoning"
+  },
+  "2122": {
+   "name": "Washington Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/WA0680/WA0680-123b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/11397709",
+   "website": "http://www.washington-twp-warren.org/departments/zoning_officer.php"
+  },
+  "2123": {
+   "name": "White Township",
+   "county": "Warren",
+   "zoningMap": "https://ecode360.com/attachment/WH0556/WH0556-160n%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/14205656#14205656",
+   "website": "https://www.white-township.com/construction-office"
+  },
+  "0101": {
+   "name": "Absecon City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/ABS_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/28634832",
+   "website": "https://abseconnj.gov/index.php/departments/city-departments/construction"
+  },
+  "0102": {
+   "name": "Atlantic City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/ATC_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/15217925",
+   "website": "https://www.acnj.gov/Departments/planning-and-development"
+  },
+  "0103": {
+   "name": "Brigantine City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/BRG_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/7166045",
+   "website": "https://brigantinebeach.org/municipal/departments/construction-office/"
+  },
+  "0104": {
+   "name": "Buena Borough",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/BBO_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/28823110",
+   "website": "https://buenaboro.gov/constructioncode"
+  },
+  "0105": {
+   "name": "Buena Vista Township",
+   "county": "Atlantic",
+   "zoningMap": "https://www.buenavistanj.com/wp-content/uploads/2018/08/BVT-Zoning-Map-Draft-1-22-18.pdf",
+   "ordinance": "https://ecode360.com/16160024",
+   "website": "https://buenavistanj.com/departments/zoning-official/"
+  },
+  "0106": {
+   "name": "Corbin City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/COR_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/32666819",
+   "website": "https://sites.google.com/view/corbincitynj/municipal-services/zoningconstruction"
+  },
+  "0107": {
+   "name": "Egg Harbor City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/EHC_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/8032387",
+   "website": "https://www.eggharborcity.org/building"
+  },
+  "0108": {
+   "name": "Egg Harbor Township",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/gehr/ehtlanduse.pdf",
+   "ordinance": "https://ecode360.com/8042224",
+   "website": "https://www.ehtnj.gov/departments/planning___development/zoning.php"
+  },
+  "0109": {
+   "name": "Estell Manor City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/MunicipalZoning-Aerial/ESTZoning2010_Aerial2013_reduced.pdf",
+   "ordinance": "https://ecode360.com/29977686",
+   "website": "http://www.estellmanor.org/planningzoning.html"
+  },
+  "0110": {
+   "name": "Folsom Borough",
+   "county": "Atlantic",
+   "zoningMap": "https://ecode360.com/attachment/FO2033/FO2033-200b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/10064880",
+   "website": "http://www.folsomborough.com/services/construction.asp"
+  },
+  "0111": {
+   "name": "Galloway Township",
+   "county": "Atlantic",
+   "zoningMap": "https://www.gtnj.org/index.php/i-want-to/find-a-form-or-document/planning-and-zoning-boards/zoning-board/1338-zoning-map/file",
+   "ordinance": "https://ecode360.com/6796518",
+   "website": "https://www.gtnj.org/index.php/departments/community-development/planning-and-zoning"
+  },
+  "0112": {
+   "name": "Hamilton Township",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/MunicipalZoning/HML_Zoning.pdf",
+   "ordinance": "https://ecode360.com/10218796",
+   "website": "https://www.hamiltonatlnj.gov/departments/planning-zoning"
+  },
+  "0113": {
+   "name": "Hammonton Town",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/HAM_ZoneBuildout.pdf",
+   "ordinance": "https://codelibrary.amlegal.com/codes/hammonton/latest/hammonton_nj/0-0-0-11768",
+   "website": "https://townofhammonton.org/construction/"
+  },
+  "0114": {
+   "name": "Linwood City",
+   "county": "Atlantic",
+   "zoningMap": "http://linwoodcity.org/pdf/zoningMap.pdf",
+   "ordinance": "https://ecode360.com/13240120",
+   "website": "http://www.linwoodcity.org/services/construction.asp"
+  },
+  "0115": {
+   "name": "Longport Borough",
+   "county": "Atlantic",
+   "zoningMap": "https://www.longportnj.gov/_Content/pdf/forms/LP-zoning-map.pdf",
+   "ordinance": "https://ecode360.com/10309001",
+   "website": "https://www.longportnj.gov/department/building-construction"
+  },
+  "0116": {
+   "name": "Margate City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.margate-nj.com/flood-protection-information/files/margate-city-zoning-map",
+   "ordinance": "https://ecode360.com/10323805",
+   "website": "https://www.margate-nj.com/planning-board-zoning"
+  },
+  "0117": {
+   "name": "Mullica Township",
+   "county": "Atlantic",
+   "zoningMap": "https://mullicatownship.org/wp-content/uploads/2019/08/2019-08-05_Draft_Z0001-Reduced.pdf",
+   "ordinance": "https://ecode360.com/13870316",
+   "website": "https://mullicatownship.org/departments/development-housing/code-enforcement/"
+  },
+  "0118": {
+   "name": "Northfield City",
+   "county": "Atlantic",
+   "zoningMap": "http://www.cityofnorthfield.org/pdf/ZoningMap-1-29-15.pdf",
+   "ordinance": "https://ecode360.com/8265869",
+   "website": "https://www.cityofnorthfield.org/government/zoning.asp"
+  },
+  "0119": {
+   "name": "Pleasantville City",
+   "county": "Atlantic",
+   "zoningMap": "https://ecode360.com/16167115",
+   "ordinance": "https://ecode360.com/16163497",
+   "website": "http://www.pleasantville-nj.org/page.asp?var_incl=building.html"
+  },
+  "0120": {
+   "name": "Port Republic City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/MunicipalZoning/POR_Zoning.pdf",
+   "ordinance": "https://ecode360.com/15393684",
+   "website": "https://www.portrepublicnj.org/construction-office/"
+  },
+  "0121": {
+   "name": "Somers Point City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/SmartGrowth/SOM_ZoneBuildout.pdf",
+   "ordinance": "https://ecode360.com/11359131",
+   "website": "http://www.somerspointgov.org/mainpages/construction.asp"
+  },
+  "0122": {
+   "name": "Ventnor City",
+   "county": "Atlantic",
+   "zoningMap": "https://www.ventnorcity.org/media/Documents/CodeEnforcement/FillableForms/Zoning%20Map%202019.pdf",
+   "ordinance": "https://ecode360.com/8287042#8287043",
+   "website": "https://www.ventnorcity.org/departments/staff_directory/CodeEnforcement/"
+  },
+  "0123": {
+   "name": "Weymouth Township",
+   "county": "Atlantic",
+   "zoningMap": "https://www.atlantic-county.org/gis/pdfs/MunicipalZoning/WEY_Zoning.pdf",
+   "ordinance": "https://ecode360.com/11410939",
+   "website": "https://www.weymouthnj.org/township_offices/zoning_office/index.php"
+  },
+  "0201": {
+   "name": "Allendale Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.allendalenj.gov/media/2ynbeeoi/zoning_map.jpg",
+   "ordinance": "https://ecode360.com/8919723",
+   "website": "https://www.allendalenj.gov/building-development/construction-and-zoning/"
+  },
+  "0202": {
+   "name": "Alpine Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.alpinenj.gov/file/3cae0bf0-5c25-11f0-86c7-c55415513095",
+   "ordinance": "https://ecode360.com/8923818",
+   "website": "https://www.alpinenj.gov/page/building-dept"
+  },
+  "0203": {
+   "name": "Bergenfield Borough",
+   "county": "Bergen",
+   "zoningMap": "https://bergenfieldnj.gov/wp-content/uploads/2025/02/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/8943317",
+   "website": "https://bergenfieldnj.gov/departments/building-department/"
+  },
+  "0204": {
+   "name": "Bogota Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/BO4055/BO4055-021Af%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34720607",
+   "website": "https://www.bogotaonline.org/building-department"
+  },
+  "0205": {
+   "name": "Carlstadt Borough",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Carlstadt_Zoning_20150710.pdf",
+   "ordinance": "https://ecode360.com/11769584",
+   "website": "https://www.carlstadtnj.us/Departments/construction-zoning-planning"
+  },
+  "0206": {
+   "name": "Cliffside Park Borough",
+   "county": "Bergen",
+   "zoningMap": "https://webgen1files.revize.com/boroughcspnj/departments/building%20department/Cliffside_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/35163667",
+   "website": "https://www.cliffsideparknj.gov/departments/zoning_office.php"
+  },
+  "0207": {
+   "name": "Closter Borough",
+   "county": "Bergen",
+   "zoningMap": "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/4528/BOC/3875071/Zoning_Map__pdf_.pdf",
+   "ordinance": "https://ecode360.com/7051388",
+   "website": "https://www.closterboro.com/o/boc/page/bdzoning"
+  },
+  "0208": {
+   "name": "Cresskill Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.cresskillboro.com/government/forms/construction/553-zoning-map-1/file",
+   "ordinance": "https://ecode360.com/6271638",
+   "website": "https://www.cresskillboro.com/departments/construction"
+  },
+  "0209": {
+   "name": "Demarest Borough",
+   "county": "Bergen",
+   "zoningMap": "https://demarestnj.gov/government/forms/zoning-board-of-adjustment-documents/116-demarest-zoning-map/file",
+   "ordinance": "https://ecode360.com/31312236",
+   "website": "https://demarestnj.gov/departments/construction"
+  },
+  "0210": {
+   "name": "Dumont Borough",
+   "county": "Bergen",
+   "zoningMap": "https://dumontnj.gov/documents/zoningmap.pdf",
+   "ordinance": "https://ecode360.com/9557518",
+   "website": "https://dumontnj.gov/building-department"
+  },
+  "0211": {
+   "name": "Elmwood Park Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/EL0259/EL0259-034b%20Zoning%20District%20Map.pdf",
+   "ordinance": "https://ecode360.com/35181869",
+   "website": "https://www.elmwoodparknj.us/departments/building-department"
+  },
+  "0212": {
+   "name": "East Rutherford Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.eastrutherfordnj.net/DocumentCenter/View/255/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/9414945",
+   "website": "https://www.eastrutherfordnj.net/201/Building-Department"
+  },
+  "0213": {
+   "name": "Edgewater Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.edgewaternj.org/DocumentCenter/View/5173/Edgewater-Zoning-Mappdf",
+   "ordinance": "https://ecode360.com/14373928",
+   "website": "https://www.edgewaternj.org/149/Building-Department"
+  },
+  "0214": {
+   "name": "Emerson Borough",
+   "county": "Bergen",
+   "zoningMap": "https://emersonnj.gov/vertical/Sites/%7B3CE7C79E-1CDE-42D4-BE99-DEDBCE95F9A4%7D/uploads/Adopted_Zoning_Map_May_3_2022_Rev_2(1).pdf",
+   "ordinance": "https://ecode360.com/11488800",
+   "website": "https://www.emersonnj.org/index.asp?SEC=CAE99956-793B-48C6-930F-762AC417DF10"
+  },
+  "0215": {
+   "name": "Englewood City",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/EN2705/EN2705-250a%20COLOR%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13856902",
+   "website": "https://www.cityofenglewood.org/1166/Code-Enforcement"
+  },
+  "0216": {
+   "name": "Englewood Cliffs Borough",
+   "county": "Bergen",
+   "zoningMap": "https://cdn.townweb.com/englewoodcliffsnj.org/wp-content/uploads/2023/06/ZoningMap_1999.pdf",
+   "ordinance": "https://ecode360.com/35703137",
+   "website": "https://englewoodcliffsnj.org/building-department/"
+  },
+  "0217": {
+   "name": "Fair Lawn Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.fairlawn.org/uploads/dm/21105/Official_Zoning_Map_9152023",
+   "ordinance": "https://ecode360.com/10052217",
+   "website": "https://fairlawn.org/zoning"
+  },
+  "0218": {
+   "name": "Fairview Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/FA4029/FA4029-025c%20Appendix%20C%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35211388",
+   "website": "https://fairviewborough.com/boards/zone"
+  },
+  "0219": {
+   "name": "Fort Lee Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.fortleenj.org/DocumentCenter/View/417/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/10071645",
+   "website": "https://www.fortleenj.org/162/Building-Department"
+  },
+  "0220": {
+   "name": "Franklin Lakes Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.franklinlakes.org/vertical/Sites/%7B02E9C1B5-59B4-4B82-8487-CE42C675CF8A%7D/uploads/2016-08-08_Zoning_Map_(2016).pdf",
+   "ordinance": "https://ecode360.com/7172563",
+   "website": "https://www.franklinlakes.org/index.asp?SEC=5E439A39-1ACC-4A85-931C-7F7AE6561DD3"
+  },
+  "0221": {
+   "name": "Garfield City",
+   "county": "Bergen",
+   "zoningMap": "https://www.garfieldnj.org/_Content/pdf/zoning.pdf",
+   "ordinance": "https://ecode360.com/10086640",
+   "website": "https://www.garfieldnj.org/Departments/building-department"
+  },
+  "0222": {
+   "name": "Glen Rock Borough",
+   "county": "Bergen",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/10101374",
+   "website": "https://glenrocknj.net/departments/zoning-department"
+  },
+  "0223": {
+   "name": "Hackensack City",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/HA0454/HA0454-175g%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13166949",
+   "website": "https://www.hackensack.org/building-housing-and-land-use/"
+  },
+  "0224": {
+   "name": "Harrington Park Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.harringtonparknj.gov/government/forms/construction/pre-construction-applications/513-zoning-map-1/file",
+   "ordinance": "https://ecode360.com/13393999",
+   "website": "https://www.harringtonparknj.gov/departments/construction"
+  },
+  "0225": {
+   "name": "Hasbrouck Heights Borough",
+   "county": "Bergen",
+   "zoningMap": "https://cdn.shopify.com/s/files/1/0692/7309/2378/files/Borough_of_Hasbrouck_Heights_-_Zoning_Map.pdf?v=1681861334",
+   "ordinance": "https://ecode360.com/10376067",
+   "website": "https://hasbrouck-heightsnj.org/pages/construction-code-enforcement"
+  },
+  "0226": {
+   "name": "Haworth Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.haworthnj.org/vertical/Sites/%7B3226EF68-541C-456F-8644-AC724E9AC52C%7D/uploads/Haworth_Zoning_Map_August_2010.pdf",
+   "ordinance": "https://ecode360.com/35573893",
+   "website": "https://www.haworthnj.org/index.asp?SEC=70AB896F-A644-4BD0-B512-645DAC50E865"
+  },
+  "0227": {
+   "name": "Hillsdale Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.hillsdalenj.org/vertical/Sites/%7BFE916F8D-CA48-4788-B4B7-6A2BF8501398%7D/uploads/2020_zoning_map_and_schedule.pdf",
+   "ordinance": "https://ecode360.com/10263516",
+   "website": "https://www.hillsdalenj.org/buildingconstructionzoning"
+  },
+  "0228": {
+   "name": "Ho-Ho-Kus Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.hhkborough.com/zoning-official/files/hhk-zoning-map-1986",
+   "ordinance": "https://ecode360.com/13543075",
+   "website": "https://www.hhkborough.com/zoning-official"
+  },
+  "0229": {
+   "name": "Leonia Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.leonianj.gov/home/showpublisheddocument/4446/638150839261770000",
+   "ordinance": "https://ecode360.com/9254523",
+   "website": "https://www.leonianj.gov/borough-government/borough-departments/building-department"
+  },
+  "0230": {
+   "name": "Little Ferry Borough",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Little_Ferry_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/34745607",
+   "website": "http://www.littleferrynj.org/content/121/default.aspx"
+  },
+  "0231": {
+   "name": "Lodi Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/LO0288/LO0288-585a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13642182",
+   "website": "https://lodi-nj.org/p/zoning-department"
+  },
+  "0232": {
+   "name": "Lyndhurst Township",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Lyndhurst_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/34772439",
+   "website": "https://www.lyndhurstnj.org/Departments/construction-department"
+  },
+  "0233": {
+   "name": "Mahwah Township",
+   "county": "Bergen",
+   "zoningMap": "https://www.mahwahtwp.org/DocumentCenter/View/127/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/34814044",
+   "website": "https://www.mahwahtwp.org/195/Planning-Zoning-Property-Maintenance"
+  },
+  "0234": {
+   "name": "Maywood Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.maywoodnj.com/vertical/sites/%7B3F816141-7A2D-4412-8A8D-6C5C2C1C1341%7D/uploads/Zoning_Map_Dated_10-14-2014.pdf",
+   "ordinance": "https://ecode360.com/10329566",
+   "website": "https://www.maywoodnj.com/?SEC=679BB4F4-2FE5-4900-A5C4-A43D41506925"
+  },
+  "0235": {
+   "name": "Midland Park Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.midlandparknj.org/zoning-board-adjustment/files/midland-park-zoning-map-color-coded",
+   "ordinance": "https://ecode360.com/34953997",
+   "website": "https://www.midlandparknj.org/building-department"
+  },
+  "0236": {
+   "name": "Montvale Borough",
+   "county": "Bergen",
+   "zoningMap": "https://media-002-us.cdn.govstack.com/montvalenj-us/media/rlwbqdhp/zoning-map-with-block-and-lot.pdf",
+   "ordinance": "https://ecode360.com/36134954",
+   "website": "https://www.montvalenj.gov/departments/zoning-and-land-use/"
+  },
+  "0237": {
+   "name": "Moonachie Borough",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Moonachie_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/36307195",
+   "website": "https://www.moonachie.us/building-department"
+  },
+  "0238": {
+   "name": "New Milford Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.newmilfordnj.gov/file/d7cbef70-befb-11ef-bb1f-a74549ea8596",
+   "ordinance": "https://ecode360.com/35555740",
+   "website": "https://www.newmilfordboro.com/page/building-department"
+  },
+  "0239": {
+   "name": "North Arlington Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.northarlington.org/_Content/pdf/Zoning-Map-May-2022.PDF",
+   "ordinance": "https://ecode360.com/11265968",
+   "website": "https://www.northarlington.org/Departments/construction-department"
+  },
+  "0240": {
+   "name": "Northvale Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.boroughofnorthvale.com/_files/ugd/6818fc_48479d06d93d4b8ab110ca3aa939984f.pdf",
+   "ordinance": "https://ecode360.com/12517173",
+   "website": "https://www.northvalenj.org/building-department"
+  },
+  "0241": {
+   "name": "Norwood Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.norwoodboro.org/page/zoning-map",
+   "ordinance": "https://ecode360.com/6933893",
+   "website": "https://www.norwoodboro.org/page/constructioncode-enforcement"
+  },
+  "0242": {
+   "name": "Oakland Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.oakland-nj.org/about-borough/files/zoning-map-2015",
+   "ordinance": "https://ecode360.com/35166120",
+   "website": "https://www.oakland-nj.org/construction-and-code-enforcement/pages/zoning-enforcement"
+  },
+  "0243": {
+   "name": "Old Tappan Borough",
+   "county": "Bergen",
+   "zoningMap": "https://oldtappan.net/government/forms/construction/90-zoning-map-bulk-schedule/file",
+   "ordinance": "https://ecode360.com/11280857",
+   "website": "https://www.oldtappan.net/departments/construction"
+  },
+  "0244": {
+   "name": "Oradell Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.oradell.org/building-department/files/zoning-map-2018",
+   "ordinance": "https://ecode360.com/9258589",
+   "website": "https://www.oradell.org/building-department"
+  },
+  "0245": {
+   "name": "Palisades Park Borough",
+   "county": "Bergen",
+   "zoningMap": "https://palisadesparknj.org/community/town-maps/",
+   "ordinance": "https://ecode360.com/9264492",
+   "website": "https://palisadesparknj.org/departments/building-department"
+  },
+  "0246": {
+   "name": "Paramus Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.paramusborough.org/DocumentCenter/View/104/Borough-of-Paramus-2016-Signed-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/34613444",
+   "website": "https://www.paramusborough.gov/Directory.aspx?did=17"
+  },
+  "0247": {
+   "name": "Park Ridge Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/PA0433/PA0433-101i%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/11289394",
+   "website": "https://www.parkridgeboro.com/departments/zoning"
+  },
+  "0248": {
+   "name": "Ramsey Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.ramseynj.com/DocumentCenter/View/2006/Ramsey-Zoning-Map",
+   "ordinance": "https://ecode360.com/34123295",
+   "website": "https://www.ramseynj.com/207/Zoning-Department"
+  },
+  "0249": {
+   "name": "Ridgefield Borough",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Ridgefield_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/9125890",
+   "website": "https://www.ridgefieldnj.gov/index.asp?SEC=F257D928-5B82-4109-87AC-1E2D4FF7FA39&Type=B_BASIC"
+  },
+  "0250": {
+   "name": "Ridgefield Park Village",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/RI0926/RI0926-096c%20Zoning%20District%20Maps.pdf",
+   "ordinance": "https://ecode360.com/13321806",
+   "website": "https://www.ridgefieldpark.org/199/Building-Department"
+  },
+  "0251": {
+   "name": "Ridgewood Village",
+   "county": "Bergen",
+   "zoningMap": "https://mods.ridgewoodnj.net/pdf/zoningboard/Zone_Map_2022_27X27.pdf",
+   "ordinance": "https://ecode360.com/6692452",
+   "website": "https://www.ridgewoodnj.net/176/Zoning"
+  },
+  "0252": {
+   "name": "River Edge Borough",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/attachment/RI1557/RI1557-416d%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/11323401",
+   "website": "https://www.riveredgenj.org/departments/BuildingDepartment"
+  },
+  "0253": {
+   "name": "River Vale Township",
+   "county": "Bergen",
+   "zoningMap": "https://core-docs.s3.us-east-1.amazonaws.com/documents/asset/uploaded_file/4491/TRV/3827961/Zoning_Map_of_the_Township_PDF_.pdf",
+   "ordinance": "https://ecode360.com/11327440",
+   "website": "https://www.rivervalenj.org/page/building-department"
+  },
+  "0254": {
+   "name": "Rochelle Park Township",
+   "county": "Bergen",
+   "zoningMap": "https://rochelleparknj.gov/wp-content/uploads/2019/08/Zoning-2.9.16.pdf",
+   "ordinance": "https://ecode360.com/9435477",
+   "website": "https://rochelleparknj.gov/building-department-2/"
+  },
+  "0255": {
+   "name": "Rockleigh Borough",
+   "county": "Bergen",
+   "zoningMap": "https://static1.squarespace.com/static/66e3460bb5f02975bcb2c2d0/t/66ec6fadb82419387d91b3ab/1726771117527/Rockleigh_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/34756487",
+   "website": "https://rockleighnj.org/building/"
+  },
+  "0256": {
+   "name": "Rutherford Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.rutherfordboronj.com/government/forms/construction/934-rutherford-land-use-zoning-map/file",
+   "ordinance": "https://ecode360.com/11349008",
+   "website": "https://www.rutherfordboronj.com/departments/building/"
+  },
+  "0257": {
+   "name": "Saddle Brook Township",
+   "county": "Bergen",
+   "zoningMap": "https://ecode360.com/documents/SA0582/SA0582-206c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6389728",
+   "website": "https://saddlebrooknj.us/building-department/"
+  },
+  "0258": {
+   "name": "Saddle River Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.saddleriver.org/vertical/sites/%7B2E7E07BD-0A79-4A05-9B79-960D47AACDC0%7D/uploads/ZONING_MAP_Rev_2014.pdf",
+   "ordinance": "https://ecode360.com/10639166",
+   "website": "https://www.saddleriver.org/building_const"
+  },
+  "0259": {
+   "name": "South Hackensack Township",
+   "county": "Bergen",
+   "zoningMap": "https://southhackensacknj.org/zoning/documents/ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/6495099",
+   "website": "https://southhackensacknj.org/zoning/"
+  },
+  "0260": {
+   "name": "Teaneck Township",
+   "county": "Bergen",
+   "zoningMap": "https://www.teanecknj.gov/media/wgvb1bvy/map.pdf",
+   "ordinance": "https://ecode360.com/13628370",
+   "website": "https://www.teanecknj.gov/building-and-business/land-use-and-zoning/"
+  },
+  "0261": {
+   "name": "Tenafly Borough",
+   "county": "Bergen",
+   "zoningMap": "http://www.tenaflynj.org/DocumentCenter/View/90/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/36198751",
+   "website": "https://www.tenaflynj.gov/164/Building-Department"
+  },
+  "0262": {
+   "name": "Teterboro Borough",
+   "county": "Bergen",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Teterboro_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/12524374",
+   "website": "https://www.teterboronj.org/departments/construction?highlight=WyJ6b25pbmciXQ=="
+  },
+  "0263": {
+   "name": "Upper Saddle River Borough",
+   "county": "Bergen",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/8647177",
+   "website": "https://www.usrtoday.org/172/Zoning-Department"
+  },
+  "0264": {
+   "name": "Waldwick Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.waldwicknj.gov/media/departments/building/Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/34786497",
+   "website": "https://www.waldwicknj.org/BuildingFAQs"
+  },
+  "0265": {
+   "name": "Wallington Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.wallingtonnj.org/zoning-board-adjustment/files/zoning-map-borough-wallington",
+   "ordinance": "https://ecode360.com/15124336",
+   "website": "https://www.wallingtonnj.org/zoning-board-adjustment"
+  },
+  "0266": {
+   "name": "Washington Township",
+   "county": "Bergen",
+   "zoningMap": "https://www.twpofwashington.us/file/1b2fed40-c8f2-11ed-909a-3dded216ffa7",
+   "ordinance": "https://ecode360.com/31164079",
+   "website": "https://www.twpofwashington.us/page/zoning-department"
+  },
+  "0267": {
+   "name": "Westwood Borough",
+   "county": "Bergen",
+   "zoningMap": "https://westwoodnj.gov/DocumentCenter/View/297/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/13848225",
+   "website": "https://westwoodnj.gov/250/Zoning-Office"
+  },
+  "0268": {
+   "name": "Woodcliff Lake Borough",
+   "county": "Bergen",
+   "zoningMap": "https://wclnj.com/government/documents/forms-documents/board-department-forms-documents/zoning-board/50-zoning-map/file",
+   "ordinance": "https://ecode360.com/11420899",
+   "website": "https://wclnj.com/departments/construction?highlight"
+  },
+  "0269": {
+   "name": "Wood-Ridge Borough",
+   "county": "Bergen",
+   "zoningMap": "https://www.njwoodridge.org/_Content/pdf/W-R-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/28840411",
+   "website": "https://www.njwoodridge.org/Departments/construction-department"
+  },
+  "0270": {
+   "name": "Wyckoff Township",
+   "county": "Bergen",
+   "zoningMap": "https://www.wyckoffnj.gov/sites/g/files/vyhlif12106/f/uploads/zoning-map.pdf",
+   "ordinance": "https://ecode360.com/11431465",
+   "website": "https://www.wyckoff-nj.com/building-zoning-property-maintenance"
+  },
+  "0301": {
+   "name": "Bass River Township",
+   "county": "Burlington",
+   "zoningMap": "https://bassriver-nj.org/site_files/Maps/township_zoning_map.pdf",
+   "ordinance": "https://library.municode.com/nj/bass_river_township/codes/municipal_code?nodeId=TIT17ZO",
+   "website": "https://bassriver-nj.org/offices/"
+  },
+  "0302": {
+   "name": "Beverly City",
+   "county": "Burlington",
+   "zoningMap": "http://thecityofbeverly.com/wp-content/uploads/2014/06/Beverly-Zoning-Map.pdf",
+   "ordinance": "http://thecityofbeverly.com/wp-content/uploads/2015/11/Beverly-City-Zoning-Ordinance.pdf",
+   "website": "http://thecityofbeverly.com/land-use"
+  },
+  "0303": {
+   "name": "Bordentown City",
+   "county": "Burlington",
+   "zoningMap": "https://co.burlington.nj.us/DocumentCenter/View/6679/Map4M-3?bidId=",
+   "ordinance": "https://ecode360.com/13026455",
+   "website": "https://www.cityofbordentown.com/page/office-of-housing-inspectioffice-of-housing-inspection-code-enforcementon-code-enforcement"
+  },
+  "0304": {
+   "name": "Bordentown Township",
+   "county": "Burlington",
+   "zoningMap": "https://bordentowntwp.maps.arcgis.com/apps/webappviewer/index.html?id=af8fff2db6a0400390d2c4b0f35d0ff6",
+   "ordinance": "https://ecode360.com/40329951#40329951",
+   "website": "https://www.bordentowntownship.com/o/bordentown/page/zoningcode-enforcement"
+  },
+  "0305": {
+   "name": "Burlington City",
+   "county": "Burlington",
+   "zoningMap": "https://ecode360.com/attachment/BU2898/BU2898-207a%20Zoning%20Maps.pdf",
+   "ordinance": "https://ecode360.com/13612651",
+   "website": "https://www.burlingtonnj.us/zoning/"
+  },
+  "0306": {
+   "name": "Burlington Township",
+   "county": "Burlington",
+   "zoningMap": "http://twp.burlington.nj.us/filestorage/279/714/765/767/771/Zoning_Map_2012.pdf",
+   "ordinance": "https://ecode360.com/7630968",
+   "website": "http://twp.burlington.nj.us/planning-and-zoning"
+  },
+  "0307": {
+   "name": "Chesterfield Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.chesterfieldtwpnj.gov/media/5571",
+   "ordinance": "https://ecode360.com/12289876",
+   "website": "https://www.chesterfieldtwpnj.gov/zoning"
+  },
+  "0308": {
+   "name": "Cinnaminson Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6684",
+   "ordinance": "https://ecode360.com/10011224",
+   "website": "https://cinnaminsonnj.org/office-of-community-and-economic-development/#construction"
+  },
+  "0309": {
+   "name": "Delanco Township",
+   "county": "Burlington",
+   "zoningMap": "http://www.delancotownship.com/filestorage/5328/5330/5332/5343/8643/Delanco_Zoning_Map_0417.pdf",
+   "ordinance": "https://ecode360.com/10019997",
+   "website": "http://www.delancotownship.com/content/5300/7041/default.aspx"
+  },
+  "0310": {
+   "name": "Delran Township",
+   "county": "Burlington",
+   "zoningMap": "https://delrantownship.org/wp-content/uploads/2024/05/Delran_Zoning_Map-1.pdf",
+   "ordinance": "https://ecode360.com/10027367",
+   "website": "https://www.delrantownship.org/zoning-department/"
+  },
+  "0311": {
+   "name": "Eastampton Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.eastampton.com/media/11506",
+   "ordinance": "https://ecode360.com/15249002",
+   "website": "https://www.eastampton.com/zoning"
+  },
+  "0312": {
+   "name": "Edgewater Park Township",
+   "county": "Burlington",
+   "zoningMap": "http://www.edgewaterpark-nj.com/filestorage/173/360/430/1247/ZONING_MAP_2019.pdf",
+   "ordinance": "https://ecode360.com/33438491",
+   "website": "http://www.edgewaterpark-nj.com/content/163/338/4748.aspx"
+  },
+  "0313": {
+   "name": "Evesham Township",
+   "county": "Burlington",
+   "zoningMap": "https://evesham-nj.org/government/forms/construction/community-development-documents/486-zoning-map/file",
+   "ordinance": "https://ecode360.com/11960852",
+   "website": "https://evesham-nj.org/departments/construction"
+  },
+  "0314": {
+   "name": "Fieldsboro Borough",
+   "county": "Burlington",
+   "zoningMap": "https://www.fieldsboro.us/media/71",
+   "ordinance": "https://www.fieldsboro.us/media/61",
+   "website": "https://www.bordentowntownship.com/o/bordentown/page/construction"
+  },
+  "0315": {
+   "name": "Florence Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.florence-nj.gov/wp-content/uploads/2023/05/Zoning-Map-08.30.2022.pdf",
+   "ordinance": "https://ecode360.com/10059695",
+   "website": "https://www.florence-nj.gov/departments/zoning-board-of-adjustment/zoning-board-documents/"
+  },
+  "0316": {
+   "name": "Hainesport Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6692",
+   "ordinance": "https://ecode360.com/10205319",
+   "website": "https://www.hainesporttownship.com/construction-zoning"
+  },
+  "0317": {
+   "name": "Lumberton Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6693",
+   "ordinance": "https://ecode360.com/10110447",
+   "website": "https://www.lumbertontwp.com/departments-services/construction-inspectio"
+  },
+  "0318": {
+   "name": "Mansfield Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.mansfieldtwp.com/sites/g/files/vyhlif8026/f/uploads/0318-zoning_map_0.pdf",
+   "ordinance": "https://ecode360.com/13100536",
+   "website": "https://www.mansfieldtwp.com/zoning"
+  },
+  "0319": {
+   "name": "Maple Shade Township",
+   "county": "Burlington",
+   "zoningMap": "https://mapleshade.com/wp-content/uploads/2022/07/MapleShadeZonePlanMap-2-12-18-1.pdf",
+   "ordinance": "https://ecode360.com/6928907",
+   "website": "https://mapleshade.com/land-use-community-development/"
+  },
+  "0320": {
+   "name": "Medford Township",
+   "county": "Burlington",
+   "zoningMap": "https://medfordtownship.com/wp-content/uploads/2022/09/Medford_Zoning_Map_-_12.2021.pdf",
+   "ordinance": "https://ecode360.com/30785265#30785542",
+   "website": "https://medfordtownship.com/planning-zoning/"
+  },
+  "0321": {
+   "name": "Medford Lakes Borough",
+   "county": "Burlington",
+   "zoningMap": "https://www.medfordlakes.com/DocumentCenter/View/90/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/8277050",
+   "website": "https://www.medfordlakes.com/183/Zoning"
+  },
+  "0322": {
+   "name": "Moorestown Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.moorestown.nj.us/DocumentCenter/View/190/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/10348174",
+   "website": "https://www.moorestown.nj.us/155/Zoning-Office"
+  },
+  "0323": {
+   "name": "Mount Holly Township",
+   "county": "Burlington",
+   "zoningMap": "https://cdn.townweb.com/twp.mountholly.nj.us/wp-content/uploads/2022/11/Mount-Holly-Township-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/10358373",
+   "website": "https://twp.mountholly.nj.us/departments/planning-zoning/"
+  },
+  "0324": {
+   "name": "Mount Laurel Township",
+   "county": "Burlington",
+   "zoningMap": "https://cms7files.revize.com/mountlaurel/Zoning%20Map%202020.pdf",
+   "ordinance": "https://ecode360.com/10365147",
+   "website": "https://www.mountlaurel.com/department/planning___zoning/index.php"
+  },
+  "0325": {
+   "name": "New Hanover Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6701",
+   "ordinance": "https://www.newhanovertwp.com/township-ordinances",
+   "website": "https://www.newhanovertwp.com/construction"
+  },
+  "0326": {
+   "name": "North Hanover Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.northhanovertwp.com/Zoning/NH%20Zoning%20Map%2019.pdf",
+   "ordinance": "https://www.northhanovertwp.com/Zoning/zoning%20ordinance%20Aug%202013.pdf",
+   "website": "https://www.northhanovertwp.com/Zoning/zoning%20page.html"
+  },
+  "0327": {
+   "name": "Palmyra Borough",
+   "county": "Burlington",
+   "zoningMap": "https://cms3.revize.com/revize/palmyraboroughnj/Images/Departments/Zoning/map.jpg",
+   "ordinance": "https://ecode360.com/11283472",
+   "website": "https://boroughofpalmyra.com/departments/zoning.php"
+  },
+  "0328": {
+   "name": "Pemberton Borough",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6704",
+   "ordinance": "https://ecode360.com/11297216#11297216",
+   "website": "https://www.pembertonborough.us/planningzoning.html"
+  },
+  "0329": {
+   "name": "Pemberton Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.pemberton-twp.com/PembertonTwp_ZoningMap_2021_UpdatedPerPinelands.pdf",
+   "ordinance": "https://ecode360.com/11301266",
+   "website": "https://www.pemberton-twp.com/departments/community_development/zoning_division/index.php"
+  },
+  "0330": {
+   "name": "Riverside Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.riversidetwp.org/wp-content/uploads/2013/11/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/15623682",
+   "website": "https://riversidetwp.org/construction-and-zoning-office/"
+  },
+  "0331": {
+   "name": "Riverton Borough",
+   "county": "Burlington",
+   "zoningMap": "https://ecode360.com/attachment/RI0487/RI0487-128e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/11341677",
+   "website": "https://riverton-nj.com/construction-code-enforcement/"
+  },
+  "0332": {
+   "name": "Shamong Township",
+   "county": "Burlington",
+   "zoningMap": "https://webgen1files1.revize.com/shamongnj/Documents/Department%20Contacts%20%20Hours/Building%20Code/SHAMONG_Zoning_Map_(Color)_20121231(1).pdf",
+   "ordinance": "https://ecode360.com/11354684#11354685",
+   "website": "https://www.shamong.net/department_contacts__hours/building_code_construction_permits__zoning/index.php"
+  },
+  "0333": {
+   "name": "Southampton Township",
+   "county": "Burlington",
+   "zoningMap": "https://ecode360.com/attachment/SO3594/SO3594-012b%20App%20B_Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/29793062",
+   "website": "https://www.southamptonnj.org/government/construction___zoning.php"
+  },
+  "0334": {
+   "name": "Springfield Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.springfieldtownshipnj.org/zoningoffice#occdrw",
+   "ordinance": "https://ecode360.com/6395224",
+   "website": "https://www.springfieldtownshipnj.org/zoningoffice"
+  },
+  "0335": {
+   "name": "Tabernacle Township",
+   "county": "Burlington",
+   "zoningMap": "https://cms2.revize.com/revize/tabernacletwpnj/zoning%2011X17.pdf?t=202010190943500&t=202010190943500",
+   "ordinance": "https://ecode360.com/36333839",
+   "website": "https://www.tabernacle-nj.gov/departments/zoning.php"
+  },
+  "0336": {
+   "name": "Washington Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6712",
+   "ordinance": "https://ecode360.com/105813",
+   "website": "https://www.wtbcnj.org/departments/zoning-official"
+  },
+  "0337": {
+   "name": "Westampton Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.westamptonnj.gov/sites/g/files/vyhlif5171/f/uploads/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/8751721",
+   "website": "https://www.westamptonnj.gov/construction-code-enforcement-inspections"
+  },
+  "0338": {
+   "name": "Willingboro Township",
+   "county": "Burlington",
+   "zoningMap": "https://wi3070.zoninghub.com/zoningmap.aspx",
+   "ordinance": "https://ecode360.com/15568995",
+   "website": "https://www.willingboronj.gov/departments/inspections-code-enforcement"
+  },
+  "0339": {
+   "name": "Woodland Township",
+   "county": "Burlington",
+   "zoningMap": "https://www.woodlandtownship.org/vertical/sites/%7B398AF088-65EC-478C-9A50-C859C1E90BF3%7D/uploads/Zoning_Map.pdf",
+   "ordinance": "Not published online",
+   "website": "https://www.woodlandtownship.org/permits"
+  },
+  "0340": {
+   "name": "Wrightstown Borough",
+   "county": "Burlington",
+   "zoningMap": "https://www.co.burlington.nj.us/DocumentCenter/View/6676",
+   "ordinance": "https://ecode360.com/12545632",
+   "website": "https://wrightstownborough.com/index.php/government/construction-office"
+  },
+  "0401": {
+   "name": "Audubon Borough",
+   "county": "Camden",
+   "zoningMap": "https://resources.finalsite.net/images/v1697572450/audubonschoolsorg/lupjacbgwsznbnu1ldlr/zoning-map.pdf",
+   "ordinance": "https://library.municode.com/nj/audubon_borough/codes/code_of_ordinances?nodeId=PTIIPLDE_CH113LADE_ARTVIIZORE",
+   "website": "https://www.audubonnj.com/constructionzoning"
+  },
+  "0402": {
+   "name": "Audubon Park Borough",
+   "county": "Camden",
+   "zoningMap": "Not published online",
+   "ordinance": "Not published online",
+   "website": "http://www.audubonparknj.org/"
+  },
+  "0403": {
+   "name": "Barrington Borough",
+   "county": "Camden",
+   "zoningMap": "http://barringtonboro.com/wp-content/uploads/2021/07/Zoning-map-Sept-2016.pdf",
+   "ordinance": "https://ecode360.com/38918062?highlight=zoning&searchId=22717920880405442#38918062",
+   "website": "https://barringtonboro.com/borough-services/construction-zoning/"
+  },
+  "0404": {
+   "name": "Bellmawr Borough",
+   "county": "Camden",
+   "zoningMap": "https://bellmawr.com/DocumentCenter/View/245/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/29124252",
+   "website": "https://bellmawr.com/169/Zoning"
+  },
+  "0405": {
+   "name": "Berlin Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.berlinnj.org/Document_Center/Department/Planning%20Zoining/2019%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/8949343",
+   "website": "https://www.berlinnj.org/planning-zoning/"
+  },
+  "0406": {
+   "name": "Berlin Township",
+   "county": "Camden",
+   "zoningMap": "https://berlintwp.com/wp-content/uploads/2025/08/2-24-2025-Berlin-Twp-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/26819763#26819763",
+   "website": "https://berlintwp.com/planning-zoning-board/"
+  },
+  "0407": {
+   "name": "Brooklawn Borough",
+   "county": "Camden",
+   "zoningMap": "https://brooklawn-nj.com/wp-content/uploads/2021/04/zoning-map.pdf",
+   "ordinance": "https://ecode360.com/9409877",
+   "website": "https://brooklawn-nj.com/departments/planning-and-zoning/"
+  },
+  "0408": {
+   "name": "Camden City",
+   "county": "Camden",
+   "zoningMap": "https://www.ci.camden.nj.us/wp-content/uploads/2020/08/zoning_map.pdf",
+   "ordinance": "https://ecode360.com/28223260",
+   "website": "https://www.ci.camden.nj.us/planning-development-department/"
+  },
+  "0409": {
+   "name": "Cherry Hill Township",
+   "county": "Camden",
+   "zoningMap": "https://gis.chtownship.com/CHZoningmap/index.html",
+   "ordinance": "https://www.chnj.gov/160/Zoning-Ordinance",
+   "website": "https://www.chnj.gov/203/Zoning"
+  },
+  "0410": {
+   "name": "Chesilhurst Borough",
+   "county": "Camden",
+   "zoningMap": "https://ecode360.com/attachment/CH2676/CH2676-285a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/13411730",
+   "website": "https://chesilhurstboro.org/departments/planning-and-zoning"
+  },
+  "0411": {
+   "name": "Clementon Borough",
+   "county": "Camden",
+   "zoningMap": "https://clementon-nj.com/wp-content/uploads/2021/04/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/6915389",
+   "website": "https://clementon-nj.com/planning-zoning/"
+  },
+  "0412": {
+   "name": "Collingswood Borough",
+   "county": "Camden",
+   "zoningMap": "http://cms6.revize.com/revize/collingswoodnj/government/departments/docs/zoning/1.ZONING%20MAP.pdf",
+   "ordinance": "https://ecode360.com/10013890",
+   "website": "https://www.collingswood.com/government/departments/zoning_and_planning_permits.php"
+  },
+  "0413": {
+   "name": "Gibbsboro Borough",
+   "county": "Camden",
+   "zoningMap": "https://gibbsborotownhall.com/zoning-map/",
+   "ordinance": "https://ecode360.com/10096095",
+   "website": "https://gibbsborotownhall.com/construction-office/"
+  },
+  "0414": {
+   "name": "Gloucester City",
+   "county": "Camden",
+   "zoningMap": "https://www.cityofgloucester.org/sites/g/files/vyhlif5381/f/uploads/gloucester_city_zoning_map_-_click_here.pdf",
+   "ordinance": "https://www.cityofgloucester.org/sites/g/files/vyhlif5381/f/uploads/2023_zoning_ordinance.pdf",
+   "website": "https://www.cityofgloucester.org/code-enforcement-housing-department"
+  },
+  "0415": {
+   "name": "Gloucester Township",
+   "county": "Camden",
+   "zoningMap": "https://glotwp19.wpenginepowered.com/wp-content/uploads/2025/03/GloucesterTownship_ZoningMap_Update_2024.pdf",
+   "ordinance": "https://ecode360.com/42959756",
+   "website": "https://glotwp.com/department/community-development-planning/"
+  },
+  "0416": {
+   "name": "Haddon Township",
+   "county": "Camden",
+   "zoningMap": "https://www.haddontwp.com/wp-content/uploads/2020/05/HADDON-TOWNSHIP-ZONING-MAP.pdf",
+   "ordinance": "https://ecode360.com/10197436",
+   "website": "https://www.haddontwp.com/departmets/construction-office/"
+  },
+  "0417": {
+   "name": "Haddonfield Borough",
+   "county": "Camden",
+   "zoningMap": "https://cms5.revize.com/revize/boroughofhaddonfield/Construction%20Office/0417-Zoning%20Map_08-2020%20-%20USE%20THIS%20ONE.pdf?t=202009241452340&t=202009241452340",
+   "ordinance": "https://ecode360.com/10200753",
+   "website": "https://www.haddonfieldnj.org/information/contact_the_borough/phone_directory.php"
+  },
+  "0418": {
+   "name": "Haddon Heights Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.haddonhts.com/media/6706",
+   "ordinance": "https://ecode360.com/6581170",
+   "website": "https://haddonhts.com/zoning"
+  },
+  "0419": {
+   "name": "Hi-nella Borough",
+   "county": "Camden",
+   "zoningMap": "Not published online",
+   "ordinance": "Not published online",
+   "website": "https://www.hinellaboro.org/"
+  },
+  "0420": {
+   "name": "Laurel Springs Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.laurelsprings-nj.com/DocumentCenter/View/384/Zoning-Map-Rev-PDF",
+   "ordinance": "https://www.laurelsprings-nj.com/DocumentCenter/View/396/Chapter-270---Zoning?bidId=",
+   "website": "https://www.laurelsprings-nj.com/1209/Zoning"
+  },
+  "0421": {
+   "name": "Lawnside Borough",
+   "county": "Camden",
+   "zoningMap": "Not Published Online",
+   "ordinance": "https://ecode360.com/35985779#35985779",
+   "website": "https://www.lawnside.net/1204/Construction-Department"
+  },
+  "0422": {
+   "name": "Lindenwold Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.lindenwoldnj.gov/sites/g/files/vyhlif3361/f/uploads/zoning-_new.pdf",
+   "ordinance": "https://ecode360.com/16156587",
+   "website": "https://www.lindenwoldnj.gov/joint-land-use"
+  },
+  "0423": {
+   "name": "Magnolia Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.magnolia-nj.org/media/216",
+   "ordinance": "https://library.municode.com/nj/magnolia/codes/code_of_ordinances?nodeId=TIT17ZO",
+   "website": "https://www.magnolia-nj.org/construction"
+  },
+  "0424": {
+   "name": "Merchantville Borough",
+   "county": "Camden",
+   "zoningMap": "https://ecode360.com/attachment/ME0068/ME0068-094c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/34647252",
+   "website": "https://www.merchantvillenj.gov/department/zoning_office.php"
+  },
+  "0425": {
+   "name": "Mount Ephraim Borough",
+   "county": "Camden",
+   "zoningMap": "https://mountephraim-nj.com/wp-content/uploads/2021/01/Current-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/30205818",
+   "website": "https://mountephraim-nj.com/departments/construction-office/"
+  },
+  "0426": {
+   "name": "Oaklyn Borough",
+   "county": "Camden",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/11273042",
+   "website": "https://www.oaklyn-nj.net/page/departments"
+  },
+  "0427": {
+   "name": "Pennsauken Township",
+   "county": "Camden",
+   "zoningMap": "https://www.pennsauken.gov/222/Zoning-Maps",
+   "ordinance": "https://ecode360.com/11306879",
+   "website": "https://www.twp.pennsauken.nj.us/216/Planning-Zoning"
+  },
+  "0428": {
+   "name": "Pine Hill Borough",
+   "county": "Camden",
+   "zoningMap": "https://ecode360.com/attachment/PI4111/PI4111-023a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35569263",
+   "website": "https://www.pinehillboronj.com/departments/planning-and-zoning/"
+  },
+  "0430": {
+   "name": "Runnemede Borough",
+   "county": "Camden",
+   "zoningMap": "https://runnemedenj.org/government/forms/community-resources/zoning-and-tax-maps/46-zoning-map/file",
+   "ordinance": "https://ecode360.com/12702485",
+   "website": "https://runnemedenj.org/departments/construction"
+  },
+  "0431": {
+   "name": "Somerdale Borough",
+   "county": "Camden",
+   "zoningMap": "https://ecode360.com/attachment/SO0443/SO0443-162a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/29969432",
+   "website": "https://somerdale-nj.com/departments/planning-zoning/"
+  },
+  "0432": {
+   "name": "Stratford Borough",
+   "county": "Camden",
+   "zoningMap": "https://www.stratfordnj.org/pdf/revit/zoning-map.pdf",
+   "ordinance": "https://library.municode.com/nj/stratford_borough/codes/code_of_ordinances?nodeId=TIT17ZO",
+   "website": "https://stratfordnj.org/joint-land-board/"
+  },
+  "0433": {
+   "name": "Tavistock Borough",
+   "county": "Camden",
+   "zoningMap": "Not published online",
+   "ordinance": "Not published online",
+   "website": "https://tavistocknj.org/"
+  },
+  "0434": {
+   "name": "Voorhees Township",
+   "county": "Camden",
+   "zoningMap": "https://voorheesnj.com/wp-content/uploads/2023/02/2023_ZONING-MAP-nj-aerials.pdf",
+   "ordinance": "https://codelibrary.amlegal.com/codes/voorheestwp/latest/voorheestwp_nj/0-0-0-25995",
+   "website": "https://voorheesnj.com/departments/zoning/"
+  },
+  "0435": {
+   "name": "Waterford Township",
+   "county": "Camden",
+   "zoningMap": "https://ecode360.com/documents/WA0490/public/653140653.pdf",
+   "ordinance": "https://ecode360.com/29327244",
+   "website": "https://waterfordtwp.org/departments/construction-zoning-enforcement/"
+  },
+  "0436": {
+   "name": "Winslow Township",
+   "county": "Camden",
+   "zoningMap": "http://www.winslowtownship.com/filestorage/3298/3516/zoning_map_approved_may_2022.pdf",
+   "ordinance": "https://ecode360.com/34627477",
+   "website": "http://www.winslowtownship.com/content/3298/3516/default.aspx"
+  },
+  "0437": {
+   "name": "Woodlynne Borough",
+   "county": "Camden",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/WO0631",
+   "website": "https://www.woodlynnenj.org/code-enforcement"
+  },
+  "0501": {
+   "name": "Avalon Borough",
+   "county": "Cape May",
+   "zoningMap": "http://www.avalonboro.org/planning-zoning/2007%20AVA%20ZONING%20Map.pdf",
+   "ordinance": "https://ecode360.com/34663118",
+   "website": "https://avalonboro.net/government/department-of-administration/zoning-office/"
+  },
+  "0502": {
+   "name": "Cape May City",
+   "county": "Cape May",
+   "zoningMap": "https://ecode360.com/attachment/CA1942/CA1942-525a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6660620",
+   "website": "https://www.capemaycity.com/departments/ConstructionZoning"
+  },
+  "0503": {
+   "name": "Cape May Point Borough",
+   "county": "Cape May",
+   "zoningMap": "https://ecode360.com/attachment/CA0524/CA0524-150a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35938632",
+   "website": "https://capemaypoint.org/contact.php"
+  },
+  "0504": {
+   "name": "Dennis Township",
+   "county": "Cape May",
+   "zoningMap": "https://dennistwp.org/wp-content/uploads/2019/04/DennisTownshipZoningMapApril2013-min.pdf",
+   "ordinance": "https://ecode360.com/36535534",
+   "website": "https://dennistwp.org/township-personnel/"
+  },
+  "0505": {
+   "name": "Lower Township",
+   "county": "Cape May",
+   "zoningMap": "https://townshipoflower.org/planningandzoning/2010_0520_ZoningMap.pdf",
+   "ordinance": "https://ecode360.com/11491894",
+   "website": "https://townshipoflower.org/planning-zoning.php"
+  },
+  "0506": {
+   "name": "Middle Township",
+   "county": "Cape May",
+   "zoningMap": "https://www.middletownship.com/zone/Middle%20Zoning%20%20south%20(revised).pdf",
+   "ordinance": "https://ecode360.com/9071192",
+   "website": "https://middletownship.com/departments/zoning-office/"
+  },
+  "0507": {
+   "name": "North Wildwood City",
+   "county": "Cape May",
+   "zoningMap": "https://northwildwood.com/wp-content/uploads/2020/08/Zoning-Map-April-2020.pdf",
+   "ordinance": "https://ecode360.com/8051605",
+   "website": "https://northwildwood.com/departments/construction-office/"
+  },
+  "0508": {
+   "name": "Ocean City",
+   "county": "Cape May",
+   "zoningMap": "https://services.ocnj.us/government/documents/department-documents/zoning-department/148-zoning-map-8-31-2016/file",
+   "ordinance": "https://ecode360.com/36271383",
+   "website": "https://services.ocnj.us/departments/zoning"
+  },
+  "0509": {
+   "name": "Sea Isle City",
+   "county": "Cape May",
+   "zoningMap": "https://www.seaislecitynj.us/media/Forms/Construction/SIC%20zoning%20map%20sht%204.PDF",
+   "ordinance": "https://ecode360.com/35114237",
+   "website": "https://www.seaislecitynj.us/departments/ConstructionOffice"
+  },
+  "0510": {
+   "name": "Stone Harbor Borough",
+   "county": "Cape May",
+   "zoningMap": "https://stoneharbornj.org/wp-content/uploads/2020/08/0510-Zoning_12-6-2011_SIGNED.pdf",
+   "ordinance": "https://ecode360.com/10814722",
+   "website": "https://stoneharbornj.org/departments/construction/"
+  },
+  "0511": {
+   "name": "Upper Township",
+   "county": "Cape May",
+   "zoningMap": "https://uppertownship.com/wp-content/uploads/2020/05/UT-Zoning-2020-Map.pdf",
+   "ordinance": "https://ecode360.com/35460787",
+   "website": "https://uppertownship.com/departments/planning-zoning-office/"
+  },
+  "0512": {
+   "name": "West Cape May Borough",
+   "county": "Cape May",
+   "zoningMap": "https://www.westcapemay.us/document-center/zoning-department/243-zoning-map-adopted-july-2008-readopted-november-2010/file.html",
+   "ordinance": "https://ecode360.com/36278506",
+   "website": "https://www.westcapemay.us/departments/zoning.html"
+  },
+  "0513": {
+   "name": "West Wildwood Borough",
+   "county": "Cape May",
+   "zoningMap": "https://westwildwood.org/wp-content/uploads/2017/12/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/38936285#38936285",
+   "website": "https://westwildwood.org/departments/code-enforcement/"
+  },
+  "0514": {
+   "name": "Wildwood City",
+   "county": "Cape May",
+   "zoningMap": "https://da89b2f4-dcf6-4071-8686-db0eeb060d95.usrfiles.com/ugd/da89b2_781941d926924d269996199601b30eaf.pdf",
+   "ordinance": "https://ecode360.com/36172333",
+   "website": "https://wildwoodnj.gov/planningzoning"
+  },
+  "0515": {
+   "name": "Wildwood Crest Borough",
+   "county": "Cape May",
+   "zoningMap": "https://wildwoodcrest.org/PDF/Land_Use_Map_8_2005.pdf",
+   "ordinance": "https://ecode360.com/36119694",
+   "website": "https://wildwoodcrest.org/planningzoning.php"
+  },
+  "0516": {
+   "name": "Woodbine Borough",
+   "county": "Cape May",
+   "zoningMap": "https://ecode360.com/attachment/WO4121/WO4121-026a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36352526",
+   "website": "http://www.boroughofwoodbine.net/"
+  },
+  "0601": {
+   "name": "Bridgeton City",
+   "county": "Cumberland",
+   "zoningMap": "https://www.cityofbridgetonnj.gov/DocumentCenter/View/795/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/6907069",
+   "website": "https://www.cityofbridgetonnj.gov/195/Planning-Zoning-Administration"
+  },
+  "0602": {
+   "name": "Commercial Township",
+   "county": "Cumberland",
+   "zoningMap": "https://commercialtwp.com/wp-content/uploads/2022/02/Commercial-Township-Zoning-Maps.pdf",
+   "ordinance": "https://ecode360.com/12602978#12602978",
+   "website": "https://www.commercialtwp.com/construction"
+  },
+  "0603": {
+   "name": "Deerfield Township",
+   "county": "Cumberland",
+   "zoningMap": "https://ecode360.com/documents/DE0850/public/543283156.pdf",
+   "ordinance": "https://ecode360.com/5055397",
+   "website": "https://sites.google.com/view/deerfieldtownship/departments/zoning-code"
+  },
+  "0604": {
+   "name": "Downe Township",
+   "county": "Cumberland",
+   "zoningMap": "https://downetwpnj.org/wp-content/uploads/2020/07/Downe-Township-Zoning-Map.pdf",
+   "ordinance": "https://downetwpnj.org/wp-content/uploads/2016/08/DTZoningOrdinance.pdf",
+   "website": "https://downetwpnj.org/departments/zoning-office/"
+  },
+  "0605": {
+   "name": "Fairfield Township",
+   "county": "Cumberland",
+   "zoningMap": "http://fairfieldtownshipnj.org/wp-content/uploads/2024/11/20241118105255373.pdf",
+   "ordinance": "https://ecode360.com/33611980",
+   "website": "http://fairfieldtownshipnj.org/departments/construction/"
+  },
+  "0606": {
+   "name": "Greenwich Township",
+   "county": "Cumberland",
+   "zoningMap": "https://www.historicgreenwichnj.org/wp-content/uploads/PZB/PlanningDocs/greenwich_zoning_map.pdf",
+   "ordinance": "https://ecode360.com/36608717",
+   "website": "http://www.historicgreenwichnj.org/planning-documents/"
+  },
+  "0607": {
+   "name": "Hopewell Township",
+   "county": "Cumberland",
+   "zoningMap": "http://hopewelltwp-nj.com/wp-content/uploads/2024/03/Hopewell-Twp-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/34422518",
+   "website": "http://hopewelltwp-nj.com/2375/Zoning"
+  },
+  "0608": {
+   "name": "Lawrence Township",
+   "county": "Cumberland",
+   "zoningMap": "https://www.lawrencetwpcumberlandnj.com/Minutes_and_Other_Municipal_Documents/zoningmap2003color.pdf",
+   "ordinance": "https://www.lawrencetwpcumberlandnj.com/Minutes_and_Other_Municipal_Documents/Lawrence%20Twp%20Cumberland%20NJ%20Development%20Regulations%20Ordinance%20July%2014%202003.pdf",
+   "website": "https://www.lawrencetwpcumberlandnj.com/OfficialsandAgencies.htm"
+  },
+  "0609": {
+   "name": "Maurice River Township",
+   "county": "Cumberland",
+   "zoningMap": "https://www.mauricerivertwp.org/DocumentCenter/View/276/MRT-Zoning-Map-1-PDF?bidId=",
+   "ordinance": "https://ecode360.com/34975500",
+   "website": "https://www.mauricerivertwp.org/2235/Construction"
+  },
+  "0610": {
+   "name": "Millville City",
+   "county": "Cumberland",
+   "zoningMap": "https://ecode360.com/attachment/MI1908/MI1908-030e%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/6286474",
+   "website": "https://www.millvillenj.gov/313/Zoning"
+  },
+  "0611": {
+   "name": "Shiloh Borough",
+   "county": "Cumberland",
+   "zoningMap": "Not published online",
+   "ordinance": "https://shilohborough.com/government/ordinances/",
+   "website": "https://shilohborough.com/government/planning-zoning/"
+  },
+  "0612": {
+   "name": "Stow Creek Township",
+   "county": "Cumberland",
+   "zoningMap": "https://stowcreektwp.org/wp-content/uploads/2022/04/Stow-Creek-Zoning-Map-2016.pdf",
+   "ordinance": "https://stowcreektwp.org/wp-content/uploads/2022/04/2017-StowCreekTwpOrdinance.pdf",
+   "website": "https://stowcreektwp.org/planning-zoning-and-housing/"
+  },
+  "0613": {
+   "name": "Upper Deerfield Township",
+   "county": "Cumberland",
+   "zoningMap": "https://upperdeerfield.com/wp-content/uploads/2023/06/ORD-840-UDT-Zoning-Map.png",
+   "ordinance": "https://ecode360.com/14810214",
+   "website": "https://upperdeerfield.com/administration/housing-zoning/"
+  },
+  "0614": {
+   "name": "Vineland City",
+   "county": "Cumberland",
+   "zoningMap": "https://www.vinelandcity.org/wp-content/uploads/2021/02/Zoning.Map_.2019-Full-Map-BW.pdf",
+   "ordinance": "https://ecode360.com/12584275",
+   "website": "https://www.vinelandcity.org/zoning/"
+  },
+  "0701": {
+   "name": "Belleville Township",
+   "county": "Essex",
+   "zoningMap": "https://ecode360.com/attachment/BE4059/BE4059-023a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36469199",
+   "website": "https://www.bellevillenj.org/Departments/department-of-planning-and-development"
+  },
+  "0702": {
+   "name": "Bloomfield Township",
+   "county": "Essex",
+   "zoningMap": "https://www.bloomfieldtwpnj.com/DocumentCenter/View/86/2014-Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/12001864",
+   "website": "https://www.bloomfieldtwpnj.com/310/Planning-Zoning"
+  },
+  "0703": {
+   "name": "Caldwell Borough",
+   "county": "Essex",
+   "zoningMap": "https://caldwell-nj.com/vertical/sites/%7B6BAC054F-223B-4082-A606-DE1D76D33F98%7D/uploads/Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/9993563",
+   "website": "https://caldwell-nj.com/construction"
+  },
+  "0704": {
+   "name": "Cedar Grove Township",
+   "county": "Essex",
+   "zoningMap": "https://experience.arcgis.com/experience/17e6fe871cd148479ffcf65974584b2e",
+   "ordinance": "https://ecode360.com/9247169",
+   "website": "https://cedargrovenj.org/242/Planning-Zoning-Department"
+  },
+  "0705": {
+   "name": "East Orange City",
+   "county": "Essex",
+   "zoningMap": "https://www.eastorange-nj.gov/DocumentCenter/View/494/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/27015151",
+   "website": "https://www.eastorange-nj.gov/508/Zoning"
+  },
+  "0706": {
+   "name": "Essex Fells Borough",
+   "county": "Essex",
+   "zoningMap": "https://www.essexfellsboro.com/_Content/pdf/Essex-Fells-Zoning-Map3.pdf",
+   "ordinance": "https://ecode360.com/10528001",
+   "website": "https://www.essexfellsboro.com/Departments/building-and-zoning"
+  },
+  "0707": {
+   "name": "Fairfield Township",
+   "county": "Essex",
+   "zoningMap": "https://www.fairfieldnj.org/DocumentCenter/View/333/Zoning-Map-PDF?bidId=",
+   "ordinance": "https://ecode360.com/35314662",
+   "website": "https://www.fairfieldnj.org/236/Zoning"
+  },
+  "0708": {
+   "name": "Glen Ridge Borough",
+   "county": "Essex",
+   "zoningMap": "https://www.glenridgenj.org/wp-content/uploads/2025/07/buildingzoningmap11.28.16.pdf",
+   "ordinance": "https://library.municode.com/nj/glen_ridge_borough/codes/code_of_ordinances?nodeId=TIT17ZO",
+   "website": "https://www.glenridgenj.org/planning.htm"
+  },
+  "0709": {
+   "name": "Irvington Township",
+   "county": "Essex",
+   "zoningMap": "https://irvingtonnj.gov/wp-content/uploads/2023/12/Zoning-Map-PDF-Version-Township-Map-Page.pdf",
+   "ordinance": "https://ecode360.com/30411382",
+   "website": "https://irvingtonnj.gov/community-development-and-planning/"
+  },
+  "0710": {
+   "name": "Livingston Township",
+   "county": "Essex",
+   "zoningMap": "https://ecode360.com/attachment/LI1238/LI1238-170b%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/10295328",
+   "website": "https://www.livingstonnj.org/1725/Zoning"
+  },
+  "0711": {
+   "name": "Maplewood Township",
+   "county": "Essex",
+   "zoningMap": "https://www.maplewoodnj.gov/home/showpublisheddocument/1169/638276484407670000",
+   "ordinance": "https://ecode360.com/9417895",
+   "website": "https://www.maplewoodnj.gov/government/community-development/zoning-review"
+  },
+  "0712": {
+   "name": "Millburn Township",
+   "county": "Essex",
+   "zoningMap": "https://topology.maps.arcgis.com/apps/webappviewer/index.html?id=767cdaf78b034e1baba0bf5890d37fe9",
+   "ordinance": "https://ecode360.com/35143140",
+   "website": "https://twp.millburn.nj.us/150/Building"
+  },
+  "0713": {
+   "name": "Montclair Township",
+   "county": "Essex",
+   "zoningMap": "https://mtnjplanning.maps.arcgis.com/apps/webappviewer/index.html?id=99c64c61b349495181648e8bf3ac0328",
+   "ordinance": "https://ecode360.com/7189542",
+   "website": "https://www.montclairnjusa.org/Government/Departments/Planning-Community-Development"
+  },
+  "0714": {
+   "name": "Newark City",
+   "county": "Essex",
+   "zoningMap": "https://newgin.maps.arcgis.com/apps/webappviewer/index.html?id=8364d36c5a204dfc8b60b4330af8b1df",
+   "ordinance": "https://ecode360.com/37745895",
+   "website": "https://www.newarknj.gov/257/Division-of-Planning-Zoning"
+  },
+  "0715": {
+   "name": "North Caldwell Borough",
+   "county": "Essex",
+   "zoningMap": "https://www.northcaldwell.org/DocumentCenter/View/312/Zoning-Map-2023-PDF",
+   "ordinance": "https://ecode360.com/35661975",
+   "website": "https://www.northcaldwell.org/1231/Building-Engineering-Zoning"
+  },
+  "0716": {
+   "name": "Nutley Township",
+   "county": "Essex",
+   "zoningMap": "https://www.nutleynj.org/media/Forms-Permits-Applications/Code%20Enforcement%20/Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/12135466",
+   "website": "https://www.nutleynj.org/code-enforcement"
+  },
+  "0717": {
+   "name": "Orange City",
+   "county": "Essex",
+   "zoningMap": "https://orangenj.gov/DocumentCenter/View/2010/City-of-Orange-Township-Zoning-Map",
+   "ordinance": "https://ecode360.com/34567151",
+   "website": "https://orangenj.gov/355/Zoning-Division"
+  },
+  "0718": {
+   "name": "Roseland Borough",
+   "county": "Essex",
+   "zoningMap": "https://roseland.maps.arcgis.com/home/item.html?id=a45c4992c14642a79f5ca954f48b2175",
+   "ordinance": "https://ecode360.com/34523834",
+   "website": "https://www.roselandnj.org/216/Code-Enforcement"
+  },
+  "0719": {
+   "name": "South Orange Village",
+   "county": "Essex",
+   "zoningMap": "https://www.southorange.org/DocumentCenter/View/261/Zoning-and-Redevelopment-Districts-PDF-",
+   "ordinance": "https://southorange.municipalcodeonline.com/book?type=ordinances#name=185_Attachment_2-_District_Use_Regulations",
+   "website": "https://www.southorange.org/164/Zoning"
+  },
+  "0720": {
+   "name": "Verona Township",
+   "county": "Essex",
+   "zoningMap": "https://ecode360.com/attachment/VE0815/VE0815-150b%202011%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/31999635",
+   "website": "https://www.veronanj.org/zoning"
+  },
+  "0721": {
+   "name": "West Caldwell Township",
+   "county": "Essex",
+   "zoningMap": "https://www.westcaldwell.com/_Content/pdf/zoning-map-west-caldwell.pdf",
+   "ordinance": "https://ecode360.com/35367190",
+   "website": "https://www.westcaldwell.com/Departments/planning-and-zoning"
+  },
+  "0722": {
+   "name": "West Orange Township",
+   "county": "Essex",
+   "zoningMap": "https://www.westorange.org/DocumentCenter/View/9240/West-Orange-Zoning-Map-including-amendments-through-Nov-2020",
+   "ordinance": "https://ecode360.com/35637436",
+   "website": "https://www.westorange.org/778/Zoning-Enforcement-Property-Maint-Public"
+  },
+  "0801": {
+   "name": "Clayton Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://www.claytonnj.com/DocumentCenter/View/3766/Zoning-Map-PDF",
+   "ordinance": "https://ecode360.com/30706166",
+   "website": "https://www.claytonnj.com/1209/Zoning"
+  },
+  "0802": {
+   "name": "Deptford Township",
+   "county": "Gloucester",
+   "zoningMap": "https://www.deptford-nj.org/filestorage/34753/35769/35811/36042/2022_Deptford_Zoning_9_2021_COLOR_11x17.pdf",
+   "ordinance": "https://ecode360.com/DE0193",
+   "website": "https://www.deptford-nj.org/planning-zoning"
+  },
+  "0803": {
+   "name": "East Greenwich Township",
+   "county": "Gloucester",
+   "zoningMap": "https://drive.google.com/file/d/1mI3T6p-4V_2NToCjhWC5Fn_9dfAgTuI1/view",
+   "ordinance": "https://library.municode.com/nj/east_greenwich_township/codes/municipal_code?nodeId=TIT16LADECO",
+   "website": "https://www.eastgreenwichnj.com/government/planning-and-zoning"
+  },
+  "0804": {
+   "name": "Elk Township",
+   "county": "Gloucester",
+   "zoningMap": "http://elktownshipnj.gov/wp-content/uploads/2020/05/Zoning-Map-2016-ADOPTED-O-8-2016.pdf",
+   "ordinance": "https://ecode360.com/12498868",
+   "website": "https://elktownshipnj.gov/departments/zoning/"
+  },
+  "0805": {
+   "name": "Franklin Township",
+   "county": "Gloucester",
+   "zoningMap": "https://www.franklintownshipnj.org/DocumentCenter/View/5771/Zoning-Map---Franklin-Township-PDF",
+   "ordinance": "https://ecode360.com/9926814",
+   "website": "https://www.franklintownshipnj.org/152/Planning-Zoning"
+  },
+  "0806": {
+   "name": "Glassboro Borough",
+   "county": "Gloucester",
+   "zoningMap": "http://taxmaps.info/docs/zoning/0806_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/13327422",
+   "website": "https://www.glassboro.org/planning-zoning"
+  },
+  "0807": {
+   "name": "Greenwich Township",
+   "county": "Gloucester",
+   "zoningMap": "https://www.greenwichtwp.com/DocumentCenter/View/1576/zoning_map_revised",
+   "ordinance": "https://ecode360.com/12213804",
+   "website": "https://www.greenwichtwp.com/2168/Construction-Code-Office"
+  },
+  "0808": {
+   "name": "Harrison Township",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/318170/HA1928-225c%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/7646897",
+   "website": "https://harrisontwp.us/municipal-departments/zoning-officer/"
+  },
+  "0809": {
+   "name": "Logan Township",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/LO0702/LO0702-UDOd%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/36756380",
+   "website": "https://www.logan-twp.org/departments/construction-and-code-enforcement/"
+  },
+  "0810": {
+   "name": "Mantua Township",
+   "county": "Gloucester",
+   "zoningMap": "https://mantuatownship.com/wp-content/uploads/2020/02/2019-Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/9575880",
+   "website": "https://mantuatownship.com/departments/community-development/zoning-department/"
+  },
+  "0811": {
+   "name": "Monroe Township",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/319286/MO0197-175h%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/7181569",
+   "website": "https://monroetownshipnj.org/3-2/department-of-development-housing/zoning-office/"
+  },
+  "0812": {
+   "name": "National Park Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://webgen1files.revize.com/bnpnj/Master.Plan.Attachment%205(Zoning%20Map).pdf",
+   "ordinance": "https://webgen1files.revize.com/bnpnj/Document%20Center/Departments/Zoning%20&%20Constructions/zoningordinance.pdf",
+   "website": "https://www.nationalparknj.com/departments/zoning___constructions/index.php"
+  },
+  "0813": {
+   "name": "Newfield Borough",
+   "county": "Gloucester",
+   "zoningMap": "Not published online",
+   "ordinance": "https://ecode360.com/13251326",
+   "website": "https://www.newfieldborough.org/contact-us/"
+  },
+  "0814": {
+   "name": "Paulsboro Borough",
+   "county": "Gloucester",
+   "zoningMap": "http://taxmaps.info/docs/zoning/0814_Zoning_Map.pdf",
+   "ordinance": "https://ecode360.com/11293721",
+   "website": "https://paulsboronj.org/departments/code-construction/"
+  },
+  "0815": {
+   "name": "Pitman Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/PI1553/PI1553-035a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35953871",
+   "website": "https://www.pitman.org/departments/construction___zoning/index.php"
+  },
+  "0816": {
+   "name": "South Harrison Township",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/SO1812/SO1812-090a%20Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/10145520",
+   "website": "https://www.southharrison-nj.org/municipal-departments/construction-code-enforcement-office"
+  },
+  "0817": {
+   "name": "Swedesboro Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://www.historicswedesboro.com/wp-content/uploads/2025/01/SWEDESBORO-ZONING-MAP-2024.pdf",
+   "ordinance": "https://ecode360.com/15310592",
+   "website": "https://www.historicswedesboro.com/zoning-rental-registration/"
+  },
+  "0818": {
+   "name": "Washington Township",
+   "county": "Gloucester",
+   "zoningMap": "https://cms2.revize.com/revize/washingtontownshipnj/Washington%20Township%20Zoning%20Map%202024.pdf",
+   "ordinance": "https://ecode360.com/7665587",
+   "website": "https://www.twp.washington.nj.us/departments/planning___zoning/zoning_information/index.php"
+  },
+  "0819": {
+   "name": "Wenonah Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://boroughofwenonah.com/wp-content/uploads/2021/06/WENONAH-ZONE-MAP-24x36-12-20-17.pdf",
+   "ordinance": "https://ecode360.com/36166332",
+   "website": "https://boroughofwenonah.com/government/construction-code-enforcement/"
+  },
+  "0820": {
+   "name": "West Deptford Township",
+   "county": "Gloucester",
+   "zoningMap": "https://cms9files.revize.com/westdeptfordnj/Zoning%20Map.pdf",
+   "ordinance": "https://ecode360.com/35975802",
+   "website": "https://www.westdeptford.com/services/departments/construction___inspection/planning_board.php"
+  },
+  "0821": {
+   "name": "Westville Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://westville-nj.com/wp-content/uploads/2023/04/ZONING_MAP.pdf",
+   "ordinance": "https://ecode360.com/15225883",
+   "website": "https://westville-nj.com/departments/construction-building-permits/"
+  },
+  "0822": {
+   "name": "Woodbury City",
+   "county": "Gloucester",
+   "zoningMap": "https://ecode360.com/attachment/WO0578/WO0578-202c%20Zoning%20Map.pdf",
+   "ordinance": "https://library.municode.com/nj/woodbury/codes/code_of_ordinances?nodeId=PTIIGELE_CH202ZO",
+   "website": "https://woodbury.nj.us/1184/Code-Enforcement"
+  },
+  "0823": {
+   "name": "Woodbury Heights Borough",
+   "county": "Gloucester",
+   "zoningMap": "https://www.bwhnj.com/DocumentCenter/View/1961/ZONING-MAP-?bidId=",
+   "ordinance": "https://ecode360.com/36357667#36357667",
+   "website": "https://www.bwhnj.com/226/Construction-Zoning-Enforcement"
+  },
+  "0824": {
+   "name": "Woolwich Township",
+   "county": "Gloucester",
+   "zoningMap": "https://woolwichtwp.org/wp-content/uploads/2020/01/2018-11-Exhibit-A_Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/11426033",
+   "website": "https://woolwichtwp.org/departments/zoning-office/"
+  },
+  "0901": {
+   "name": "Bayonne City",
+   "county": "Hudson",
+   "zoningMap": "https://www.bayonnenj.org/_Content/pdf/forms/tax/2020-Zoning-Map-Updated-September-2020.pdf",
+   "ordinance": "https://ecode360.com/35730904",
+   "website": "https://www.bayonnenj.org/Departments/department-of-planning-and-zoning-and-development"
+  },
+  "0902": {
+   "name": "East Newark Borough",
+   "county": "Hudson",
+   "zoningMap": "https://www.boroughofeastnewark.com/_Content/pdf/forms/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/36266674",
+   "website": "https://www.boroughofeastnewark.com/Departments/building-and-construction"
+  },
+  "0903": {
+   "name": "Guttenberg Town",
+   "county": "Hudson",
+   "zoningMap": "https://www.guttenbergnj.org/_Content/pdf/forms/Zoning-Map-Guttenberg.pdf",
+   "ordinance": "https://ecode360.com/35698545",
+   "website": "https://www.guttenbergnj.org/Departments/building-department"
+  },
+  "0904": {
+   "name": "Harrison Town",
+   "county": "Hudson",
+   "zoningMap": "https://ecode360.com/attachment/HA1928/HA1928-225d%20Town%20Center%20Zoning%20Map.pdf",
+   "ordinance": "https://library.municode.com/nj/harrison/codes/code_of_ordinances?nodeId=TIT17LADEOR",
+   "website": "https://townofharrison.com/149/Construction-Engineering"
+  },
+  "0905": {
+   "name": "Hoboken City",
+   "county": "Hudson",
+   "zoningMap": "https://cityofhoboken.maps.arcgis.com/apps/webappviewer/index.html?id=3673c59835754c0b9bea72d9f0e4406d",
+   "ordinance": "https://ecode360.com/15237147",
+   "website": "https://www.hobokennj.gov/departments/zoning-office"
+  },
+  "0906": {
+   "name": "Jersey City",
+   "county": "Hudson",
+   "zoningMap": "https://experience.arcgis.com/experience/63717e4171904651a65fe9827fcb5571/",
+   "ordinance": "https://library.municode.com/nj/jersey_city/codes/code_of_ordinances?nodeId=CH345ZO",
+   "website": "https://www.jerseycitynj.gov/cityhall/housinganddevelopment/zoning"
+  },
+  "0907": {
+   "name": "Kearny Town",
+   "county": "Hudson",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Kearny_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/36027729",
+   "website": "https://www.kearnynj.org/construction-code-enforcement/"
+  },
+  "0908": {
+   "name": "North Bergen Township",
+   "county": "Hudson",
+   "zoningMap": "https://www.northbergen.org/_Content/pdf/NB2006zoningmap2.pdf",
+   "ordinance": "https://www.northbergen.org/_Content/pdf/NB_ZoningOrdinance_FORWEB.pdf",
+   "website": "https://www.northbergen.org/Departments/application-forms-zoning-map"
+  },
+  "0909": {
+   "name": "Secaucus Town",
+   "county": "Hudson",
+   "zoningMap": "https://meri.njmeadowlands.gov/downloads/gis/maps/Secaucus_Zoning_WebMap_District_11x17_Portrait.pdf",
+   "ordinance": "https://ecode360.com/35541272",
+   "website": "https://secaucusnj.gov/departments/construction"
+  },
+  "0910": {
+   "name": "Union City",
+   "county": "Hudson",
+   "zoningMap": "https://www.ucnj.com/_Content/pdf/misc/Zoning_Map_UC.pdf",
+   "ordinance": "https://ecode360.com/45711623#45711623",
+   "website": "https://www.ucnj.com/Departments/building-department"
+  },
+  "0911": {
+   "name": "Weehawken Township",
+   "county": "Hudson",
+   "zoningMap": "https://ecode360.com/attachment/WE4065/WE4065-023b%20Zoning%20Maps.pdf",
+   "ordinance": "https://ecode360.com/34512416",
+   "website": "https://www.weehawken-nj.us/departments/building-department"
+  },
+  "0912": {
+   "name": "West New York Town",
+   "county": "Hudson",
+   "zoningMap": "https://www.westnewyorknj.org/wp-content/uploads/2023/10/Zoning-Map.pdf",
+   "ordinance": "https://ecode360.com/7060814",
+   "website": "https://www.westnewyorknj.org/Departments/building-department"
+  }
+ }
+}
